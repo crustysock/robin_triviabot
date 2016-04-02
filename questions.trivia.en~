@@ -43,23 +43,23 @@
 #  <!========================================================!>
 
 Category: Americanisms
-Question: Britains say 'tarmac'; Americans say ------.
+Question: Britains say 'tarmac'; Americans say ______.
 Answer: runway
 
 Category: Analogies
-Question: Analogy: 'Ancient' is to 'old' as 'recent' is to --------.
+Question: Analogy: 'Ancient' is to 'old' as 'recent' is to ________.
 Answer: current
 
 Category: Analogies
-Question: Bull - cow as fox - ----------.
+Question: Bull - cow as fox - __________.
 Answer: vixen
 
 Category: Analogies
-Question: Goose - geese as passerby - -----------.
+Question: Goose - geese as passerby - ___________.
 Answer: passersby
 
 Category: Anatomy
-Question: Your ---- holds your head to your shoulders.
+Question: Your ____ holds your head to your shoulders.
 Answer: neck
 
 Category: Arts
@@ -67,7 +67,7 @@ Question: In what field of study would you find "flying buttresses"?
 Answer: architecture
 
 Category: Arts
-Question: The study of building design is ------------.
+Question: The study of building design is ____________.
 Answer: architecture
 
 Category: Arts
@@ -75,7 +75,7 @@ Question: This statue was found on the Greek island of Melos in 1820.
 Answer: Venus de Milo
 
 Category: Arts
-Question: Three main types of Greek columns are Doric, Ionic, and ----------.
+Question: Three main types of Greek columns are Doric, Ionic, and __________.
 Answer: Corinthian
 
 Category: Arts
@@ -99,7 +99,7 @@ Question: Which month has a diamond as a birthstone?
 Answer: April
 
 Category: Astronomy
-Question: A heavenly body moving under the attraction of the Sun and consisting of a nucleus and a tail is a(n) -----.
+Question: A heavenly body moving under the attraction of the Sun and consisting of a nucleus and a tail is a(n) _____.
 Answer: comet
 
 Category: Astronomy
@@ -107,7 +107,7 @@ Question: Does Uranus have an aurora?
 Answer: yes
 
 Category: Astronomy
-Question: From 1979 until 2000 the most distant planet from the earth was -------.
+Question: From 1979 until 2000 the most distant planet from the earth was _______.
 Answer: Neptune
 
 Category: Astronomy
@@ -128,7 +128,7 @@ Question: Name the second-largest planet in the solar system.
 Answer: saturn
 
 Category: Astronomy
-Question: Our galaxy is commonly known as the --------.
+Question: Our galaxy is commonly known as the ________.
 Answer: Milky Way
 
 Category: Astronomy
@@ -136,27 +136,27 @@ Question: The Big Dipper is part of what constellation?
 Answer: Ursa Major
 
 Category: Astronomy
-Question: The North Star is also known as -------.
+Question: The North Star is also known as _______.
 Answer: Polaris
 
 Category: Astronomy
-Question: The fourth planet from the sun is ----.
+Question: The fourth planet from the sun is ____.
 Answer: Mars
 
 Category: Astronomy
-Question: The name for the group of stars which form a hunter with a club and shield is -----.
+Question: The name for the group of stars which form a hunter with a club and shield is _____.
 Answer: Orion
 
 Category: Astronomy
-Question: The planet closest to the sun is -------.
+Question: The planet closest to the sun is _______.
 Answer: Mercury
 
 Category: Astronomy
-Question: The spiral galaxy nearest ours is the --------- galaxy.
+Question: The spiral galaxy nearest ours is the _________ galaxy.
 Answer: Andromeda
 
 Category: Astronomy
-Question: The tides on the earth's oceans are actually created by gravitational pull from the ----.
+Question: The tides on the earth's oceans are actually created by gravitational pull from the ____.
 Answer: Moon
 
 Category: Astronomy
@@ -208,7 +208,7 @@ Question: What planet boasts the Great Red Spot?
 Answer: Jupiter
 
 Category: Bet you don't know ;-)
-Question: The two sexes of humans are male and ------?
+Question: The two sexes of humans are male and ______?
 Answer: female
 
 Category: Biochemistry
@@ -238,7 +238,7 @@ Question: What is normal body temperature for an adult human (in degrees fahrenh
 Answer: 98.6
 
 Category: Botany
-Question: The practice of joining the parts of two plants to make them grow as one is called --------.
+Question: The practice of joining the parts of two plants to make them grow as one is called ________.
 Answer: grafting
 
 Category: Botany
@@ -263,7 +263,7 @@ Answer: three hundred and sixty six
 Regexp: (three hundred (and )?sixty[- ]six|366)
 
 Category: Cartoon Trivia
-Question: Alvin & Simon had a brother called ----.
+Question: Alvin & Simon had a brother called ____.
 Answer: Theodore
 Regexp: (theodore|theo)
 
@@ -272,7 +272,7 @@ Question: An Andy Panda cartoon gave birth to a famous, cantankerous bird. Name 
 Answer: Woody Woodpecker
 
 Category: Cartoon Trivia
-Question: An adventurous penguin named Tennessee Tuxedo had a sidekick named -------?
+Question: An adventurous penguin named Tennessee Tuxedo had a sidekick named _______?
 Answer: Chumley
 
 Category: Cartoon Trivia
@@ -300,7 +300,7 @@ Question: Charles Boyer inspired a cartoon skunk. Who?
 Answer: Pepe le Pew
 
 Category: Cartoon Trivia
-Question: Famous Phrases: Who knows? The ------.
+Question: Famous Phrases: Who knows? The ______.
 Answer: Shadow
 
 Category: Cartoon Trivia
@@ -325,7 +325,7 @@ Question: In what city does Fat Albert live?
 Answer: Philadelphia
 
 Category: Cartoon Trivia
-Question: Mentor of Titan had two children in the Marvel comics, Thanos and ---?
+Question: Mentor of Titan had two children in the Marvel comics, Thanos and ___?
 Answer: Ero
 
 Category: Cartoon Trivia
@@ -385,11 +385,11 @@ Question: On what T.V. show could Tom Terrific be found?
 Answer: Captain Kangaroo
 
 Category: Cartoon Trivia
-Question: Popeye's chief adversary has two names, Bluto and ------?
+Question: Popeye's chief adversary has two names, Bluto and ______?
 Answer: Brutus
 
 Category: Cartoon Trivia
-Question: Porky Pig had a girlfriend named --------.
+Question: Porky Pig had a girlfriend named ________.
 Answer: Petunia
 
 Category: Cartoon Trivia
@@ -598,27 +598,27 @@ Question: Hydrogen Hydroxide is more commonly known as what?
 Answer: water
 
 Category: Chemistry
-Question: Nitrogen, a poisonous gas, makes up 78% of the --- that we breathe.
+Question: Nitrogen, a poisonous gas, makes up 78% of the ___ that we breathe.
 Answer: air
 
 Category: Chemistry
-Question: Sodium Hydroxide is more commonly known as ---.
+Question: Sodium Hydroxide is more commonly known as ___.
 Answer: lye
 
 Category: Chemistry
-Question: Sodium bicarbonate is better known as ---------.
+Question: Sodium bicarbonate is better known as _________.
 Answer: baking soda
 
 Category: Chemistry
-Question: The process of removing salt from sea water is known as -----------.
+Question: The process of removing salt from sea water is known as ___________.
 Answer: desalination
 
 Category: Chemistry
-Question: The smallest portion of a substance capable of existing independently and retaining its original properties is a(n) --------.
+Question: The smallest portion of a substance capable of existing independently and retaining its original properties is a(n) ________.
 Answer: molecule
 
 Category: Chemistry
-Question: This ancient attempt to transmute base metals into gold was called -------.
+Question: This ancient attempt to transmute base metals into gold was called _______.
 Answer: alchemy
 
 Category: Chemistry
@@ -634,7 +634,7 @@ Question: This poisonous gas is in the exhaust fumes from cars.
 Answer: carbon monoxide
 
 Category: Chemistry
-Question: Water containing carbon dioxide under pressure is called ---- -----.
+Question: Water containing carbon dioxide under pressure is called ____ _____.
 Answer: soda water
 
 Category: Chemistry
@@ -674,7 +674,7 @@ Question: Name the loner rebel reindeer with the red shiny nose.
 Answer: Rudolph
 
 Category: Christmas
-Question: Santa Claus reportedly lives at the ----- Pole.
+Question: Santa Claus reportedly lives at the _____ Pole.
 Answer: north
 
 Category: Comic Strip Trivia
@@ -682,11 +682,11 @@ Question: What comic strip is set at Camp Swampy?
 Answer: Beetle Bailey
 
 Category: Computer Science
-Question: That big square thing you're staring at right now is called a -------?
+Question: That big square thing you're staring at right now is called a _______?
 Answer: monitor
 
 Category: Computer Science
-Question: The Internet Relay Chat Program, which normally connects to port 6667, is more commonly known as ---.
+Question: The Internet Relay Chat Program, which normally connects to port 6667, is more commonly known as ___.
 Answer: IRC
 
 Category: Definitions
@@ -746,120 +746,120 @@ Question: -isms: The belief in living a very austere and self-denying life.
 Answer: asceticism
 
 Category: Definitions
-Question: A clip, shaped like a bar to keep a woman's hair in place is a -------.
+Question: A clip, shaped like a bar to keep a woman's hair in place is a _______.
 Answer: barrette
 
 Category: Definitions
-Question: A depilatory is a substance used for removing ----.
+Question: A depilatory is a substance used for removing ____.
 Answer: hair
 
 Category: Definitions
-Question: A device used to change the voltage of alternating currents is a ----------.
+Question: A device used to change the voltage of alternating currents is a __________.
 Answer: transformer
 
 Category: Definitions
-Question: A flat, round hat sometimes worn by soldiers is a -----.
+Question: A flat, round hat sometimes worn by soldiers is a _____.
 Answer: beret
 
 Category: Definitions
-Question: A government in which power is restricted to a few is a(n) ----------.
+Question: A government in which power is restricted to a few is a(n) __________.
 Answer: oligarchy
 
 Category: Definitions
-Question: A person in his eighties is called a(n) ------------.
+Question: A person in his eighties is called a(n) ____________.
 Answer: octogenarian
 
 Category: Definitions
-Question: A person who starts fires maliciously is a(n) ---------.
+Question: A person who starts fires maliciously is a(n) _________.
 Answer: arsonist
 
 Category: Definitions
-Question: A person with a strong desire to steal is a(n) --------.
+Question: A person with a strong desire to steal is a(n) ________.
 Answer: kleptomaniac
 
 Category: Definitions
-Question: A pugilist is a -----.
+Question: A pugilist is a _____.
 Answer: boxer
 
 Category: Definitions
-Question: A receptacle for holy water is a(n) ----.
+Question: A receptacle for holy water is a(n) ____.
 Answer: font
 
 Category: Definitions
-Question: A sun-dried grape is known as a(n) ------.
+Question: A sun-dried grape is known as a(n) ______.
 Answer: raisin
 
 Category: Definitions
-Question: A word like 'NASA' formed from the initials of other words is a(n) ------.
+Question: A word like 'NASA' formed from the initials of other words is a(n) ______.
 Answer: acronym
 
 Category: Definitions
-Question: Acrophobia is a fear of -------.
+Question: Acrophobia is a fear of _______.
 Answer: heights
 
 Category: Definitions
-Question: An "omniscient" person has unlimited ----------.
+Question: An "omniscient" person has unlimited __________.
 Answer: knowledge
 
 Category: Definitions
-Question: An anemometer measures ---- --------.
+Question: An anemometer measures ____ ________.
 Answer: wind velocity
 
 Category: Definitions
-Question: An animal stuffer is a(n) -----------.
+Question: An animal stuffer is a(n) ___________.
 Answer: taxidermist
 
 Category: Definitions
-Question: An artist supports his canvas on a(n) -----.
+Question: An artist supports his canvas on a(n) _____.
 Answer: easel
 
 Category: Definitions
-Question: An instrument on a car to measure the distance travelled is called a(n) --------.
+Question: An instrument on a car to measure the distance travelled is called a(n) ________.
 Answer: odometer
 
 Category: Definitions
-Question: Androphobia is the fear of -----.
+Question: Androphobia is the fear of _____.
 Answer: males
 Regexp: (men|males?)
 
 Category: Definitions
-Question: Animals that once existed but don't exist now are said to be -------.
+Question: Animals that once existed but don't exist now are said to be _______.
 Answer: extinct
 
 Category: Definitions
-Question: Any object worn as a charm may be called a(n) ------.
+Question: Any object worn as a charm may be called a(n) ______.
 Answer: amulet
 
 Category: Definitions
-Question: Bibliophobia is a fear of -----.
+Question: Bibliophobia is a fear of _____.
 Answer: books
 
 Category: Definitions
-Question: Brontophobia is the fear of -------.
+Question: Brontophobia is the fear of _______.
 Answer: thunder
 
 Category: Definitions
-Question: Dendrochronology is better known as ----------.
+Question: Dendrochronology is better known as __________.
 Answer: ring dating
 
 Category: Definitions
-Question: Doraphobia is the fear of ---------.
+Question: Doraphobia is the fear of _________.
 Answer: fur
 
 Category: Definitions
-Question: Eleutherophobia is a fear of -------.
+Question: Eleutherophobia is a fear of _______.
 Answer: freedom
 
 Category: Definitions
-Question: Gymnophobia is the fear of ----------.
+Question: Gymnophobia is the fear of __________.
 Answer: naked bodies
 
 Category: Definitions
-Question: Hills and ridges composed of drifting sand are known as -----.
+Question: Hills and ridges composed of drifting sand are known as _____.
 Answer: dunes
 
 Category: Definitions
-Question: Ichthyology is the study of --------.
+Question: Ichthyology is the study of ________.
 Answer: fish
 
 Category: Definitions
@@ -891,111 +891,111 @@ Question: Name the porceilan chair you sit on at least once a day.
 Answer: toilet
 
 Category: Definitions
-Question: One who tells fortunes by the stars is a(n) ----------.
+Question: One who tells fortunes by the stars is a(n) __________.
 Answer: astrologer
 
 Category: Definitions
-Question: Rats, mice, beavers, and squirrels are all -------.
+Question: Rats, mice, beavers, and squirrels are all _______.
 Answer: rodents
 
 Category: Definitions
-Question: The art of tracing designs and taking impressions of them is -----------.
+Question: The art of tracing designs and taking impressions of them is ___________.
 Answer: lithography
 
 Category: Definitions
-Question: The covering on the tip of a shoelace is a(n) -----.
+Question: The covering on the tip of a shoelace is a(n) _____.
 Answer: aglet
 
 Category: Definitions
-Question: The distance around the outside of a circle is its ------------.
+Question: The distance around the outside of a circle is its ____________.
 Answer: circumference
 
 Category: Definitions
-Question: The earth's atmosphere and the space beyond is known as ---------.
+Question: The earth's atmosphere and the space beyond is known as _________.
 Answer: aerospace
 
 Category: Definitions
-Question: The effect produced when sound is reflected back is known as a(n) ----.
+Question: The effect produced when sound is reflected back is known as a(n) ____.
 Answer: echo
 
 Category: Definitions
-Question: The feeling of having experienced something before is known as -------.
+Question: The feeling of having experienced something before is known as _______.
 Answer: deja vu
 
 Category: Definitions
-Question: The science of preparing and dispensing drugs is --------.
+Question: The science of preparing and dispensing drugs is ________.
 Answer: pharmacy
 
 Category: Definitions
-Question: The science of providing men, equipment and supplies for military operations is called --------.
+Question: The science of providing men, equipment and supplies for military operations is called ________.
 Answer: logistics
 
 Category: Definitions
-Question: The study of human behaviour is ----------.
+Question: The study of human behaviour is __________.
 Answer: psychology
 
 Category: Definitions
-Question: The study of human pre-history is -----------.
+Question: The study of human pre-history is ___________.
 Answer: archaeology
 
 Category: Definitions
-Question: The study of insects is ----------.
+Question: The study of insects is __________.
 Answer: entomology
 
 Category: Definitions
-Question: The study of light and its relation to sight is called ------.
+Question: The study of light and its relation to sight is called ______.
 Answer: optics
 
 Category: Definitions
-Question: The study of man and culture is known as ----------.
+Question: The study of man and culture is known as __________.
 Answer: anthropology
 
 Category: Definitions
-Question: The study of natural phenomena: motion, forces, light, sound, etc. is called ------.
+Question: The study of natural phenomena: motion, forces, light, sound, etc. is called ______.
 Answer: physics
 
 Category: Definitions
-Question: The study of plants is ------.
+Question: The study of plants is ______.
 Answer: botany
 
 Category: Definitions
-Question: The study of religion is --------.
+Question: The study of religion is ________.
 Answer: theology
 
 Category: Definitions
-Question: The study of sound is ---------.
+Question: The study of sound is _________.
 Answer: acoustics
 
 Category: Definitions
-Question: The study of the composition of substances and the changes that they undergo is ---------.
+Question: The study of the composition of substances and the changes that they undergo is _________.
 Answer: chemistry
 
 Category: Definitions
-Question: The study of the earth's physical divisions into mountains, seas, etc. is ---------.
+Question: The study of the earth's physical divisions into mountains, seas, etc. is _________.
 Answer: geography
 
 Category: Definitions
-Question: The study of the manner in which organisms carry on their life processes is ---------.
+Question: The study of the manner in which organisms carry on their life processes is _________.
 Answer: physiology
 
 Category: Definitions
-Question: The symbols used on a map are explained by the ------.
+Question: The symbols used on a map are explained by the ______.
 Answer: legend
 
 Category: Definitions
-Question: The treatment of disease by chemical substances which are toxic to the causative micro-organisms is called ------------.
+Question: The treatment of disease by chemical substances which are toxic to the causative micro-organisms is called ____________.
 Answer: chemotherapy
 
 Category: Definitions
-Question: The weight at the end of a pendulum is a(n) ------.
+Question: The weight at the end of a pendulum is a(n) ______.
 Answer: bob
 
 Category: Definitions
-Question: The wide wall built along the banks of rivers to stop flooding is a(n) -----.
+Question: The wide wall built along the banks of rivers to stop flooding is a(n) _____.
 Answer: levee
 
 Category: Definitions
-Question: The word "cumulus" refers to a type of -----------.
+Question: The word "cumulus" refers to a type of ___________.
 Answer: cloud
 
 Category: Definitions
@@ -1023,11 +1023,11 @@ Question: This word means "split personality".
 Answer: schizophrenia
 
 Category: Definitions
-Question: Throat, foxing, and platform are parts of a(n) --------.
+Question: Throat, foxing, and platform are parts of a(n) ________.
 Answer: shoe
 
 Category: Definitions
-Question: Toxiphobia is a fear of ---------.
+Question: Toxiphobia is a fear of _________.
 Answer: poison
 
 Category: Definitions
@@ -1103,7 +1103,7 @@ Question: Name the clothing wrinkle remover that sounds like a kind of metal.
 Answer: iron
 
 Category: Don't Strain Yourself Thinking ;-)
-Question: A 3 1/2" floppy disk measures --- and 1/2 inches across.
+Question: A 3 1/2" floppy disk measures ___ and 1/2 inches across.
 Answer: 3
 
 Category: Don't Strain Yourself Thinking ;-)
@@ -1111,23 +1111,23 @@ Question: A brown crayon is what color?
 Answer: brown
 
 Category: Don't Strain Yourself Thinking ;-)
-Question: A smoke detector will alarm if it detects -----.
+Question: A smoke detector will alarm if it detects _____.
 Answer: smoke
 
 Category: Don't Strain Yourself Thinking ;-)
-Question: A water heater keeps ----- warm for you.
+Question: A water heater keeps _____ warm for you.
 Answer: water
 
 Category: Don't Strain Yourself Thinking ;-)
-Question: Although not all come from France, ------ fries are often served with hamburgers.
+Question: Although not all come from France, ______ fries are often served with hamburgers.
 Answer: french
 
 Category: Don't Strain Yourself Thinking ;-)
-Question: An ----- clock usually wakes you in the morning.
+Question: An _____ clock usually wakes you in the morning.
 Answer: alarm
 
 Category: Don't Strain Yourself Thinking ;-)
-Question: During the American Revolution, the Boston Tea Party took place in ------ Harbor.
+Question: During the American Revolution, the Boston Tea Party took place in ______ Harbor.
 Answer: boston
 
 Category: Don't Strain Yourself Thinking ;-)
@@ -1153,11 +1153,11 @@ Question: What is a sorcerer who deals in black magic called?
 Answer: necromancer
 
 Category: Food
-Question: Boston butt, jowl, and picnic ham are parts of a ------.
+Question: Boston butt, jowl, and picnic ham are parts of a ______.
 Answer: pig
 
 Category: Food and Drink
-Question: Even though it tastes nothing like grapes, a ---------- is often eaten for breakfast.
+Question: Even though it tastes nothing like grapes, a __________ is often eaten for breakfast.
 Answer: grapefruit
 
 Category: Food and Drink
@@ -1173,7 +1173,7 @@ Question: From which fruit is the liqueur Kirsh made?
 Answer: cherry
 
 Category: Food and Drink
-Question: Iceberg, Boston, and Bibb are types of ---------.
+Question: Iceberg, Boston, and Bibb are types of _________.
 Answer: lettuce
 
 Category: Food and Drink
@@ -1185,7 +1185,7 @@ Question: Little round chocolate candies are known as _&m's.
 Answer: m
 
 Category: Food and Drink
-Question: Mustard, ketchup and onions on a hotdog are all ----------.
+Question: Mustard, ketchup and onions on a hotdog are all __________.
 Answer: condiments
 
 Category: Food and Drink
@@ -1213,7 +1213,7 @@ Question: Rum is made from this plant.
 Answer: sugar cane
 
 Category: Food and Drink
-Question: Vermicelli literally means -----------.
+Question: Vermicelli literally means ___________.
 Answer: little worms
 
 Category: Food and Drink
@@ -1242,47 +1242,47 @@ Answer: St. Louis
 Regexp: St.? Louis
 
 Category: Fun
-Question: Cocktails: Bourbon, sugar and mint make a(n) -----------.
+Question: Cocktails: Bourbon, sugar and mint make a(n) ___________.
 Answer: mint julep
 
 Category: Fun
-Question: Cocktails: Cognac (brandy) and white creme de menthe make a(n) -------------.
+Question: Cocktails: Cognac (brandy) and white creme de menthe make a(n) _____________.
 Answer: stinger
 
 Category: Fun
-Question: Cocktails: Creme de Cacao, cream, and brandy make a(n) ----------.
+Question: Cocktails: Creme de Cacao, cream, and brandy make a(n) __________.
 Answer: brandy alexander
 
 Category: Fun
-Question: Cocktails: Gin and Collins mix make a(n) ----------.
+Question: Cocktails: Gin and Collins mix make a(n) __________.
 Answer: Tom Collins
 
 Category: Fun
-Question: Cocktails: Rum, lime, and cola drink make a(n) ------------.
+Question: Cocktails: Rum, lime, and cola drink make a(n) ____________.
 Answer: cuba libre
 
 Category: Fun
-Question: Cocktails: Triple sec, tequila, and lemon or lime juice make a(n) ---------.
+Question: Cocktails: Triple sec, tequila, and lemon or lime juice make a(n) _________.
 Answer: margarita
 
 Category: Fun
-Question: Cocktails: Vodka and Kahlua make a -----------.
+Question: Cocktails: Vodka and Kahlua make a ___________.
 Answer: black russian
 
 Category: Fun
-Question: Cocktails: Vodka, orange juice and Galliano make a(n) -----------.
+Question: Cocktails: Vodka, orange juice and Galliano make a(n) ___________.
 Answer: Harvey Wallbanger
 
 Category: Fun
-Question: Cocktails: Whiskey, hot coffee, and whipped cream make a(n) ---------.
+Question: Cocktails: Whiskey, hot coffee, and whipped cream make a(n) _________.
 Answer: Irish coffee
 
 Category: Games
-Question: A bridge hand with no cards in one suit is said to have a -------.
+Question: A bridge hand with no cards in one suit is said to have a _______.
 Answer: void
 
 Category: Games
-Question: A poker hand consisting of three of a kind and a pair is called a -------.
+Question: A poker hand consisting of three of a kind and a pair is called a _______.
 Answer: full house
 
 Category: Games
@@ -1305,7 +1305,7 @@ Question: If you "peg out" what game are you playing?
 Answer: cribbage
 
 Category: Games
-Question: In poker five cards of the same suit is called a(n) --------.
+Question: In poker five cards of the same suit is called a(n) ________.
 Answer: flush
 
 Category: Games
@@ -1345,7 +1345,7 @@ Question: Name the only woman suspect in the game of "Cluedo" who isn't married.
 Answer: Miss #Scarlett#
 
 Category: Games
-Question: These are the two highest valued letters in "Scrabble".  "Q" and -----.
+Question: These are the two highest valued letters in "Scrabble".  "Q" and _____.
 Answer: Z
 
 Category: Games
@@ -1389,7 +1389,7 @@ Answer: twenty questions
 Regexp: (twenty|20) questions
 
 Category: General Knowledge
-Question: Although it doesn't sound like a dog, ----dust is ornamental wood chips often placed in flowerbeds.
+Question: Although it doesn't sound like a dog, ____dust is ornamental wood chips often placed in flowerbeds.
 Answer: bark
 
 Category: General Knowledge
@@ -1397,11 +1397,11 @@ Question: Chicago Transit Authority is now known as which group?
 Answer: Chicago
 
 Category: General Knowledge
-Question: If you drive on a parkway, you park on a -------?
+Question: If you drive on a parkway, you park on a _______?
 Answer: driveway
 
 Category: General Knowledge
-Question: To refuel your car you go to a ----- station.
+Question: To refuel your car you go to a _____ station.
 Answer: petrol
 
 Category: General Knowledge
@@ -1457,7 +1457,7 @@ Question: What is this sign called "&"?
 Answer: ampersand
 
 Category: General Knowledge
-Question: When using a telephone, you must wait for a ---- tone before starting your call.
+Question: When using a telephone, you must wait for a ____ tone before starting your call.
 Answer: dial
 
 Category: General Knowledge
@@ -1473,7 +1473,7 @@ Question: Bridgeport is the largest city in which state?
 Answer: Connecticut
 
 Category: Geography
-Question: Bridgetown is the capital of --------.
+Question: Bridgetown is the capital of ________.
 Answer: Barbados
 
 Category: Geography
@@ -1756,7 +1756,7 @@ Question: Madrid and Lisbon are both located near this river.
 Answer: Tagus
 
 Category: Geography
-Question: Meridians converge at the --------.
+Question: Meridians converge at the ________.
 Answer: #pole#s
 
 Category: Geography
@@ -1937,7 +1937,7 @@ Question: On which river is the Aswan High Dam?
 Answer: Nile
 
 Category: Geography
-Question: Over 75% of the Earth's surface is covered by some form of -----.
+Question: Over 75% of the Earth's surface is covered by some form of _____.
 Answer: Water
 
 Category: Geography
@@ -1985,7 +1985,7 @@ Question: The Thatcher Ferry Bridge crosses what canal?
 Answer: #Panama# Canal
 
 Category: Geography
-Question: The United States is made up of -- states.
+Question: The United States is made up of __ states.
 Answer: 50
 
 Category: Geography
@@ -1993,15 +1993,15 @@ Question: The Volta is the largest river in which country?
 Answer: Ghana
 
 Category: Geography
-Question: The countries of Belgium, Netherlands, and Luxembourg are together called --------.
+Question: The countries of Belgium, Netherlands, and Luxembourg are together called ________.
 Answer: Benelux
 
 Category: Geography
-Question: The longest river in Western Europe is ---------?
+Question: The longest river in Western Europe is _________?
 Answer: Rhine
 
 Category: Geography
-Question: The sun sets in the ----?
+Question: The sun sets in the ____?
 Answer: west
 
 Category: Geography
@@ -2655,35 +2655,35 @@ Question: Name the capital city of Utah.
 Answer: Salt Lake City
 
 Category: Geology
-Question: Earth's outer layer of surface soil or crust is called the -------.
+Question: Earth's outer layer of surface soil or crust is called the _______.
 Answer: Lithosphere
 
 Category: Geology
-Question: Peat, lignite and bituminous are types of ---------.
+Question: Peat, lignite and bituminous are types of _________.
 Answer: coal
 
 Category: Geology
-Question: Slate is formed by the metamorphosis of ---------.
+Question: Slate is formed by the metamorphosis of _________.
 Answer: shale
 
 Category: Geology
-Question: The green variety of beryl is called --------.
+Question: The green variety of beryl is called ________.
 Answer: emerald
 
 Category: Geology
-Question: The molten material from a volcano is --------?
+Question: The molten material from a volcano is ________?
 Answer: lava
 
 Category: Geology
-Question: The spot on the Earth's surface directly above an earthquake's focus is called the ------.
+Question: The spot on the Earth's surface directly above an earthquake's focus is called the ______.
 Answer: epicenter
 
 Category: Geology
-Question: The violet variety of quartz is called --------.
+Question: The violet variety of quartz is called ________.
 Answer: amethyst
 
 Category: Geology
-Question: There are three types of rocks: metamorphic, sedimentary, and ---------.
+Question: There are three types of rocks: metamorphic, sedimentary, and _________.
 Answer: igneous
 
 Category: Geology
@@ -2711,7 +2711,7 @@ Question: Britain and Argentina fought over these islands in 1982.
 Answer: #Falkland#s Islands
 
 Category: History
-Question: Canadian Prime Minister: Pierre Elliott ----------.
+Question: Canadian Prime Minister: Pierre Elliott __________.
 Answer: Trudeau
 
 Category: History
@@ -2719,7 +2719,7 @@ Question: Churchill, F.D. Roosvelt and Stalin met here in 1945.
 Answer: Yalta
 
 Category: History
-Question: Eras are divided into units called --------.
+Question: Eras are divided into units called ________.
 Answer: periods
 
 Category: History
@@ -2731,7 +2731,7 @@ Question: Four Japanese carriers were destroyed in this battle.
 Answer: Midway
 
 Category: History
-Question: Frankish ruler Charles the Great is better known as ---------.
+Question: Frankish ruler Charles the Great is better known as _________.
 Answer: Charlemagne
 
 Category: History
@@ -2743,11 +2743,11 @@ Question: General Sherman burned this city in 1864.
 Answer: Atlanta
 
 Category: History
-Question: Germany's WW I allies were Austria-Hungary, Bulgaria, and --------.
+Question: Germany's WW I allies were Austria-Hungary, Bulgaria, and ________.
 Answer: Turkey
 
 Category: History
-Question: Germany's allies in WW II were Japan, Italy, Hungary, Bulgaria, Finland, Libya, and ---------.
+Question: Germany's allies in WW II were Japan, Italy, Hungary, Bulgaria, Finland, Libya, and _________.
 Answer: Romania
 
 Category: History
@@ -2819,7 +2819,7 @@ Question: His ship was the H.M.S. Beagle.
 Answer: Charles #Darwin#
 
 Category: History
-Question: His wife was Roxana. His horse was Bacephalus. He was --------.
+Question: His wife was Roxana. His horse was Bacephalus. He was ________.
 Answer: Alexander the Great
 
 Category: History
@@ -2869,11 +2869,11 @@ Question: Israel occupied the Golan Heights.  Whose territory was it?
 Answer: Syria
 
 Category: History
-Question: Israel occupied the West Bank.  It belonged to -------.
+Question: Israel occupied the West Bank.  It belonged to _______.
 Answer: Jordan
 
 Category: History
-Question: John F. Kennedy Airport in New York used to be called ----------.
+Question: John F. Kennedy Airport in New York used to be called __________.
 Answer: Idlewind
 
 Category: History
@@ -2890,7 +2890,7 @@ Answer: Boston Tea Party
 Regexp: Boston Tea[- ]Party
 
 Category: History
-Question: One who fought professionally in Roman arenas was a(n) ------------.
+Question: One who fought professionally in Roman arenas was a(n) ____________.
 Answer: Gladiator
 
 Category: History
@@ -2938,7 +2938,7 @@ Question: The "Bay of Pigs" fiasco took place in this country.
 Answer: Cuba
 
 Category: History
-Question: The Devonian Period is also known as the Age of ----------.
+Question: The Devonian Period is also known as the Age of __________.
 Answer: fish
 
 Category: History
@@ -2954,7 +2954,7 @@ Question: The St. Valentine's Day massacre took place in this city.
 Answer: Chicago
 
 Category: History
-Question: The first dog in space was named ---------.
+Question: The first dog in space was named _________.
 Answer: Laika
 
 Category: History
@@ -3040,7 +3040,7 @@ Question: This word describes the Nazi annihilation of Jews.
 Answer: holocaust
 
 Category: History
-Question: Those big black CD's that you see at garage sales that people call "albums" are made of -----.
+Question: Those big black CD's that you see at garage sales that people call "albums" are made of _____.
 Answer: vinyl
 
 Category: History
@@ -3048,19 +3048,19 @@ Question: Two 747's collided here in 1977.
 Answer: Canary Islands
 
 Category: History
-Question: U.S. President, Chester Alan --------.
+Question: U.S. President, Chester Alan ________.
 Answer: Arthur
 
 Category: History
-Question: U.S. President, Herbert C. ---------.
+Question: U.S. President, Herbert C. _________.
 Answer: Hoover
 
 Category: History
-Question: U.S. President, John Quincy --------.
+Question: U.S. President, John Quincy ________.
 Answer: Adams
 
 Category: History
-Question: U.S. President: Calvin ---------.
+Question: U.S. President: Calvin _________.
 Answer: Coolidge
 
 Category: History
@@ -3210,7 +3210,7 @@ Question: Name the soda that is often confused with a drug.
 Answer: Coke
 
 Category: Language
-Question: Subject, verb and object are parts of a ---------.
+Question: Subject, verb and object are parts of a _________.
 Answer: sentence
 
 Category: Language
@@ -3226,15 +3226,15 @@ Question: What three letter word means the same as "to ingest"?
 Answer: eat
 
 Category: Languages
-Question: "faux pas" means -----------.
+Question: "faux pas" means ___________.
 Answer: mistake
 
 Category: Languages
-Question: Mardi Gras is French for -----------.
+Question: Mardi Gras is French for ___________.
 Answer: fat tuesday
 
 Category: Languages
-Question: The name Australia is derived from the Latin word "australis" which means -------.
+Question: The name Australia is derived from the Latin word "australis" which means _______.
 Answer: southern
 
 Category: Languages
@@ -3242,11 +3242,11 @@ Question: The name for this semi-precious stone comes from the Latin for "sea wa
 Answer: aquamarine
 
 Category: Languages
-Question: What ONE word fits? ----hood; ----hole; ----date.
+Question: What ONE word fits? ____hood; ____hole; ____date.
 Answer: man
 
 Category: Languages
-Question: What ONE word fits? ----stream; ----hill; -----pour.
+Question: What ONE word fits? ____stream; ____hill; _____pour.
 Answer: down
 
 Category: Languages
@@ -3266,7 +3266,7 @@ Question: Captain Hook, Tiger Lily, and Tinker Bell are characters in what story
 Answer: Peter Pan
 
 Category: Literature
-Question: Dr. Seuss wrote this book: The Cat in the ------.
+Question: Dr. Seuss wrote this book: The Cat in the ______.
 Answer: Hat
 
 Category: Literature
@@ -3304,15 +3304,15 @@ Question: Name the Shakespeare play from this ultra short plot summary: Urged on
 Answer: Macbeth
 
 Category: Literature
-Question: Stephen King's: "Pet --------".
+Question: Stephen King's: "Pet ________".
 Answer: Semetary
 
 Category: Literature
-Question: Stephen King's: "Salem's ---------".
+Question: Stephen King's: "Salem's _________".
 Answer: Lot
 
 Category: Literature
-Question: Stephen King's: "The Dead --------".
+Question: Stephen King's: "The Dead ________".
 Answer: Zone
 
 Category: Literature
@@ -3356,32 +3356,32 @@ Question: You are in a room where all walls face south.  A bear walks by.  What 
 Answer: White
 
 Category: Mathematics
-Question: A U.S. dime is worth --- cents.
+Question: A U.S. dime is worth ___ cents.
 Answer: ten
 Regexp: (ten|10)
 
 Category: Mathematics
-Question: A line drawn from an angle of a triangle to the mid-point of the opposite side is a(n) -------.
+Question: A line drawn from an angle of a triangle to the mid-point of the opposite side is a(n) _______.
 Answer: median
 
 Category: Mathematics
-Question: A triangle with three equal sides is called -------.
+Question: A triangle with three equal sides is called _______.
 Answer: equilateral
 
 Category: Mathematics
-Question: A triangle with two equal sides is called ----------.
+Question: A triangle with two equal sides is called __________.
 Answer: isosceles
 
 Category: Mathematics
-Question: An angle greater than 180 degrees and less than 360 degrees is a(n) -------- angle.
+Question: An angle greater than 180 degrees and less than 360 degrees is a(n) ________ angle.
 Answer: reflex
 
 Category: Mathematics
-Question: An angle greater than 90 degrees and less than 180 degrees is said to be ---------.
+Question: An angle greater than 90 degrees and less than 180 degrees is said to be _________.
 Answer: obtuse
 
 Category: Mathematics
-Question: An integer that is greater than 1 and is divisible only by itself and 1 is known as a(n) -------.
+Question: An integer that is greater than 1 and is divisible only by itself and 1 is known as a(n) _______.
 Answer: prime
 
 Category: Mathematics
@@ -3390,7 +3390,7 @@ Answer: thirty nine
 Regexp: (thirty[- ]nine|39)
 
 Category: Mathematics
-Question: Arc, radius, and sector are parts of a(n) ---------.
+Question: Arc, radius, and sector are parts of a(n) _________.
 Answer: circle
 
 Category: Mathematics
@@ -3416,16 +3416,16 @@ Question: Name the number system which uses only the symbols 1 and 0.
 Answer: The #binary# system
 
 Category: Mathematics
-Question: The angles inside a square total ------- degrees.
+Question: The angles inside a square total _______ degrees.
 Answer: three hundred and sixty
 Regexp: (three hundred (and |& )?sixty|360)
 
 Category: Mathematics
-Question: The mathematical study of properties of lines, angels, etc., is --------.
+Question: The mathematical study of properties of lines, angels, etc., is ________.
 Answer: geometry
 
 Category: Mathematics
-Question: The space occupied by a body is called its ------.
+Question: The space occupied by a body is called its ______.
 Answer: volume
 
 Category: Mathematics
@@ -3433,7 +3433,7 @@ Question: The square root of 1 is?
 Answer: 1
 
 Category: Mathematics
-Question: Two angles that total 180 degrees are called -------.
+Question: Two angles that total 180 degrees are called _______.
 Answer: supplementary
 
 Category: Mathematics
@@ -3441,31 +3441,31 @@ Question: What geometric shape has 4 equal sides?
 Answer: square
 
 Category: Medicine
-Question: A baby doctor is a ---------.
+Question: A baby doctor is a _________.
 Answer: pediatrician
 
 Category: Medicine
-Question: A bone specialist is a(n) --------.
+Question: A bone specialist is a(n) ________.
 Answer: osteopath
 
 Category: Medicine
-Question: A loss of memory is known as ----------.
+Question: A loss of memory is known as __________.
 Answer: amnesia
 
 Category: Medicine
-Question: A medicine that hastens the emptying of the bowels is called a --------.
+Question: A medicine that hastens the emptying of the bowels is called a ________.
 Answer: laxative
 
 Category: Medicine
-Question: A non-cancerous tumor is said to be -------.
+Question: A non-cancerous tumor is said to be _______.
 Answer: benign
 
 Category: Medicine
-Question: A thread used in surgery to tie a bleeding blood vessel is called a(n) ---------.
+Question: A thread used in surgery to tie a bleeding blood vessel is called a(n) _________.
 Answer: ligature
 
 Category: Medicine
-Question: Carditis, affects the --------.
+Question: Carditis, affects the ________.
 Answer: heart
 
 Category: Medicine
@@ -3477,15 +3477,15 @@ Question: Due to a lack of vitamin C, sailors used to contract this disease.
 Answer: scurvy
 
 Category: Medicine
-Question: Encephalitis affects the --------.
+Question: Encephalitis affects the ________.
 Answer: brain
 
 Category: Medicine
-Question: Gastritis affects the ----------.
+Question: Gastritis affects the __________.
 Answer: stomach
 
 Category: Medicine
-Question: Hammer, anvil, and stirrup are parts of the --------.
+Question: Hammer, anvil, and stirrup are parts of the ________.
 Answer: ear
 
 Category: Medicine
@@ -3493,7 +3493,7 @@ Question: He discovered the process of vaccination for prevention of smallpox.
 Answer: Edward #Jenner#
 
 Category: Medicine
-Question: Hepatitis affects the ----------.
+Question: Hepatitis affects the __________.
 Answer: Liver
 
 Category: Medicine
@@ -3532,15 +3532,15 @@ Question: In which organ is your "hypothalmus" located?
 Answer: brain
 
 Category: Medicine
-Question: Infantile Paralysis is commonly known as --------.
+Question: Infantile Paralysis is commonly known as ________.
 Answer: polio
 
 Category: Medicine
-Question: Meningitis affects the ---------.
+Question: Meningitis affects the _________.
 Answer: brain
 
 Category: Medicine
-Question: Myositis affects the ---------.
+Question: Myositis affects the _________.
 Answer: muscles
 
 Category: Medicine
@@ -3556,23 +3556,23 @@ Question: Name the largest gland in the human body.
 Answer: liver
 
 Category: Medicine
-Question: Osteomyelitis affects the ---------.
+Question: Osteomyelitis affects the _________.
 Answer: bones
 
 Category: Medicine
-Question: Peritonitis, affects the --------.
+Question: Peritonitis, affects the ________.
 Answer: abdomen
 
 Category: Medicine
-Question: Prosthetics deals with the making of ----------.
+Question: Prosthetics deals with the making of __________.
 Answer: artificial limbs
 
 Category: Medicine
-Question: Tarsus, metatarsus, and phalanges are parts of a(n) ---------.
+Question: Tarsus, metatarsus, and phalanges are parts of a(n) _________.
 Answer: foot
 
 Category: Medicine
-Question: The branch of medicine dealing with curing by operative procedures is --------.
+Question: The branch of medicine dealing with curing by operative procedures is ________.
 Answer: surgery
 
 Category: Medicine
@@ -3580,15 +3580,15 @@ Question: The lack of this element in the diet is a cause of goitre.
 Answer: iodine
 
 Category: Medicine
-Question: The largest single organ of the human body is the --------.
+Question: The largest single organ of the human body is the ________.
 Answer: skin
 
 Category: Medicine
-Question: The medical name for the voice box is the ---------.
+Question: The medical name for the voice box is the _________.
 Answer: larynx
 
 Category: Medicine
-Question: The teeth used for biting or cutting are known as -------.
+Question: The teeth used for biting or cutting are known as _______.
 Answer: incisors
 
 Category: Medicine
@@ -3639,7 +3639,7 @@ Question: This small gland attached to the brain exerts a control over growth.
 Answer: pituitary
 
 Category: Medicine
-Question: Ulna, radius, and clavicle are types of ----------.
+Question: Ulna, radius, and clavicle are types of __________.
 Answer: bone
 
 Category: Medicine
@@ -3705,19 +3705,19 @@ Question: This dry, warm wind flows eastward down the slopes of the Rocky Mounta
 Answer: Chinook
 
 Category: Movie Trivia
-Question: Actor: ------- Borgnine.
+Question: Actor: _______ Borgnine.
 Answer: Ernest
 
 Category: Movie Trivia
-Question: Actor: -------- Hackman.
+Question: Actor: ________ Hackman.
 Answer: Gene
 
 Category: Movie Trivia
-Question: Actor: ---------- Nimoy.
+Question: Actor: __________ Nimoy.
 Answer: Leonard
 
 Category: Movie Trivia
-Question: Actor: ---------- Savalas.
+Question: Actor: __________ Savalas.
 Answer: Telly
 
 Category: Movie Trivia
@@ -3733,28 +3733,28 @@ Question: Charles Laughton played Quasimodo in this epic film.
 Answer: Hunchback of Notre Dame
 
 Category: Movie Trivia
-Question: Darth Vader was the villan in the movie, "---- Wars".
+Question: Darth Vader was the villan in the movie, "____ Wars".
 Answer: Star
 
 Category: Movie Trivia
-Question: Film Title: An Officer and a(n) ---------.
+Question: Film Title: An Officer and a(n) _________.
 Answer: Gentleman
 
 Category: Movie Trivia
-Question: Film Title: Fahrenheit --------. (a number)
+Question: Film Title: Fahrenheit ________. (a number)
 Answer: 451
 
 Category: Movie Trivia
-Question: Film Title: The Last Days of ---------. (a city)
+Question: Film Title: The Last Days of _________. (a city)
 Answer: Pompeii
 
 Category: Movie Trivia
-Question: Film Title: ------ (a number) Leagues Under the Sea.
+Question: Film Title: ______ (a number) Leagues Under the Sea.
 Answer: 20,000
 Regexp: 20[\,.]?000
 
 Category: Movie Trivia
-Question: Forrest ---- liked shrimp.
+Question: Forrest ____ liked shrimp.
 Answer: Gump
 
 Category: Movie Trivia
@@ -3841,7 +3841,7 @@ Question: Nick Nolte and Eddie Murphy star in this 1982 film.
 Answer: 48 Hours
 
 Category: Movie Trivia
-Question: Peter Sellers is best known for his role as Inspector ---------.
+Question: Peter Sellers is best known for his role as Inspector _________.
 Answer: Clouseau
 
 Category: Movie Trivia
@@ -3869,7 +3869,7 @@ Question: The song "Matchmaker, Matchmaker" came from which musical play?
 Answer: Fiddler On The Roof
 
 Category: Movie Trivia
-Question: The two rival gangs in "West Side Story" were the Sharks and the ---------.
+Question: The two rival gangs in "West Side Story" were the Sharks and the _________.
 Answer: Jets
 
 Category: Movie Trivia
@@ -4188,7 +4188,7 @@ Question: Fifties rock "n" roll was revived by what greased hair, T-shirted, TV 
 Answer: Sha Na Na
 
 Category: Music
-Question: Jerry Lee Lewis had Great ----- Of Fire.
+Question: Jerry Lee Lewis had Great _____ Of Fire.
 Answer: #balls#!
 
 Category: Music
@@ -4196,7 +4196,7 @@ Question: Name Jerry Garcia's long lived group.
 Answer: The #Grateful Dead#
 
 Category: Music
-Question: The Who's rock musical stars Elton John.  It's called --------.
+Question: The Who's rock musical stars Elton John.  It's called ________.
 Answer: Tommy
 
 Category: Music
@@ -4295,7 +4295,7 @@ Question: Whose theme song was Back In The Saddle Again?
 Answer: Gene #Autry#'s
 
 Category: Mythology
-Question: The sea gods had a three-pronged spear called a(n) --------.
+Question: The sea gods had a three-pronged spear called a(n) ________.
 Answer: trident
 
 Category: Mythology
@@ -4323,11 +4323,11 @@ Question: Name the largest of the dinosaurs.
 Answer: brachiosaurus
 
 Category: Natural History
-Question: The remains of prehistoric organisms that have been preserved in rocks are called --------.
+Question: The remains of prehistoric organisms that have been preserved in rocks are called ________.
 Answer: fossils
 
 Category: Nature
-Question: A "sirocco" refers to a type of ----------.
+Question: A "sirocco" refers to a type of __________.
 Answer: wind
 
 Category: Nature
@@ -4335,27 +4335,27 @@ Question: A calm ocean region near the equator.
 Answer: #doldrum#s
 
 Category: Nature
-Question: A coral island consisting of a ring of rock enclosing a central lagoon is a(n) --------.
+Question: A coral island consisting of a ring of rock enclosing a central lagoon is a(n) ________.
 Answer: atoll
 
 Category: Nature
-Question: A great wave resulting from an earthquakes is called a (an) --------.
+Question: A great wave resulting from an earthquakes is called a (an) ________.
 Answer: tsunami
 
 Category: Nature
-Question: A group of gorillas is known as a -----------.
+Question: A group of gorillas is known as a ___________.
 Answer: band
 
 Category: Nature
-Question: A group of kangaroos is known as a -------.
+Question: A group of kangaroos is known as a _______.
 Answer: troop
 
 Category: Nature
-Question: A hot spring which shoots steam into the air is a -------.
+Question: A hot spring which shoots steam into the air is a _______.
 Answer: geyser
 
 Category: Nature
-Question: A one-humped camel is called a ---------.
+Question: A one-humped camel is called a _________.
 Answer: dromedary
 
 Category: Nature
@@ -4363,23 +4363,23 @@ Question: A relationship between two different types of organism which live toge
 Answer: symbiosis
 
 Category: Nature
-Question: A terrapin is a type of ---------.
+Question: A terrapin is a type of _________.
 Answer: turtle
 
 Category: Nature
-Question: An animal is a bird if it has -------.
+Question: An animal is a bird if it has _______.
 Answer: feathers
 
 Category: Nature
-Question: An animal is a fish if it has ---------.
+Question: An animal is a fish if it has _________.
 Answer: gills
 
 Category: Nature
-Question: Corolla, filament and stigma are parts of a(n) ---------.
+Question: Corolla, filament and stigma are parts of a(n) _________.
 Answer: flower
 
 Category: Nature
-Question: Dense sea-water swamps along coasts of hot countries are called --------.
+Question: Dense sea-water swamps along coasts of hot countries are called ________.
 Answer: mangroves
 
 Category: Nature
@@ -4391,7 +4391,7 @@ Question: Excluding man, what is the longest-lived land mammal?
 Answer: elephant
 
 Category: Nature
-Question: Fandible, lateral line, and dorsal fin are parts of a(n) --------.
+Question: Fandible, lateral line, and dorsal fin are parts of a(n) ________.
 Answer: fish
 
 Category: Nature
@@ -4414,11 +4414,11 @@ Answer: ten
 Regexp: (ten|10)
 
 Category: Nature
-Question: Imperial, Buck, and Luna are types of ---------.
+Question: Imperial, Buck, and Luna are types of _________.
 Answer: moth
 
 Category: Nature
-Question: Knife, Clown, and Pencil are types of ----------.
+Question: Knife, Clown, and Pencil are types of __________.
 Answer: fish
 
 Category: Nature
@@ -4426,7 +4426,7 @@ Question: Linseed oil is obtained from the seed of which plant?
 Answer: flax
 
 Category: Nature
-Question: Maxillary palps, abdomen, and metathorax are parts of a(n) --------.
+Question: Maxillary palps, abdomen, and metathorax are parts of a(n) ________.
 Answer: insect
 
 Category: Nature
@@ -4478,7 +4478,7 @@ Question: Name the wild dogs of Australia.
 Answer: dingo
 
 Category: Nature
-Question: Paper is made from the pulp of -----.
+Question: Paper is made from the pulp of _____.
 Answer: wood
 
 Category: Nature
@@ -4486,7 +4486,7 @@ Question: Snakes are reptiles.  What are frogs?
 Answer: amphibians
 
 Category: Nature
-Question: Some animals spend the winter in a sleep-like state known as ---------.
+Question: Some animals spend the winter in a sleep-like state known as _________.
 Answer: hibernation
 
 Category: Nature
@@ -4498,7 +4498,7 @@ Question: The fins of which fish are made into a soup?
 Answer: shark
 
 Category: Nature
-Question: The four stages in the life-cycle of an insect are: egg, adult, pupa, and --------.
+Question: The four stages in the life-cycle of an insect are: egg, adult, pupa, and ________.
 Answer: larva
 
 Category: Nature
@@ -4579,7 +4579,7 @@ Question: This ugly creature has patches of red on his rear-end.
 Answer: mandrill
 
 Category: Nature
-Question: Walrus tusks are made of --------.
+Question: Walrus tusks are made of ________.
 Answer: ivory
 
 Category: Nature
@@ -4719,7 +4719,7 @@ Question: What are these: chrysolite, beryl, jasper, and tourmaline?
 Answer: gems
 
 Category: Nursery Rhymes
-Question: Jack and Jill went up a ---- to fetch a pail of water?
+Question: Jack and Jill went up a ____ to fetch a pail of water?
 Answer: hill
 
 Category: Nursery Rhymes
@@ -4727,23 +4727,23 @@ Question: Name the nursery rhyme mother whos last name is that of a bird?
 Answer: goose
 
 Category: Physics
-Question: The energy which a body possesses by virtue of its motion is called --------.
+Question: The energy which a body possesses by virtue of its motion is called ________.
 Answer: kinetic
 
 Category: Physics
-Question: The pivot point of a lever is called the ---------.
+Question: The pivot point of a lever is called the _________.
 Answer: fulcrum
 
 Category: Physics
-Question: The process of water changing to water vapor is known as -------.
+Question: The process of water changing to water vapor is known as _______.
 Answer: evaporation
 
 Category: Physics
-Question: The rate of change of velocity is known as ---------.
+Question: The rate of change of velocity is known as _________.
 Answer: acceleration
 
 Category: Physics
-Question: The visible spectrum of light ranges from red to --------.
+Question: The visible spectrum of light ranges from red to ________.
 Answer: violet
 
 Category: Physics
@@ -4760,7 +4760,7 @@ Answer: zero
 Regexp: (zero|0)
 
 Category: Physics
-Question: Water freezes at -- degrees Fahrenheit.
+Question: Water freezes at __ degrees Fahrenheit.
 Answer: thirty two
 Regexp: (thirty[- ]two|32)
 
@@ -4769,11 +4769,11 @@ Question: What is measured by a Geiger counter?
 Answer: radioactivity
 
 Category: Physics
-Question: When light waves pass from one medium into another they change direction.  This is called ---------.
+Question: When light waves pass from one medium into another they change direction.  This is called _________.
 Answer: refraction
 
 Category: Physics
-Question: Work done, equals force multiplied by --------.
+Question: Work done, equals force multiplied by ________.
 Answer: distance
 
 Category: Politics
@@ -4790,7 +4790,7 @@ Question: Name Ronald Reagan's first wife.
 Answer: Wyman
 
 Category: Presidents
-Question: U.S. President, Woodrow ----------.
+Question: U.S. President, Woodrow __________.
 Answer: Wilson
 
 Category: Quick! Quick!
@@ -4806,15 +4806,15 @@ Question: On a standard computer keyboard, this is the letter just to the right 
 Answer: x
 
 Category: Quick! Quick!
-Question: The longest key on your keyboard is the ----- bar.
+Question: The longest key on your keyboard is the _____ bar.
 Answer: space
 
 Category: Quick! Quick!
-Question: The season ------ comes right after Spring.
+Question: The season ______ comes right after Spring.
 Answer: summer
 
 Category: Quick! Quick!
-Question: There are -- seconds in a minute.
+Question: There are __ seconds in a minute.
 Answer: sixty
 Regexp: (sixty|60)
 
@@ -4852,7 +4852,7 @@ Question: When spelled backwards, the word "retupmoc" becomes what?
 Answer: computer
 
 Category: Religion
-Question: Followers of the Unification Church are called --------.
+Question: Followers of the Unification Church are called ________.
 Answer: Moonies
 
 Category: Religion
@@ -4892,27 +4892,27 @@ Question: Who founded the People's Temple Commune?
 Answer: Jim Jones
 
 Category: Science
-Question: A flat-bottomed conical laboratory flask with a narrow neck is called a(n) ----------.
+Question: A flat-bottomed conical laboratory flask with a narrow neck is called a(n) __________.
 Answer: #erlenmeyer# flask
 
 Category: Science
-Question: A phrenologist reads ---------.
+Question: A phrenologist reads _________.
 Answer: skulls
 
 Category: Science
-Question: A point to which rays of light converge is called a(n) --------.
+Question: A point to which rays of light converge is called a(n) ________.
 Answer: focus
 
 Category: Science
-Question: A shallow dish with a cover, used for science specimens is a(n) --------.
+Question: A shallow dish with a cover, used for science specimens is a(n) ________.
 Answer: #petri# dish
 
 Category: Science
-Question: Acetylsalicylic acid is more commonly known as ---------.
+Question: Acetylsalicylic acid is more commonly known as _________.
 Answer: aspirin
 
 Category: Science
-Question: Botany and Zoology combined make up the science of -------.
+Question: Botany and Zoology combined make up the science of _______.
 Answer: biology
 
 Category: Science
@@ -4924,27 +4924,27 @@ Question: By what name is Lysergic acid diethylamide better known?
 Answer: LSD
 
 Category: Science
-Question: Cetology is the study of --------.
+Question: Cetology is the study of ________.
 Answer: whales
 
 Category: Science
-Question: Circuits can be wired in series or in ---------.
+Question: Circuits can be wired in series or in _________.
 Answer: parallel
 
 Category: Science
-Question: Cocci, Spirilla, and Streptococci are types of --------.
+Question: Cocci, Spirilla, and Streptococci are types of ________.
 Answer: bacteria
 
 Category: Science
-Question: Deoxyribonucleic acid is better known as ----------.
+Question: Deoxyribonucleic acid is better known as __________.
 Answer: DNA
 
 Category: Science
-Question: Dermatitis affects the ----------.
+Question: Dermatitis affects the __________.
 Answer: skin
 
 Category: Science
-Question: Epidermal cells, palisade cells, and veins are parts of a(n) --------.
+Question: Epidermal cells, palisade cells, and veins are parts of a(n) ________.
 Answer: leaf
 
 Category: Science
@@ -4953,11 +4953,11 @@ Answer: anti-freeze
 Regexp: anti[- ]?freeze
 
 Category: Science
-Question: Forked, Sheet, and Ball are types of ----------.
+Question: Forked, Sheet, and Ball are types of __________.
 Answer: lightning
 
 Category: Science
-Question: Growing plants in liquids rather than soil is known as --------.
+Question: Growing plants in liquids rather than soil is known as ________.
 Answer: hydroponics
 
 Category: Science
@@ -4990,47 +4990,47 @@ Question: In which country was the match invented?
 Answer: France
 
 Category: Science
-Question: Nitrous oxide is better known as ----------.
+Question: Nitrous oxide is better known as __________.
 Answer: laughing gas
 
 Category: Science
-Question: Nuclear membrane, cytoplasm, and nucleus are parts of a(n) ----------.
+Question: Nuclear membrane, cytoplasm, and nucleus are parts of a(n) __________.
 Answer: cell
 
 Category: Science
-Question: Pulp, crown, and root are parts of a(n) --------.
+Question: Pulp, crown, and root are parts of a(n) ________.
 Answer: tooth
 
 Category: Science
-Question: Quinine is added to water to make -------.
+Question: Quinine is added to water to make _______.
 Answer: tonic water
 
 Category: Science
-Question: Sound Navigation Ranging is better known as ---------.
+Question: Sound Navigation Ranging is better known as _________.
 Answer: sonar
 
 Category: Science
-Question: The Kelvin scale is used to measure ---------.
+Question: The Kelvin scale is used to measure _________.
 Answer: temperature
 
 Category: Science
-Question: The filament of a regular light bulb is usually made of --------.
+Question: The filament of a regular light bulb is usually made of ________.
 Answer: tungsten
 
 Category: Science
-Question: The instrument used in geometry to measure angles is a(n) -------.
+Question: The instrument used in geometry to measure angles is a(n) _______.
 Answer: protractor
 
 Category: Science
-Question: The name for the Russian equivalent of Skylab is --------.
+Question: The name for the Russian equivalent of Skylab is ________.
 Answer: Salyut
 
 Category: Science
-Question: The second space shuttle was named ----------.
+Question: The second space shuttle was named __________.
 Answer: Columbia
 
 Category: Science
-Question: The vernal equinox is the beginning of --------.
+Question: The vernal equinox is the beginning of ________.
 Answer: spring
 
 Category: Science
@@ -5083,151 +5083,151 @@ Question: Who is known as the father of genetics?
 Answer: Gregor #Mendel#
 
 Category: Similes
-Question: As bold as -------.
+Question: As bold as _______.
 Answer: brass
 
 Category: Similes
-Question: As clean as a(n) --------.
+Question: As clean as a(n) ________.
 Answer: whistle
 
 Category: Similes
-Question: As clear as a(n) ---------.
+Question: As clear as a(n) _________.
 Answer: bell
 
 Category: Similes
-Question: As cute as a(n) --------.
+Question: As cute as a(n) ________.
 Answer: button
 
 Category: Similes
-Question: As easy as --------.
+Question: As easy as ________.
 Answer: pie
 
 Category: Similes
-Question: As fit as a(n) ----------.
+Question: As fit as a(n) __________.
 Answer: fiddle
 
 Category: Similes
-Question: As good as ---------.
+Question: As good as _________.
 Answer: gold
 
 Category: Similes
-Question: As graceful as a(n) ---------.
+Question: As graceful as a(n) _________.
 Answer: swan
 
 Category: Similes
-Question: As large as --------.
+Question: As large as ________.
 Answer: life
 
 Category: Similes
-Question: As loud as ---------.
+Question: As loud as _________.
 Answer: thunder
 
 Category: Similes
-Question: As pale as a(n) -----------.
+Question: As pale as a(n) ___________.
 Answer: ghost
 
 Category: Similes
-Question: As pleased as ---------.
+Question: As pleased as _________.
 Answer: punch
 
 Category: Similes
-Question: As pretty as a(n) --------.
+Question: As pretty as a(n) ________.
 Answer: picture
 
 Category: Similes
-Question: As proud as a(n) -----------.
+Question: As proud as a(n) ___________.
 Answer: peacock
 
 Category: Similes
-Question: As quiet as a(n) ---------.
+Question: As quiet as a(n) _________.
 Answer: mouse
 
 Category: Similes
-Question: As sick as a(n) -----------.
+Question: As sick as a(n) ___________.
 Answer: dog
 
 Category: Similes
-Question: As sly as a(n) ----------.
+Question: As sly as a(n) __________.
 Answer: fox
 
 Category: Similes
-Question: As smart as a(n) --------.
+Question: As smart as a(n) ________.
 Answer: whip
 
 Category: Similes
-Question: Fresh as a(n) --------------.
+Question: Fresh as a(n) ______________.
 Answer: daisy
 
 Category: Sport
-Question: Baseball: The Baltimore --------.
+Question: Baseball: The Baltimore ________.
 Answer: Orioles
 
 Category: Sport
-Question: Baseball: The Toronto ---------.
+Question: Baseball: The Toronto _________.
 Answer: Bluejays
 
 Category: Sport
-Question: Basketball: The Boston -----------.
+Question: Basketball: The Boston ___________.
 Answer: Celtics
 
 Category: Sport
-Question: Basketball: The Denver ---------.
+Question: Basketball: The Denver _________.
 Answer: Nuggets
 
 Category: Sport
-Question: Basketball: The Los Angeles ---------.
+Question: Basketball: The Los Angeles _________.
 Answer: Lakers
 
 Category: Sport
-Question: Basketball: The New York ----------.
+Question: Basketball: The New York __________.
 Answer: Knicks
 
 Category: Sport
-Question: Basketball: The Seattle --------.
+Question: Basketball: The Seattle ________.
 Answer: Supersonics
 
 Category: Sport
-Question: Basketball: The Utah --------.
+Question: Basketball: The Utah ________.
 Answer: Jazz
 
 Category: Sport
-Question: Football: The Baltimore --------.
+Question: Football: The Baltimore ________.
 Answer: Colts
 
 Category: Sport
-Question: Football: The Buffalo -------.
+Question: Football: The Buffalo _______.
 Answer: Bills
 
 Category: Sport
-Question: Football: The Cincinnati ---------.
+Question: Football: The Cincinnati _________.
 Answer: Bengals
 
 Category: Sport
-Question: Football: The Cleveland --------.
+Question: Football: The Cleveland ________.
 Answer: Browns
 
 Category: Sport
-Question: Football: The Dallas ---------.
+Question: Football: The Dallas _________.
 Answer: Cowboys
 
 Category: Sport
-Question: Football: The Denver ---------.
+Question: Football: The Denver _________.
 Answer: Broncos
 
 Category: Sport
-Question: Football: The Miami ----------.
+Question: Football: The Miami __________.
 Answer: Dolphins
 
 Category: Sport
-Question: Football: The Minnesota -------.
+Question: Football: The Minnesota _______.
 Answer: Vikings
 
 Category: Sport
-Question: Football: The New Orleans ----------.
+Question: Football: The New Orleans __________.
 Answer: Saints
 
 Category: Sport
-Question: Football: The Seattle -------.
+Question: Football: The Seattle _______.
 Answer: Seahawks
 
 Category: Sport
@@ -5240,52 +5240,52 @@ Answer: Kareem Abdul-Jabbar
 Regexp: Kareem Abdul[- ]?Jabbar
 
 Category: Sport
-Question: Hockey: The Boston -----------.
+Question: Hockey: The Boston ___________.
 Answer: Bruins
 
 Category: Sport
-Question: Hockey: The Buffalo ---------.
+Question: Hockey: The Buffalo _________.
 Answer: Sabres
 
 Category: Sport
-Question: Hockey: The Calgary ----------.
+Question: Hockey: The Calgary __________.
 Answer: Flames
 
 Category: Sport
-Question: Hockey: The Chicago ---------.
+Question: Hockey: The Chicago _________.
 Answer: Blackhawks
 Regexp: black ?hawks
 
 Category: Sport
-Question: Hockey: The Detroit --------.
+Question: Hockey: The Detroit ________.
 Answer: Red Wings
 
 Category: Sport
-Question: Hockey: The Edmonton ----------.
+Question: Hockey: The Edmonton __________.
 Answer: Oilers
 
 Category: Sport
-Question: Hockey: The Los Angeles --------.
+Question: Hockey: The Los Angeles ________.
 Answer: Kings
 
 Category: Sport
-Question: Hockey: The Montreal --------.
+Question: Hockey: The Montreal ________.
 Answer: Canadians
 
 Category: Sport
-Question: Hockey: The Pittsburgh ----------.
+Question: Hockey: The Pittsburgh __________.
 Answer: Penguins
 
 Category: Sport
-Question: Hockey: The St. Louis ----------.
+Question: Hockey: The St. Louis __________.
 Answer: Blues
 
 Category: Sport
-Question: Hockey: The Toronto -------.
+Question: Hockey: The Toronto _______.
 Answer: Maple Leafs
 
 Category: Sport
-Question: Hockey: The Vancouver --------.
+Question: Hockey: The Vancouver ________.
 Answer: Canucks
 
 Category: Sport
@@ -5418,7 +5418,7 @@ Question: She was "Sports Illustrated's" first female "Sportsman of the Year".
 Answer: Billie Jean King
 
 Category: Sport
-Question: Soccer: The New York ---------.
+Question: Soccer: The New York _________.
 Answer: Cosmos
 
 Category: Sport
@@ -5426,16 +5426,16 @@ Question: The 1976 Summer Olympics were held in this city.
 Answer: Montreal
 
 Category: Sport
-Question: The Japanese martial art of fencing is called --------.
+Question: The Japanese martial art of fencing is called ________.
 Answer: kendo
 
 Category: Sport
-Question: The person who carries the golfer's clubs is called a(n) --------.
+Question: The person who carries the golfer's clubs is called a(n) ________.
 Answer: caddie
 Regexp: cadd(ie|y)
 
 Category: Sport
-Question: The white marks intersecting each five yard line are called --------.
+Question: The white marks intersecting each five yard line are called ________.
 Answer: #hash# marks
 
 Category: Sport
@@ -5459,7 +5459,7 @@ Question: This traditional Japanese wrestling sport takes place in a circular ri
 Answer: sumo
 
 Category: Sport
-Question: Two under par on a hole of golf is called a(n) --------.
+Question: Two under par on a hole of golf is called a(n) ________.
 Answer: eagle
 
 Category: Sport
@@ -5590,7 +5590,7 @@ Question: When read upside down, what does the term "umop apisdn" signify?
 Answer: upside down
 
 Category: Stupid things to do ;-)
-Question: If you look at the sun long enough, you go -----.
+Question: If you look at the sun long enough, you go _____.
 Answer: blind
 
 Category: Summertime
@@ -5614,7 +5614,7 @@ Question: Who was Chief Marshall of the Mickey Mouse Club?
 Answer: Walt Disney
 
 Category: Triplets
-Question: Hook, line and -----------.
+Question: Hook, line and ___________.
 Answer: sinker
 
 Category: Trivia
@@ -5622,16 +5622,16 @@ Question: "7X" was used to refer to the secret ingredient of which drink?
 Answer: Coca Cola
 
 Category: Trivia
-Question: A "pigskin" is another name for a(n) --------.
+Question: A "pigskin" is another name for a(n) ________.
 Answer: football
 
 Category: Trivia
-Question: A can of Pepsi holds -- fluid ounces.
+Question: A can of Pepsi holds __ fluid ounces.
 Answer: twelve
 Regexp: (twelve|12)
 
 Category: Trivia
-Question: A foot-long ruler is -- inches long.
+Question: A foot-long ruler is __ inches long.
 Answer: twelve
 Regexp: (twelve|12)
 
@@ -5640,7 +5640,7 @@ Question: Most men do this each morning, using a razor.
 Answer: shave
 
 Category: Trivia
-Question: Most people wear a watch on their ---- wrist.
+Question: Most people wear a watch on their ____ wrist.
 Answer: left
 
 Category: Trivia
@@ -5648,7 +5648,7 @@ Question: Name the implement that removes water from your windshield on your car
 Answer: wiper
 
 Category: Trivia
-Question: Traffic Trivia:  Red means stop, ----- means go.
+Question: Traffic Trivia:  Red means stop, _____ means go.
 Answer: green
 
 Category: Trivia
@@ -5708,11 +5708,11 @@ Question: Who is known as "the world's oldest teenager"?
 Answer: Dick #Clark#
 
 Category: Word Asssociation
-Question: Ball and --------.
+Question: Ball and ________.
 Answer: chain
 
 Category: Word Asssociation
-Question: Peace and ---------.
+Question: Peace and _________.
 Answer: quiet
 
 Category: Word Asssociation

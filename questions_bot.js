@@ -49,7 +49,7 @@ function poseSingleQuestion(index, timeout) {
   var usersCorrect = [ ];
   setTimeout(function() {
     var answers = pullNewAnswers();
-    usersCorrect = judgeAnswers(q[index][2], answers);
+    usersCorrect = judgeAnswers(q[index][3], answers);
     usersCorrect = usersCorrect.filter(function(item, pos, self) {
       return self.indexOf(item) == pos;
     });
@@ -85,14 +85,8 @@ function customTrim(str) {
   return str.replace(/^[\s!\?]+|[\s!\?]+$/gm, '');
 }
 function answerMatch(raw_key, raw_answer) {
-  var key = customTrim(raw_key.toLowerCase()), alt_key = "";
-  var answer = customTrim(raw_answer.toLowerCase());
-
-  if (key.indexOf("#") != -1) {
-    alt_key = key.slice(key.indexOf("#") + 1, key.lastIndexOf("#"));
-    key = key.replace(/#/gm, '');
-  }
-  return key == answer || (alt_key != "" && alt_key == answer);
+  var key_regex = new RegExp("^" + raw_key.toLowerCase() + "$");
+  return key_regex.test(customTrim(raw_answer.toLowerCase()));
 }
 function pullNewAnswers() {
   var re = new Array();
