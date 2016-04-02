@@ -112,8 +112,8 @@ Answer: Neptune
 
 Category: Astronomy
 Question: How many planets are there in our solar system?
-Answer: nine
-Regexp: (nine|9)
+Answer: eight
+Regexp: (eight|8)
 
 Category: Astronomy
 Question: If you're in the northern hemisphere, Polaris, the North Star, can be found by looking which direction?
