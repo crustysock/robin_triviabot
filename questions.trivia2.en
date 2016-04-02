@@ -19,7 +19,7 @@
 #  Regexp: [ck]onfu(ts|z)ius
 #  Author: anonymous
 #  Level: hard
-#  Comment: demo-entry, ������� ^� !"�$%&/()=? `�
+#  Comment: demo-entry, ______________ ^__ !"__$%&/()=? `__
 #  Score: 5
 #  Tip: Kon......
 #  Tip: ...fuz...
@@ -854,7 +854,7 @@ Question: Which country has the most cars per mile of road?
 Answer: England
 
 Category: Cartoon Decorum
-Question: Donald Duck comics were banned in Finland because he didn't wear ������?
+Question: Donald Duck comics were banned in Finland because he didn't wear ____________?
 Answer: pants
 
 Category: Cartoon Trivia
@@ -913,7 +913,7 @@ Category: Cartoon Trivia
 Question: Who drew the comic 'The Maxx'?
 Answer: Sam Keith
 
-Question: Baseball: The San Diego �������?
+Question: Baseball: The San Diego ______________?
 Answer: Padres
 
 Category: Cartoon Trivia
@@ -1104,59 +1104,59 @@ Question: In the 'Twelve days of christmas', how many items in total are sent by
 Answer: seventy eight
 Regexp: (seventy eight|78)
 
-Category: Clich�s
-Question: A bird in the hand is worth ������?
+Category: Clich__s
+Question: A bird in the hand is worth ____________?
 Answer: two in the bush
 Regexp: (two|2) in the bush
 
-Category: Clich�s
-Question: A stitch in time saves ����?
+Category: Clich__s
+Question: A stitch in time saves ________?
 Answer: nine
 Regexp: (nine|9)
 
-Category: Clich�s
-Question: As clear as a �������?
+Category: Clich__s
+Question: As clear as a ______________?
 Answer: bell
 
-Category: Clich�s
-Question: As close as two ������ in a pod?
+Category: Clich__s
+Question: As close as two ____________ in a pod?
 Answer: peas
 
-Category: Clich�s
-Question: As easy as ������?
+Category: Clich__s
+Question: As easy as ____________?
 Answer: pie
 
-Category: Clich�s
-Question: As hard as �������?
+Category: Clich__s
+Question: As hard as ______________?
 Answer: nails
 
-Category: Clich�s
-Question: As mad as a �������?
+Category: Clich__s
+Question: As mad as a ______________?
 Answer: wet hen or hatter
 Regexp: (wet hen|hatter)
 
-Category: Clich�s
-Question: As nervous as a long-tailed cat in a room full of ������?
+Category: Clich__s
+Question: As nervous as a long-tailed cat in a room full of ____________?
 Answer: rocking chairs
 
-Category: Clich�s
-Question: As pretty as a ������?
+Category: Clich__s
+Question: As pretty as a ____________?
 Answer: picture
 
-Category: Clich�s
-Question: As sick as a ������?
+Category: Clich__s
+Question: As sick as a ____________?
 Answer: dog
 
-Category: Clich�s
-Question: As sly as a ������?
+Category: Clich__s
+Question: As sly as a ____________?
 Answer: fox
 
-Category: Clich�s
-Question: Hell hath no fury like a ������?
+Category: Clich__s
+Question: Hell hath no fury like a ____________?
 Answer: woman scorned
 
-Category: Clich�s
-Question: Time ���� when you're having fun?
+Category: Clich__s
+Question: Time ________ when you're having fun?
 Answer: flies
 
 Category: Clothing
@@ -1211,7 +1211,7 @@ Question: What is a group of geese called?
 Answer: gaggle
 
 Category: Companies
-Question: The De Beers group of companies controls more than 80% of the world's supply of ������?
+Question: The De Beers group of companies controls more than 80% of the world's supply of ____________?
 Answer: rough #diamonds#
 
 Category: Companies
@@ -1283,7 +1283,7 @@ Question: What is pure china clay called?
 Answer: kaolin
 
 Category: Culture
-Question: Because the emu and the kangaroo cannot walk backwards, they are on the Australian ������?
+Question: Because the emu and the kangaroo cannot walk backwards, they are on the Australian ____________?
 Answer: coat of arms
 
 Category: Culture
@@ -1304,7 +1304,7 @@ Question: In which town does the famous 'running of the bulls' take place?
 Answer: Pamplona
 
 Category: Culture
-Question: Israel has the highest per capital consumption of ������?
+Question: Israel has the highest per capital consumption of ____________?
 Answer: turkey
 
 Category: Culture
@@ -1407,33 +1407,33 @@ Question: Which nationality calls Munich the 'Monaco of Bavaria'?
 Answer: Italians
 
 Category: Currencies
-Question: Germany's equivalent to the dollar is the ������?
+Question: Germany's equivalent to the dollar is the ____________?
 Answer: deutsche mark
 Regexp: deutsch(e )?mark
 
 Category: Currencies
-Question: Israel's equivalent to the dollar is the ������?
+Question: Israel's equivalent to the dollar is the ____________?
 Answer: shekel
 Regexp: (shekel|sheqel)
 
 Category: Currencies
-Question: Italy's equivalant to the dollar is the ������?
+Question: Italy's equivalant to the dollar is the ____________?
 Answer: lira
 
 Category: Currencies
-Question: Japan's equivalent to the dollar is the ������?
+Question: Japan's equivalent to the dollar is the ____________?
 Answer: yen
 
 Category: Currencies
-Question: Mexico's equivalent to the dollar is the ������?
+Question: Mexico's equivalent to the dollar is the ____________?
 Answer: peso
 
 Category: Currencies
-Question: Spain's equivalent to the dollar is the ������?
+Question: Spain's equivalent to the dollar is the ____________?
 Answer: peseta
 
 Category: Currencies
-Question: The quetzal is the currency of ������?
+Question: The quetzal is the currency of ____________?
 Answer: Guatemala
 
 Category: Currencies
@@ -1531,7 +1531,7 @@ Question: As what was Sony's video recorder known?
 Answer: betamax
 
 Category: Electronics
-Question: Circuits can be wired in parallel or ������?
+Question: Circuits can be wired in parallel or ____________?
 Answer: series
 
 Category: Entomology
@@ -1778,7 +1778,7 @@ Answer: twelve
 Regexp: (twelve|12)
 
 Category: Gems
-Question: Peridot is the birthstone for ������?
+Question: Peridot is the birthstone for ____________?
 Answer: August
 
 Category: Gems
@@ -1841,19 +1841,19 @@ Question: What is the capital of Democratic Republic of the Congo?
 Answer: Kinshasa
 
 Category: Geography
-Question: Abuja is the capital of ������?
+Question: Abuja is the capital of ____________?
 Answer: Nigeria
 
 Category: Geography
-Question: Accra is the capital of ������?
+Question: Accra is the capital of ____________?
 Answer: Ghana
 
 Category: Geography
-Question: Albany is the capital of �����?
+Question: Albany is the capital of __________?
 Answer: New York
 
 Category: Geography
-Question: Ankara is the capital of ������?
+Question: Ankara is the capital of ____________?
 Answer: Turkey
 
 Category: Geography
@@ -1877,68 +1877,68 @@ Question: As what was the Taj Mahal originally built?
 Answer: tomb
 
 Category: Geography
-Question: Austin is the capital of ������?
+Question: Austin is the capital of ____________?
 Answer: Texas
 
 Category: Geography
-Question: Bamako is the capital of ������?
+Question: Bamako is the capital of ____________?
 Answer: Mali
 
 Category: Geography
-Question: Bangkok is the capital of ������?
+Question: Bangkok is the capital of ____________?
 Answer: Thailand
 
 Category: Geography
-Question: Banjul is the capital of ������?
+Question: Banjul is the capital of ____________?
 Answer: Gambia
 
 Category: Geography
-Question: Bismarck is the capital of ������?
+Question: Bismarck is the capital of ____________?
 Answer: North Dakota
 
 Category: Geography
-Question: Bissau is the capital of ������?
+Question: Bissau is the capital of ____________?
 Answer: Guinea-Bissau
 Regexp: Guinea[- ]Bissau
 
 Category: Geography
-Question: Bogota is the capital of ������?
+Question: Bogota is the capital of ____________?
 Answer: Colombia
 
 Category: Geography
-Question: Boise is the capital of ������?
+Question: Boise is the capital of ____________?
 Answer: Idaho
 
 Category: Geography
-Question: Bridgetown is the capital of ������?
+Question: Bridgetown is the capital of ____________?
 Answer: Barbados
 
 Category: Geography
-Question: Budapest is the capital of ������?
+Question: Budapest is the capital of ____________?
 Answer: Hungary
 
 Category: Geography
-Question: Cheyenne is the capital of ������?
+Question: Cheyenne is the capital of ____________?
 Answer: Wyoming
 
 Category: Geography
-Question: Columbus is the capital of ������?
+Question: Columbus is the capital of ____________?
 Answer: Ohio
 
 Category: Geography
-Question: Dakar is the capital of ������?
+Question: Dakar is the capital of ____________?
 Answer: Senegal
 
 Category: Geography
-Question: Des Moines is the capital of ������?
+Question: Des Moines is the capital of ____________?
 Answer: Iowa
 
 Category: Geography
-Question: Dhaka is the capital of ������?
+Question: Dhaka is the capital of ____________?
 Answer: Bangladesh
 
 Category: Geography
-Question: Djibouti is the capital of ������?
+Question: Djibouti is the capital of ____________?
 Answer: Djibouti
 
 Category: Geography
@@ -1946,11 +1946,11 @@ Question: Five US states border which ocean?
 Answer: #Pacific# Ocean
 
 Category: Geography
-Question: Guatemala is the capital of ������?
+Question: Guatemala is the capital of ____________?
 Answer: Guatemala
 
 Category: Geography
-Question: Helena is the capital of ������?
+Question: Helena is the capital of ____________?
 Answer: Montana
 
 Category: Geography
@@ -2032,68 +2032,68 @@ Question: Is Dublin in Northern or Southern ireland?
 Answer: Southern
 
 Category: Geography
-Question: Jefferson City is the capital of ������?
+Question: Jefferson City is the capital of ____________?
 Answer: Missouri
 
 Category: Geography
-Question: Kathmandu is the capital of ������?
+Question: Kathmandu is the capital of ____________?
 Answer: Nepal
 
 Category: Geography
-Question: Kigali is the capital of ������?
+Question: Kigali is the capital of ____________?
 Answer: Rwanda
 
 Category: Geography
-Question: Kingston is the capital of ������?
+Question: Kingston is the capital of ____________?
 Answer: Jamaica
 
 Category: Geography
-Question: Kinshasa is the capital of ������?
+Question: Kinshasa is the capital of ____________?
 Answer: Democratic Republic of the Congo
 Regexp: (democratic republic of the congo|congo)
 
 Category: Geography
-Question: Kuwait City is the capital of ������?
+Question: Kuwait City is the capital of ____________?
 Answer: Kuwait
 
 Category: Geography
-Question: Lansing is the capital of ������?
+Question: Lansing is the capital of ____________?
 Answer: Michigan
 
 Category: Geography
-Question: Libreville is the capital of ������?
+Question: Libreville is the capital of ____________?
 Answer: Gabon
 
 Category: Geography
-Question: Lilongwe is the capital of ������?
+Question: Lilongwe is the capital of ____________?
 Answer: Malawi
 
 Category: Geography
-Question: Lome is the capital of ������?
+Question: Lome is the capital of ____________?
 Answer: Togo
 
 Category: Geography
-Question: Luxembourg is the capital of ������?
+Question: Luxembourg is the capital of ____________?
 Answer: Luxembourg
 
 Category: Geography
-Question: Malabo is the capital of ������?
+Question: Malabo is the capital of ____________?
 Answer: Equatorial Guinea
 
 Category: Geography
-Question: Mayfair, London is a district of little streets near ������?
+Question: Mayfair, London is a district of little streets near ____________?
 Answer: Hyde Park
 
 Category: Geography
-Question: Mexico City is the capital of ������?
+Question: Mexico City is the capital of ____________?
 Answer: Mexico
 
 Category: Geography
-Question: Montevideo is the capital of ������?
+Question: Montevideo is the capital of ____________?
 Answer: Uruguay
 
 Category: Geography
-Question: Nashville is the capital of ������?
+Question: Nashville is the capital of ____________?
 Answer: Tennessee
 
 Category: Geography
@@ -2101,11 +2101,11 @@ Question: Near what river is the Temple of Karnak?
 Answer: Nile
 
 Category: Geography
-Question: New Delhi is the capital of ������?
+Question: New Delhi is the capital of ____________?
 Answer: India
 
 Category: Geography
-Question: Nicosia is the capital of ������?
+Question: Nicosia is the capital of ____________?
 Answer: Cyprus
 
 Category: Geography
@@ -2146,55 +2146,55 @@ Question: On which coast of Australia is Sydney?
 Answer: East
 
 Category: Geography
-Question: Ouagadougou is the capital of ������?
+Question: Ouagadougou is the capital of ____________?
 Answer: Burkina Faso
 
 Category: Geography
-Question: Port Louis is the capital of ������?
+Question: Port Louis is the capital of ____________?
 Answer: Mauritius
 
 Category: Geography
-Question: Port Moresby is the capital of ������?
+Question: Port Moresby is the capital of ____________?
 Answer: Papua New Guinea
 
 Category: Geography
-Question: Raleigh is the capital of ������?
+Question: Raleigh is the capital of ____________?
 Answer: North Carolina
 
 Category: Geography
-Question: Richmond is the capital of ������?
+Question: Richmond is the capital of ____________?
 Answer: Virginia
 
 Category: Geography
-Question: Riyadh is the capital of ������?
+Question: Riyadh is the capital of ____________?
 Answer: Saudi Arabia
 
 Category: Geography
-Question: Rome is the capital of ������?
+Question: Rome is the capital of ____________?
 Answer: Italy
 
 Category: Geography
-Question: Santiago is the capital of ������?
+Question: Santiago is the capital of ____________?
 Answer: Chile
 
 Category: Geography
-Question: Santo Domingo is the capital of ������?
+Question: Santo Domingo is the capital of ____________?
 Answer: Dominican Republic
 
 Category: Geography
-Question: Singapore is the capital of ������?
+Question: Singapore is the capital of ____________?
 Answer: Singapore
 
 Category: Geography
-Question: Springfield is the capital of ������?
+Question: Springfield is the capital of ____________?
 Answer: Illinois
 
 Category: Geography
-Question: Sydney is on the east coast of ������?
+Question: Sydney is on the east coast of ____________?
 Answer: Australia
 
 Category: Geography
-Question: Tegucigalpa is the capital of ������?
+Question: Tegucigalpa is the capital of ____________?
 Answer: Honduras
 
 Category: Geography
@@ -2202,15 +2202,15 @@ Question: Through which ocean does the International Date Line approximately fol
 Answer: #Pacific# Ocean
 
 Category: Geography
-Question: Tirana is the capital of ������?
+Question: Tirana is the capital of ____________?
 Answer: Albania
 
 Category: Geography
-Question: Ulan Bator is the capital of ������?
+Question: Ulan Bator is the capital of ____________?
 Answer: Mongolia
 
 Category: Geography
-Question: Vaduz is the capital of ������?
+Question: Vaduz is the capital of ____________?
 Answer: Liechtenstein
 
 Category: Geography
@@ -2818,13 +2818,13 @@ Question: Which is the smallest independent country?
 Answer: Vatican City
 
 Category: Geography
-Question: Which island country lies immediately to the East of R�union?
+Question: Which island country lies immediately to the East of R__union?
 Answer: Mauritius
 
 Category: Geography
 Question: Which island country lies immediately to the West of Mauritius?
-Answer: R�union
-Regexp: r[�e]union
+Answer: R__union
+Regexp: r[__e]union
 
 Category: Geography
 Question: Which island country lies to the East of Mauritius?
@@ -2855,7 +2855,7 @@ Question: Who owns the island of Bermuda?
 Answer: Britain
 
 Category: Geography
-Question: Yaounde is the capital of ������?
+Question: Yaounde is the capital of ____________?
 Answer: Cameroon
 
 Category: Geogrophy
@@ -2928,7 +2928,7 @@ Answer: Squeaky Fromme
 Regexp: (Lynette|Squeaky) Fromme
 
 Category: History
-Question: East Berlin was the capital of ������?
+Question: East Berlin was the capital of ____________?
 Answer: East Germany
 
 Category: History
@@ -2989,7 +2989,7 @@ Question: In which country was paper money first used?
 Answer: China
 
 Category: History
-Question: King Richard the ��������?
+Question: King Richard the ________________?
 Answer: Lionhearted
 Regexp: Lionheart
 
@@ -3023,7 +3023,7 @@ Question: The date of which Christian festival was fixed in 325AD by the Council
 Answer: Easter
 
 Category: History
-Question: The ������ Tea Party?
+Question: The ____________ Tea Party?
 Answer: Boston
 
 Category: History
@@ -3714,7 +3714,7 @@ Question: What animal can live several weeks without its head?
 Answer: cockroach
 
 Category: Industry
-Question: South africa is the biggest producer and exporter of ������?
+Question: South africa is the biggest producer and exporter of ____________?
 Answer: mohair
 
 Category: Industry
@@ -3726,7 +3726,7 @@ Question: Who founded the SAS?
 Answer: David Stirling
 
 Category: Interesting Fact
-Question: More people are killed by donkeys every year than are killed in ������?
+Question: More people are killed by donkeys every year than are killed in ____________?
 Answer: plane crashes
 
 Category: Inventors
@@ -3950,7 +3950,7 @@ Answer: Six Days Of The Condor
 Regexp: (Six|6) Days Of The condor
 
 Category: Literature
-Question: The Hardy Boys and ������?
+Question: The Hardy Boys and ____________?
 Answer: Nancy Drew
 
 Category: Literature
@@ -4206,7 +4206,7 @@ Question: In what body part does an osteopath specialise?
 Answer: #bone#s
 
 Category: Medicine
-Question: A salt enema was given to children to rid them of ������?
+Question: A salt enema was given to children to rid them of ____________?
 Answer: Threadworm
 
 Category: Medicine
@@ -4218,7 +4218,7 @@ Question: In the early 20th century, rattlesnake venom was used to treat which i
 Answer: epilepsy
 
 Category: Medicine
-Question: North American Indians ate watercress to dissolve gravel and stones in the ������?
+Question: North American Indians ate watercress to dissolve gravel and stones in the ____________?
 Answer: bladder
 
 Category: Medicine
@@ -4514,7 +4514,7 @@ Question: Pancho was whose faithful sidekick?
 Answer: #Cisco Kid#'s
 
 Category: Movie Trivia
-Question: The film 'The Wizard Of ������'?
+Question: The film 'The Wizard Of ____________'?
 Answer: Oz
 
 Category: Movie Trivia
@@ -4795,7 +4795,7 @@ Question: Bill Justis was a studio musician when he recorded this 'sloppy' instr
 Answer: Raunchy
 
 Category: Music
-Question: Country singer Vince ����?
+Question: Country singer Vince ________?
 Answer: Gill
 
 Category: Music
@@ -4891,7 +4891,7 @@ Question: R. Kelly sings: 'If I can see it then I can do it, if I just believe i
 Answer: I Believe I Can Fly
 
 Category: Music
-Question: Randy Travis said his love was 'deeper than the ������'?
+Question: Randy Travis said his love was 'deeper than the ____________'?
 Answer: holler
 
 Category: Music
@@ -4899,11 +4899,11 @@ Question: Savage Garden took 13 nominations and 10 wins at which awards?
 Answer: #ARIA# awards
 
 Category: Music
-Question: Singer Paula ������?
+Question: Singer Paula ____________?
 Answer: Abdul
 
 Category: Music
-Question: Sung by Robert Palmer, '������ to love'?
+Question: Sung by Robert Palmer, '____________ to love'?
 Answer: Addicted
 
 Category: Music
@@ -5307,7 +5307,7 @@ Question: Who's first release was 'Talking Heads 77'?
 Answer: Psycho Killer
 
 Category: Music
-Question: ����� in the name of love?
+Question: __________ in the name of love?
 Answer: Stop
 
 Category: Muthology
@@ -5315,12 +5315,12 @@ Question: In Greek mythology, the riddle of what did Oedipus solve?
 Answer: sphinx
 
 Category: Mytholgy
-Question: Apollo was the Greek god of ������?
+Question: Apollo was the Greek god of ____________?
 Answer: prophecy and archery
 Regexp: (prophecy (and|&) archery|archery (and|&) prophecy)
 
 Category: Mythology
-Question: Dionysus was the greek god of ������?
+Question: Dionysus was the greek god of ____________?
 Answer: Wine
 
 Category: Mythology
@@ -5425,15 +5425,15 @@ Answer: Peleus and Thetis
 Regexp: (Peleus (and |& )Thetis|Thetis (and |& )Peleus)
 
 Category: Mythology
-Question: Neptune was the Roman god of the ������?
+Question: Neptune was the Roman god of the ____________?
 Answer: sea
 
 Category: Mythology
-Question: Persephone was the Greek goddess of ������?
+Question: Persephone was the Greek goddess of ____________?
 Answer: spring
 
 Category: Mythology
-Question: Poseidon was the Greek god of the ������?
+Question: Poseidon was the Greek god of the ____________?
 Answer: sea
 
 Category: Mythology
@@ -5549,7 +5549,7 @@ Question: When does the human uterus expand 500 times its normal size?
 Answer: during #pregnancy#
 
 Category: Nomenclature
-Question: Eras are divided into units called ��������?
+Question: Eras are divided into units called ________________?
 Answer: periods
 
 Category: Not Telling!
@@ -5678,7 +5678,7 @@ Answer: seventy five
 Regexp: (seventy five|75)
 
 Category: One For The Trekkies
-Question: In 'Star Trek' Jean ������ Picard?
+Question: In 'Star Trek' Jean ____________ Picard?
 Answer: Luc
 
 Category: One For The Trekkies
@@ -5798,7 +5798,7 @@ Question: With what branch of medicine is Franz Mesmer associated?
 Answer: hypnotism
 
 Category: Railways
-Question: New York has the longest subway system in ������?
+Question: New York has the longest subway system in ____________?
 Answer: North #America#
 
 Category: Railways
@@ -5856,19 +5856,19 @@ Question: What are 35% of people using personal ads for dating?
 Answer: married
 
 Category: Saints
-Question: St Frideswide the patron saint ������?
+Question: St Frideswide the patron saint ____________?
 Answer: Oxford
 
 Category: Saints
-Question: St Patrick the patron saint of ������?
+Question: St Patrick the patron saint of ____________?
 Answer: Ireland
 
 Category: Saints
-Question: St. Bernard the patron saint of �����?
+Question: St. Bernard the patron saint of __________?
 Answer: skiers
 
 Category: Saints
-Question: St. Christopher the patron saint of ������?
+Question: St. Christopher the patron saint of ____________?
 Answer: travellers
 
 Category: Saints
@@ -5908,7 +5908,7 @@ Question: In which branch of science are monocotyledon and dicotyledon terms?
 Answer: Botany
 
 Category: Science
-Question: Meteorology is the study of ������?
+Question: Meteorology is the study of ____________?
 Answer: weather
 
 Category: Science
@@ -6130,7 +6130,7 @@ Question: Who said 'you'd be surprised how much it costs to look this cheap'?
 Answer: Dolly Parton
 
 Category: Similes
-Question: As neat as a ������?
+Question: As neat as a ____________?
 Answer: pin
 
 Category: Space
@@ -6147,83 +6147,83 @@ Answer: Mohammed Ali
 Regexp: m[uo]hamm[ae]d ali
 
 Category: Sport
-Question: Baseball: The Atlanta ������?
+Question: Baseball: The Atlanta ____________?
 Answer: Braves
 
 Category: Sport
-Question: Baseball: The Boston ������?
+Question: Baseball: The Boston ____________?
 Answer: Red Sox
 
 Category: Sport
-Question: Baseball: The Chicago ������?
+Question: Baseball: The Chicago ____________?
 Answer: Cubs
 
 Category: Sport
-Question: Baseball: The Cleveland ������?
+Question: Baseball: The Cleveland ____________?
 Answer: Indians
 
 Category: Sport
-Question: Baseball: The Florida ������?
+Question: Baseball: The Florida ____________?
 Answer: Marlins
 
 Category: Sport
-Question: Baseball: The Houston ������?
+Question: Baseball: The Houston ____________?
 Answer: Astros
 
 Category: Sport
-Question: Baseball: The Kansas City ������?
+Question: Baseball: The Kansas City ____________?
 Answer: Royals
 
 Category: Sport
-Question: Baseball: The Milwaukee ������?
+Question: Baseball: The Milwaukee ____________?
 Answer: Brewers
 
 Category: Sport
-Question: Baseball: The New York ������?
+Question: Baseball: The New York ____________?
 Answer: Mets
 
 Category: Sport
-Question: Baseball: The Philadelphia ������?
+Question: Baseball: The Philadelphia ____________?
 Answer: Phillies
 
 Category: Sport
-Question: Baseball: The St. Louis ������?
+Question: Baseball: The St. Louis ____________?
 Answer: Cardinals
 
 Category: Sport
-Question: Baseball: The Texas ������?
+Question: Baseball: The Texas ____________?
 Answer: Rangers
 
 Category: Sport
-Question: Basketball: The Denver ������?
+Question: Basketball: The Denver ____________?
 Answer: Nuggets
 
 Category: Sport
-Question: Football: The Chicago ������?
+Question: Football: The Chicago ____________?
 Answer: Bears
 
 Category: Sport
-Question: Football: The Dallas ������?
+Question: Football: The Dallas ____________?
 Answer: Cowboys
 
 Category: Sport
-Question: Football: The Denver ����?
+Question: Football: The Denver ________?
 Answer: Broncos
 
 Category: Sport
-Question: Football: The Pittsburgh ������?
+Question: Football: The Pittsburgh ____________?
 Answer: Steelers
 
 Category: Sport
-Question: Football: The San Diego ������?
+Question: Football: The San Diego ____________?
 Answer: Chargers
 
 Category: Sport
-Question: Hockey: The Calgary �������?
+Question: Hockey: The Calgary ______________?
 Answer: Flames
 
 Category: Sport
-Question: Hockey: The Toronto ������?
+Question: Hockey: The Toronto ____________?
 Answer: Maple Leafs
 
 Category: Sport
@@ -6280,7 +6280,7 @@ Question: Other than skiing, which sport takes place on a piste?
 Answer: fencing
 
 Category: Sport
-Question: The first cricket one-day international was held between england and ������?
+Question: The first cricket one-day international was held between england and ____________?
 Answer: Australia
 
 Category: Sport
@@ -6512,7 +6512,7 @@ Question: On 'The Lucy Show', who played Vivian Bagley?
 Answer: Vivian Vance
 
 Category: TV Trivia
-Question: TV series: 'American ������'?
+Question: TV series: 'American ____________'?
 Answer: Bandstand
 
 Category: TV Trivia
@@ -6692,7 +6692,7 @@ Question: 7% of Americans don't know the first nine words of the American anthem
 Answer: #Canadian# anthem
 
 Category: Trivia
-Question: Betsy Ross is the only real person to ever have been the head of a ������?
+Question: Betsy Ross is the only real person to ever have been the head of a ____________?
 Answer: Pez dispenser
 
 Category: Trivia
@@ -6735,11 +6735,11 @@ Answer: one hundred and sixty nine
 Regexp: (one hundred (and )?sixty[- ]nine|169)
 
 Category: Tunnels
-Question: The world's longest tunnel connects Delaware and ������?
+Question: The world's longest tunnel connects Delaware and ____________?
 Answer: New York
 
 Category: Tunnels
-Question: The world's longest tunnel connects New York and ������?
+Question: The world's longest tunnel connects New York and ____________?
 Answer: Delaware
 
 Category: Tunnels
@@ -6850,7 +6850,7 @@ Question: Which word is related to these three: rat, blue, cottage?
 Answer: cheese
 
 Category: Word Pairs
-Question: Cattle are bovine, sheep are ������ ?
+Question: Cattle are bovine, sheep are ____________ ?
 Answer: ovine
 
 Category: Words containing 'for'
