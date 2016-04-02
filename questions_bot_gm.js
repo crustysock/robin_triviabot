@@ -14,13 +14,18 @@ BASE_SCORE = 1;
 
 MAX_MESSAGE_LENGTH = 140;
 TIME_PER_QUESTION = 24000;
-TIME_PER_BREAK = 18000;
+TIME_PER_BREAK = 14000;
 RETRY_CONNECT = 2000;
 
 QUESTIONS_PER_SCORE_DISPLAY = 8;
 NUM_SCORES_TO_DISPLAY = 15;
+  
+FLAG_FREE_PLAY = "free_play";
+FLAG_STANDARD = "standard";
+CONTEST_FREQUENCY_MS = 60 * 60 * 1000;
 
 SAVE_STRING = "robin-quiz-scores";
+VICTORY_STRING = "robin-quiz-victories";
 
 q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 'runway'],
 ['Analogies', "Analogy: 'Ancient' is to 'old' as 'recent' is to ________.", 'current', 'current'],
@@ -230,7 +235,7 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Definitions', 'Legal Terms: The people chosen to render a verdict in a court.', 'jury', 'jury'],
 ['Definitions', "Legal Terms: To steal property entrusted to one's care.", 'embezzle', 'embezzle'],
 ['Definitions', 'Name the pain-inflicting person you go to to get your teeth fixed.', 'dentist', 'dentist'],
-['Definitions', 'Name the porceilan chair you sit on at least once a day.', 'toilet', 'toilet'],
+['Definitions', 'Name the porcelain chair you sit on at least once a day.', 'toilet', 'toilet'],
 ['Definitions', 'One who tells fortunes by the stars is a(n) __________.', 'astrologer', 'astrologer'],
 ['Definitions', 'Rats, mice, beavers, and squirrels are all _______.', 'rodents', 'rodents'],
 ['Definitions', 'The art of tracing designs and taking impressions of them is ___________.', 'lithography', 'lithography'],
@@ -258,7 +263,7 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Definitions', 'The weight at the end of a pendulum is a(n) ______.', 'bob', 'bob'],
 ['Definitions', 'The wide wall built along the banks of rivers to stop flooding is a(n) _____.', 'levee', 'levee'],
 ['Definitions', 'The word "cumulus" refers to a type of ___________.', 'cloud', 'cloud'],
-['Definitions', 'This instrument is used for measuring the distance between two points, on a curved surface.', 'calliper', 'calliper'],
+['Definitions', 'This instrument is used for measuring the distance between two points, on a curved surface.', 'calliper', 'call?iper'],
 ['Definitions', 'This instrument measures atmospheric pressure.', 'barometer', 'barometer'],
 ['Definitions', 'This instrument measures the velocity of the wind.', 'anemometer', 'anemometer'],
 ['Definitions', 'This is the fear of enclosed spaces.', 'claustrophobia', 'claustrophobia'],
@@ -275,7 +280,7 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Definitions', 'What is a figure with eight equal sides called?', 'octagon', 'octagon'],
 ['Definitions', 'What is another name for a tombstone inscription?', 'epitaph', 'epitaph'],
 ['Definitions', 'What is measured by a chronometer?', 'time', 'time'],
-['Definitions', 'What is the common name for a Japanese dwarf tree?', 'bonsai', 'bonsai'],
+['Definitions', 'What is the common name for a Japanese dwarf tree?', '#bonsai# tree', '(bonsai tree|bonsai)'],
 ['Definitions', 'What is the common name for the Aurora Borealis?', 'northern lights', 'northern lights'],
 ['Definitions', 'What is the common term for a "somnambulist"?', 'sleepwalker', 'sleepwalker'],
 ['Definitions', 'What is the name for a branch of a river?', 'tributary', 'tributary'],
@@ -987,7 +992,7 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Movie Trivia', "What color was Bullitt's car?", 'Green', 'Green'],
 ['Movie Trivia', 'What country was the setting for "The King and I"?', '#Siam# (Thailand)', '(Siam (Thailand)|Siam)'],
 ['Movie Trivia', "What detective duo was featured in Mystery at Devil's Paw?", 'Hardy', 'Hardy'],
-['Movie Trivia', 'What does the statue of Oscar stand on?', 'A #Reel of Film#', '(A Reel of Film|Reel of Film)'],
+['Movie Trivia', 'What does the statue of Oscar stand on?', 'A #reel of film#', '(A reel of film|reel of film)'],
 ['Movie Trivia', 'What famous animal character called "Skull Island" home?', 'King Kong', 'King Kong'],
 ['Movie Trivia', 'What film did John Wayne win his only Oscar for?', 'True Grit', 'True Grit'],
 ['Movie Trivia', "What is Hawkeye's full name in M.A.S.H.?", 'Benjamin Franklin Pierce', 'Benjamin Franklin Pierce'],
@@ -1164,7 +1169,7 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Nature', 'What type of animal lives in a formicary?', 'ant', 'ant'],
 ['Nature', 'What word is used for a female fox?', 'vixen', 'vixen'],
 ['Nature', 'What word is used for a female sheep?', 'ewe', 'ewe'],
-['Nature', 'What word is used for a male ass? (Other than that the word used for that #*\xa7^*&%@! ex-boyfriend.)', 'jack', 'jack'],
+['Nature', 'What word is used for a male ass?', 'jack', 'jack'],
 ['Nature', 'What word is used for a male deer?', 'buck', 'buck'],
 ['Nature', 'What word is used for a male duck?', 'drake', 'drake'],
 ['Neture', 'What do oak trees grow from?', 'acorns', 'acorns'],
@@ -1613,7 +1618,7 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Cars', "What make of car is a 'Thunderbird'?", 'Ford', 'Ford'],
 ['Cars', "What make of car is an 'Espace'?", 'Renault', 'Renault'],
 ['Cars', 'Which country has the most cars per mile of road?', 'England', 'England'],
-['Cartoon Decorum', "Donald Duck comics were banned in Finland because he didn't wear \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?", 'pants', 'pants'],
+['Cartoon Decorum', "Donald Duck comics were banned in Finland because he didn't wear ____________?", 'pants', 'pants'],
 ['Cartoon Trivia', 'For which cartoon character was Beethoven a favourite composer?', 'Shroeder', 'Sc?hroeder'],
 ['Cartoon Trivia', 'How many freckles did Howdy Doody have?', 'forty eight', '(forty eight|48)'],
 ['Cartoon Trivia', 'The maiden names of which two cartoon characters are Slaghoople and Mcbricker?', 'Wilma Flintstone and Betty Rubble', 'Wilma Flintstone and Betty Rubble'],
@@ -1656,7 +1661,7 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Chemistry', 'What is the symbol for copper?', 'Cu', 'Cu'],
 ['Chemistry', 'What is the symbol for tin?', 'Sn', 'Sn'],
 ['Chemistry', 'What term is applied to ethyl alcohol that has been treated with poison to make it unfit for human consumption?', 'denatured', 'denatured'],
-['Chemistry', 'What type of paper is used to test for acidity and alkalinity?', 'litmus', 'litmus'],
+['Chemistry', 'What type of paper is used to test for acidity and alkalinity?', '#litmus# paper', '(litmus paper|litmus)'],
 ['Choking', 'On what do approximately 100 people choke to death every year?', 'ballpoint pens', 'ballpoint pens'],
 ['Christianity', 'How long did it take God to create the Universe?', '#six days# - he rested on the seventh', '(six|6) days'],
 ['Christianity', 'How many children did Noah have?', 'three', '(three|3)'],
@@ -1671,19 +1676,19 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Christianity', 'Who replaced Moses as the prophet of the Israelites?', 'Joshua', 'Joshua'],
 ['Christianity', 'Whose name did God change to Israel?', 'Jacob', 'Jacob'],
 ['Christmas Trivia', "In the 'Twelve days of christmas', how many items in total are sent by 'my true love'?", 'seventy eight', '(seventy eight|78)'],
-['Clich\xef\xbf\xbds', 'A bird in the hand is worth \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'two in the bush', '(two|2) in the bush'],
-['Clich\xef\xbf\xbds', 'A stitch in time saves \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'nine', '(nine|9)'],
-['Clich\xef\xbf\xbds', 'As clear as a \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'bell', 'bell'],
-['Clich\xef\xbf\xbds', 'As close as two \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd in a pod?', 'peas', 'peas'],
-['Clich\xef\xbf\xbds', 'As easy as \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'pie', 'pie'],
-['Clich\xef\xbf\xbds', 'As hard as \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'nails', 'nails'],
-['Clich\xef\xbf\xbds', 'As mad as a \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'wet hen or hatter', '(wet hen|hatter)'],
-['Clich\xef\xbf\xbds', 'As nervous as a long-tailed cat in a room full of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'rocking chairs', 'rocking chairs'],
-['Clich\xef\xbf\xbds', 'As pretty as a \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'picture', 'picture'],
-['Clich\xef\xbf\xbds', 'As sick as a \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'dog', 'dog'],
-['Clich\xef\xbf\xbds', 'As sly as a \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'fox', 'fox'],
-['Clich\xef\xbf\xbds', 'Hell hath no fury like a \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'woman scorned', 'woman scorned'],
-['Clich\xef\xbf\xbds', "Time \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd when you're having fun?", 'flies', 'flies'],
+['Clich__s', 'A bird in the hand is worth ____________?', 'two in the bush', '(two|2) in the bush'],
+['Clich__s', 'A stitch in time saves ________?', 'nine', '(nine|9)'],
+['Clich__s', 'As clear as a ______________?', 'bell', 'bell'],
+['Clich__s', 'As close as two ____________ in a pod?', 'peas', 'peas'],
+['Clich__s', 'As easy as ____________?', 'pie', 'pie'],
+['Clich__s', 'As hard as ______________?', 'nails', 'nails'],
+['Clich__s', 'As mad as a ______________?', 'wet hen or hatter', '(wet hen|hatter)'],
+['Clich__s', 'As nervous as a long-tailed cat in a room full of ____________?', 'rocking chairs', 'rocking chairs'],
+['Clich__s', 'As pretty as a ____________?', 'picture', 'picture'],
+['Clich__s', 'As sick as a ____________?', 'dog', 'dog'],
+['Clich__s', 'As sly as a ____________?', 'fox', 'fox'],
+['Clich__s', 'Hell hath no fury like a ____________?', 'woman scorned', 'woman scorned'],
+['Clich__s', "Time ________ when you're having fun?", 'flies', 'flies'],
 ['Clothing', 'On what is an espadrille worn?', 'foot', '(foot|feet)'],
 ['Cocktails', 'What are the essential ingredients of a daiquiri?', 'rum and lemon', '(rum (and |& )?lemon|lemon (and |& )?rum)'],
 ['Cocktails', 'What cocktail is based on rum and lemon?', 'daiquiri', 'daiquiri'],
@@ -1696,7 +1701,7 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Coins', 'What is a south african coin containing 1 troy ounce of gold called?', 'Krugerrand', 'Krugerrand'],
 ['Collective Names', 'What is a group of donkeys called?', 'herd', 'herd'],
 ['Collective Names', 'What is a group of geese called?', 'gaggle', 'gaggle'],
-['Companies', "The De Beers group of companies controls more than 80% of the world's supply of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?", 'rough #diamonds#', '(rough diamonds|diamonds)'],
+['Companies', "The De Beers group of companies controls more than 80% of the world's supply of ____________?", 'rough #diamonds#', '(rough diamonds|diamonds)'],
 ['Companies', 'What product built Hershey, Pennsylvania?', 'chocolate', 'chocolate'],
 ['Companies', "Which company controls more than 80% of the world's rough diamond supply?", 'De Beers', 'De Beers'],
 ['Computers', "What country did the operating system 'Linux' come from?", 'Finland', 'Finland'],
@@ -1714,12 +1719,12 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Crafts', 'What is kaolin?', 'pure china #clay#', '(pure china clay|clay)'],
 ['Crafts', 'What is liquid clay used in pottery called?', 'slip', 'slip'],
 ['Crafts', 'What is pure china clay called?', 'kaolin', 'kaolin'],
-['Culture', 'Because the emu and the kangaroo cannot walk backwards, they are on the Australian \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'coat of arms', 'coat of arms'],
+['Culture', 'Because the emu and the kangaroo cannot walk backwards, they are on the Australian ____________?', 'coat of arms', 'coat of arms'],
 ['Culture', 'For which country is the lotus flower the national symbol?', 'India', 'India'],
 ['Culture', 'In which country is it polite to stick your tongue out at your guests?', 'Tibet', 'Tibet'],
 ['Culture', 'In which country is milk the most popular beverage?', 'USA', '(U.?S.?A?.?|(United )?(States)? ?(of )?America)'],
 ['Culture', "In which town does the famous 'running of the bulls' take place?", 'Pamplona', 'Pamplona'],
-['Culture', 'Israel has the highest per capital consumption of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'turkey', 'turkey'],
+['Culture', 'Israel has the highest per capital consumption of ____________?', 'turkey', 'turkey'],
 ['Culture', 'What London landmark has an 11 foot long hand?', 'Big Ben', 'Big Ben'],
 ['Culture', 'What animals are on the Australian coat of arms?', 'emu and kangaroo', '(kangaroo (and|&) emu|emu (and|&) kangaroo)'],
 ['Culture', 'What are the roads of Guam paved with?', 'coral', 'coral'],
@@ -1744,13 +1749,13 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Culture', 'Which country eats the most turkey per capita?', 'Israel', 'Israel'],
 ['Culture', 'Which famous museum is in Paris, France?', 'Louvre', 'Louvre'],
 ['Culture', "Which nationality calls Munich the 'Monaco of Bavaria'?", 'Italians', 'Italians'],
-['Currencies', "Germany's equivalent to the dollar is the \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?", 'deutsche mark', 'deutsch(e )?mark'],
-['Currencies', "Israel's equivalent to the dollar is the \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?", 'shekel', '(shekel|sheqel)'],
-['Currencies', "Italy's equivalant to the dollar is the \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?", 'lira', 'lira'],
-['Currencies', "Japan's equivalent to the dollar is the \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?", 'yen', 'yen'],
-['Currencies', "Mexico's equivalent to the dollar is the \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?", 'peso', 'peso'],
-['Currencies', "Spain's equivalent to the dollar is the \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?", 'peseta', 'peseta'],
-['Currencies', 'The quetzal is the currency of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Guatemala', 'Guatemala'],
+['Currencies', "Germany's equivalent to the dollar is the ____________?", 'deutsche mark', 'deutsch(e )?mark'],
+['Currencies', "Israel's equivalent to the dollar is the ____________?", 'shekel', '(shekel|sheqel)'],
+['Currencies', "Italy's equivalant to the dollar is the ____________?", 'lira', 'lira'],
+['Currencies', "Japan's equivalent to the dollar is the ____________?", 'yen', 'yen'],
+['Currencies', "Mexico's equivalent to the dollar is the ____________?", 'peso', 'peso'],
+['Currencies', "Spain's equivalent to the dollar is the ____________?", 'peseta', 'peseta'],
+['Currencies', 'The quetzal is the currency of ____________?', 'Guatemala', 'Guatemala'],
 ['Currencies', 'What is the Japanese currency?', 'yen', 'yen'],
 ['Currencies', 'What is the currency of Guatemala?', 'quetzal', 'quetzal'],
 ['Currencies', 'What is the monetary unit of India?', 'rupee', 'rupee'],
@@ -1774,7 +1779,7 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Education', "What degree do the intials 'DDS' stand for?", 'Doctor of Dental Surgery', 'Doctor of Dental Surgery'],
 ['Egypt', "What egyptian object is also known as 'the key to the Nile'?", 'Ankh', 'Ankh'],
 ['Electronics', "As what was Sony's video recorder known?", 'betamax', 'betamax'],
-['Electronics', 'Circuits can be wired in parallel or \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'series', 'series'],
+['Electronics', 'Circuits can be wired in parallel or ____________?', 'series', 'series'],
 ['Entomology', 'What is the only insect that can turn its head?', 'praying mantis', 'praying mantis'],
 ['Environmentalism', 'Recycling one glass jar saves enough energy to watch TV for how many hours?', 'three', '(three|3)'],
 ['Famous Dead Bodies', 'Where is Sir Herbert Baker buried?', 'Westminster Abbey', 'Westminster Abbey'],
@@ -1831,7 +1836,7 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Games', "Where did the card game 'bridge' originate?", 'Turkey', 'Turkey'],
 ['Games', 'Where does the annual Poker World Series take place?', 'Las Vegas', 'Las Vegas'],
 ['Gastronomy', 'Approximately how many pounds of cereal will the average american/canadian eat every year?', 'twelve', '(twelve|12)'],
-['Gems', 'Peridot is the birthstone for \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'August', 'August'],
+['Gems', 'Peridot is the birthstone for ____________?', 'August', 'August'],
 ['Gems', 'What is the birthstone for August?', 'peridot', 'peridot'],
 ['General Knowledge', 'During which month is the longest day in the Northern hemisphere?', 'June', 'June'],
 ['General Knowledge', 'During which month is the longest day in the Southern hemisphere?', 'December', 'December'],
@@ -1846,34 +1851,34 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['General Knowledge', 'With what day does a month start if it has a Friday the 13th?', 'Sunday', 'Sunday'],
 ['Genetics', 'How many chromosomes do each body cell contain?', 'forty six', '(forty[- ]six|46)'],
 ['Geograhy', 'What is the capital of Democratic Republic of the Congo?', 'Kinshasa', 'Kinshasa'],
-['Geography', 'Abuja is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Nigeria', 'Nigeria'],
-['Geography', 'Accra is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Ghana', 'Ghana'],
-['Geography', 'Albany is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'New York', 'New York'],
-['Geography', 'Ankara is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Turkey', 'Turkey'],
+['Geography', 'Abuja is the capital of ____________?', 'Nigeria', 'Nigeria'],
+['Geography', 'Accra is the capital of ____________?', 'Ghana', 'Ghana'],
+['Geography', 'Albany is the capital of __________?', 'New York', 'New York'],
+['Geography', 'Ankara is the capital of ____________?', 'Turkey', 'Turkey'],
 ['Geography', 'As what is Constantinople now known?', 'Istanbul', 'Istanbul'],
 ['Geography', 'As what is Formosa now known?', 'Taiwan', 'Taiwan'],
 ['Geography', 'As what is Krung Thep is more commonly known?', 'Bangkok', 'Bangkok'],
 ['Geography', 'As what is the South Pole also known?', 'Amundsen Scott Station', 'Amundsen Scott Station'],
 ['Geography', 'As what was the Taj Mahal originally built?', 'tomb', 'tomb'],
-['Geography', 'Austin is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Texas', 'Texas'],
-['Geography', 'Bamako is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Mali', 'Mali'],
-['Geography', 'Bangkok is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Thailand', 'Thailand'],
-['Geography', 'Banjul is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Gambia', 'Gambia'],
-['Geography', 'Bismarck is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'North Dakota', 'North Dakota'],
-['Geography', 'Bissau is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Guinea-Bissau', 'Guinea[- ]Bissau'],
-['Geography', 'Bogota is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Colombia', 'Colombia'],
-['Geography', 'Boise is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Idaho', 'Idaho'],
-['Geography', 'Bridgetown is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Barbados', 'Barbados'],
-['Geography', 'Budapest is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Hungary', 'Hungary'],
-['Geography', 'Cheyenne is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Wyoming', 'Wyoming'],
-['Geography', 'Columbus is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Ohio', 'Ohio'],
-['Geography', 'Dakar is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Senegal', 'Senegal'],
-['Geography', 'Des Moines is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Iowa', 'Iowa'],
-['Geography', 'Dhaka is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Bangladesh', 'Bangladesh'],
-['Geography', 'Djibouti is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Djibouti', 'Djibouti'],
+['Geography', 'Austin is the capital of ____________?', 'Texas', 'Texas'],
+['Geography', 'Bamako is the capital of ____________?', 'Mali', 'Mali'],
+['Geography', 'Bangkok is the capital of ____________?', 'Thailand', 'Thailand'],
+['Geography', 'Banjul is the capital of ____________?', 'Gambia', 'Gambia'],
+['Geography', 'Bismarck is the capital of ____________?', 'North Dakota', 'North Dakota'],
+['Geography', 'Bissau is the capital of ____________?', 'Guinea-Bissau', 'Guinea[- ]Bissau'],
+['Geography', 'Bogota is the capital of ____________?', 'Colombia', 'Colombia'],
+['Geography', 'Boise is the capital of ____________?', 'Idaho', 'Idaho'],
+['Geography', 'Bridgetown is the capital of ____________?', 'Barbados', 'Barbados'],
+['Geography', 'Budapest is the capital of ____________?', 'Hungary', 'Hungary'],
+['Geography', 'Cheyenne is the capital of ____________?', 'Wyoming', 'Wyoming'],
+['Geography', 'Columbus is the capital of ____________?', 'Ohio', 'Ohio'],
+['Geography', 'Dakar is the capital of ____________?', 'Senegal', 'Senegal'],
+['Geography', 'Des Moines is the capital of ____________?', 'Iowa', 'Iowa'],
+['Geography', 'Dhaka is the capital of ____________?', 'Bangladesh', 'Bangladesh'],
+['Geography', 'Djibouti is the capital of ____________?', 'Djibouti', 'Djibouti'],
 ['Geography', 'Five US states border which ocean?', '#Pacific# Ocean', '(Pacific Ocean|Pacific)'],
-['Geography', 'Guatemala is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Guatemala', 'Guatemala'],
-['Geography', 'Helena is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Montana', 'Montana'],
+['Geography', 'Guatemala is the capital of ____________?', 'Guatemala', 'Guatemala'],
+['Geography', 'Helena is the capital of ____________?', 'Montana', 'Montana'],
 ['Geography', 'How many Great Lakes are there?', 'five', '(five|5)'],
 ['Geography', 'How many countries border the black sea?', '#six# - Turkey, Georgia, Russia, Ukraine, Romania and Bulgaria', '(six|6)'],
 ['Geography', 'If you flew due West from Portugal, what is the first continent you would reach?', 'North America', 'North America'],
@@ -1893,25 +1898,25 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Geography', 'Into which estuary do the Trent and Ouse flow?', 'Humber', 'Humber'],
 ['Geography', 'Is Belfast in Northern or Southern Ireland?', 'Northern', 'Northern'],
 ['Geography', 'Is Dublin in Northern or Southern ireland?', 'Southern', 'Southern'],
-['Geography', 'Jefferson City is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Missouri', 'Missouri'],
-['Geography', 'Kathmandu is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Nepal', 'Nepal'],
-['Geography', 'Kigali is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Rwanda', 'Rwanda'],
-['Geography', 'Kingston is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Jamaica', 'Jamaica'],
-['Geography', 'Kinshasa is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Democratic Republic of the Congo', '(democratic republic of the congo|congo)'],
-['Geography', 'Kuwait City is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Kuwait', 'Kuwait'],
-['Geography', 'Lansing is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Michigan', 'Michigan'],
-['Geography', 'Libreville is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Gabon', 'Gabon'],
-['Geography', 'Lilongwe is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Malawi', 'Malawi'],
-['Geography', 'Lome is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Togo', 'Togo'],
-['Geography', 'Luxembourg is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Luxembourg', 'Luxembourg'],
-['Geography', 'Malabo is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Equatorial Guinea', 'Equatorial Guinea'],
-['Geography', 'Mayfair, London is a district of little streets near \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Hyde Park', 'Hyde Park'],
-['Geography', 'Mexico City is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Mexico', 'Mexico'],
-['Geography', 'Montevideo is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Uruguay', 'Uruguay'],
-['Geography', 'Nashville is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Tennessee', 'Tennessee'],
+['Geography', 'Jefferson City is the capital of ____________?', 'Missouri', 'Missouri'],
+['Geography', 'Kathmandu is the capital of ____________?', 'Nepal', 'Nepal'],
+['Geography', 'Kigali is the capital of ____________?', 'Rwanda', 'Rwanda'],
+['Geography', 'Kingston is the capital of ____________?', 'Jamaica', 'Jamaica'],
+['Geography', 'Kinshasa is the capital of ____________?', 'Democratic Republic of the Congo', '(democratic republic of the congo|congo)'],
+['Geography', 'Kuwait City is the capital of ____________?', 'Kuwait', 'Kuwait'],
+['Geography', 'Lansing is the capital of ____________?', 'Michigan', 'Michigan'],
+['Geography', 'Libreville is the capital of ____________?', 'Gabon', 'Gabon'],
+['Geography', 'Lilongwe is the capital of ____________?', 'Malawi', 'Malawi'],
+['Geography', 'Lome is the capital of ____________?', 'Togo', 'Togo'],
+['Geography', 'Luxembourg is the capital of ____________?', 'Luxembourg', 'Luxembourg'],
+['Geography', 'Malabo is the capital of ____________?', 'Equatorial Guinea', 'Equatorial Guinea'],
+['Geography', 'Mayfair, London is a district of little streets near ____________?', 'Hyde Park', 'Hyde Park'],
+['Geography', 'Mexico City is the capital of ____________?', 'Mexico', 'Mexico'],
+['Geography', 'Montevideo is the capital of ____________?', 'Uruguay', 'Uruguay'],
+['Geography', 'Nashville is the capital of ____________?', 'Tennessee', 'Tennessee'],
 ['Geography', 'Near what river is the Temple of Karnak?', 'Nile', 'Nile'],
-['Geography', 'New Delhi is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'India', 'India'],
-['Geography', 'Nicosia is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Cyprus', 'Cyprus'],
+['Geography', 'New Delhi is the capital of ____________?', 'India', 'India'],
+['Geography', 'Nicosia is the capital of ____________?', 'Cyprus', 'Cyprus'],
 ['Geography', 'Of what are Quemoy and Matsu part?', 'Taiwan', 'Taiwan'],
 ['Geography', 'Of which country does the Kalahari Desert cover 84%?', 'Botswana', 'Botswana'],
 ['Geography', 'On the London Underground, which station has a different name on two of its platforms?', 'Bank and Monument', '(Bank (and|&) Monument|Monument (and|&) Bank)'],
@@ -1921,23 +1926,23 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Geography', 'On what river is Liverpool?', 'Mersey', 'Mersey'],
 ['Geography', 'On what sea is the Crimea?', 'Black Sea', 'Black Sea'],
 ['Geography', 'On which coast of Australia is Sydney?', 'East', 'East'],
-['Geography', 'Ouagadougou is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Burkina Faso', 'Burkina Faso'],
-['Geography', 'Port Louis is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Mauritius', 'Mauritius'],
-['Geography', 'Port Moresby is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Papua New Guinea', 'Papua New Guinea'],
-['Geography', 'Raleigh is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'North Carolina', 'North Carolina'],
-['Geography', 'Richmond is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Virginia', 'Virginia'],
-['Geography', 'Riyadh is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Saudi Arabia', 'Saudi Arabia'],
-['Geography', 'Rome is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Italy', 'Italy'],
-['Geography', 'Santiago is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Chile', 'Chile'],
-['Geography', 'Santo Domingo is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Dominican Republic', 'Dominican Republic'],
-['Geography', 'Singapore is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Singapore', 'Singapore'],
-['Geography', 'Springfield is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Illinois', 'Illinois'],
-['Geography', 'Sydney is on the east coast of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Australia', 'Australia'],
-['Geography', 'Tegucigalpa is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Honduras', 'Honduras'],
+['Geography', 'Ouagadougou is the capital of ____________?', 'Burkina Faso', 'Burkina Faso'],
+['Geography', 'Port Louis is the capital of ____________?', 'Mauritius', 'Mauritius'],
+['Geography', 'Port Moresby is the capital of ____________?', 'Papua New Guinea', 'Papua New Guinea'],
+['Geography', 'Raleigh is the capital of ____________?', 'North Carolina', 'North Carolina'],
+['Geography', 'Richmond is the capital of ____________?', 'Virginia', 'Virginia'],
+['Geography', 'Riyadh is the capital of ____________?', 'Saudi Arabia', 'Saudi Arabia'],
+['Geography', 'Rome is the capital of ____________?', 'Italy', 'Italy'],
+['Geography', 'Santiago is the capital of ____________?', 'Chile', 'Chile'],
+['Geography', 'Santo Domingo is the capital of ____________?', 'Dominican Republic', 'Dominican Republic'],
+['Geography', 'Singapore is the capital of ____________?', 'Singapore', 'Singapore'],
+['Geography', 'Springfield is the capital of ____________?', 'Illinois', 'Illinois'],
+['Geography', 'Sydney is on the east coast of ____________?', 'Australia', 'Australia'],
+['Geography', 'Tegucigalpa is the capital of ____________?', 'Honduras', 'Honduras'],
 ['Geography', 'Through which ocean does the International Date Line approximately follow the 180 degree meridian?', '#Pacific# Ocean', '(Pacific Ocean|Pacific)'],
-['Geography', 'Tirana is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Albania', 'Albania'],
-['Geography', 'Ulan Bator is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Mongolia', 'Mongolia'],
-['Geography', 'Vaduz is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Liechtenstein', 'Liechtenstein'],
+['Geography', 'Tirana is the capital of ____________?', 'Albania', 'Albania'],
+['Geography', 'Ulan Bator is the capital of ____________?', 'Mongolia', 'Mongolia'],
+['Geography', 'Vaduz is the capital of ____________?', 'Liechtenstein', 'Liechtenstein'],
 ['Geography', 'What Central American country extends furthest north?', 'Belize', 'Belize'],
 ['Geography', 'What Scandinavian capital begins and ends with the same letter?', 'Oslo', 'Oslo'],
 ['Geography', "What city has the world's largest black population?", '#New York# City', '(New York City|New York)'],
@@ -2087,8 +2092,8 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Geography', 'Which is the only musical bird that can fly backwards?', 'hummingbird', 'hummingbird'],
 ['Geography', 'Which is the only sea below sea level?', 'Dead Sea', 'Dead Sea'],
 ['Geography', 'Which is the smallest independent country?', 'Vatican City', 'Vatican City'],
-['Geography', 'Which island country lies immediately to the East of R\xef\xbf\xbdunion?', 'Mauritius', 'Mauritius'],
-['Geography', 'Which island country lies immediately to the West of Mauritius?', 'R\xef\xbf\xbdunion', 'r[\xef\xbf\xbde]union'],
+['Geography', 'Which island country lies immediately to the East of R__union?', 'Mauritius', 'Mauritius'],
+['Geography', 'Which island country lies immediately to the West of Mauritius?', 'R__union', 'r[__e]union'],
 ['Geography', 'Which island country lies to the East of Mauritius?', 'Australia', 'Australia'],
 ['Geography', 'Which island country lies to the West of Australia?', 'Mauritius', 'Mauritius'],
 ['Geography', 'Which large city is on the Southeastern coast of Australia?', 'Sydney', 'Sydney'],
@@ -2096,7 +2101,7 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Geography', 'Which river passes through Germany, Austria, Slovakia, Hungary, Croatia, Yugoslavia, Romania, Bulgaria and Ukraine before arriving at the Black Sea?', 'Danube', 'Danube'],
 ['Geography', 'Which tropic passes through Australia?', 'Tropic of #Capricorn#', '(Tropic of Capricorn|Capricorn)'],
 ['Geography', 'Who owns the island of Bermuda?', 'Britain', 'Britain'],
-['Geography', 'Yaounde is the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Cameroon', 'Cameroon'],
+['Geography', 'Yaounde is the capital of ____________?', 'Cameroon', 'Cameroon'],
 ['Geogrophy', 'Approximately what percentage of the earth do the oceans cover?', 'seventy one', '(seventy one|71)'],
 ['Geology', 'What is the highest active volcano in the world?', 'Cotopaxi', 'Cotopaxi'],
 ['Geology', 'What is the most reliable geyser in the world?', 'Old Faithful', 'Old Faithful'],
@@ -2113,7 +2118,7 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['History', 'As what was winchester known by the Romans?', 'Venta Bulgarum', 'Venta Bulgarum'],
 ['History', 'Between which countries was the shortest war in history?', 'Zanzibar and England', '(zanzibar( and| &|,)? england|england( and| &|,)? zanzibar)'],
 ['History', 'By who was Gerald Ford almost assassinated?', 'Squeaky Fromme', '(Lynette|Squeaky) Fromme'],
-['History', 'East Berlin was the capital of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'East Germany', 'East Germany'],
+['History', 'East Berlin was the capital of ____________?', 'East Germany', 'East Germany'],
 ['History', 'From what did Alexander the Great suffer?', 'epilepsy', 'epilepsy'],
 ['History', 'George Washington Carver advocated planting peanuts and sweet potatoes to replace what?', 'cotton and tobacco', '(cotton (and |& )tobacco|tobacco (and |& )cotton)'],
 ['History', 'George Washington Carver advocated planting what to replace cotton and tobacco?', 'peanuts and sweet potatoes', '(Pea ?nuts (and |& )(sweet )?potatoe?s|(Sweet )?potatoe?s (and |& ) pea ?nuts)'],
@@ -2127,7 +2132,7 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['History', 'In the 15th century, what was the war between the houses of Lancaster and York?', 'War of the #Roses#', '(War of the Roses|Roses)'],
 ['History', 'In which battle was George A. Custer defeated?', 'Battle of #Little Bighorn#', '(Battle of Little Bighorn|Little Bighorn)'],
 ['History', 'In which country was paper money first used?', 'China', 'China'],
-['History', 'King Richard the \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Lionhearted', 'Lionheart'],
+['History', 'King Richard the ________________?', 'Lionhearted', 'Lionheart'],
 ['History', 'Near what falls did Jimmy Angel crash his plane in 1937?', 'Angel Falls', 'Angel Falls'],
 ['History', 'Of which Cambodian party was Pol Pot the leader?', 'Khmer Rouge', 'Khmer Rouge'],
 ['History', 'Of which ship was Miles Standish captain?', 'The #Mayflower#', '(The Mayflower|Mayflower)'],
@@ -2135,7 +2140,7 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['History', 'On what day of the week did Solomon Grundy die?', 'Saturday', 'Saturday'],
 ['History', 'On what was Pennsylvania incorrectly spelled?', 'Liberty Bell', 'Liberty Bell'],
 ['History', 'The date of which Christian festival was fixed in 325AD by the Council of Nicaea?', 'Easter', 'Easter'],
-['History', 'The \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd Tea Party?', 'Boston', 'Boston'],
+['History', 'The ____________ Tea Party?', 'Boston', 'Boston'],
 ['History', 'Through the streets of what town did Lady Godiva ride naked?', 'Coventry', 'Coventry'],
 ['History', 'What 19th century war between Russia and England, Turkey, Britain and France, was named after a peninsula in the Black Sea?', '#Crimean# War', '(Crimean War|Crimean)'],
 ['History', 'What English city was known to the Romans as Venta Bulgarum?', 'Winchester', 'Winchester'],
@@ -2299,10 +2304,10 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['IRC', 'On IRC, how do you ask age, sex, location?', 'asl', 'a[/,]? ?s[/,]? ?l'],
 ['IRC', 'On irc, what does a/s/l mean?', 'age/sex/location', 'Age[/,]? ?Sex[/,]? ?Location'],
 ['Impressive Fauna', 'What animal can live several weeks without its head?', 'cockroach', 'cockroach'],
-['Industry', 'South africa is the biggest producer and exporter of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'mohair', 'mohair'],
+['Industry', 'South africa is the biggest producer and exporter of ____________?', 'mohair', 'mohair'],
 ['Industry', 'Which country is the biggest producer and exporter of mohair?', 'South Africa', 'South Africa'],
 ['Intelligence', 'Who founded the SAS?', 'David Stirling', 'David Stirling'],
-['Interesting Fact', 'More people are killed by donkeys every year than are killed in \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'plane crashes', 'plane crashes'],
+['Interesting Fact', 'More people are killed by donkeys every year than are killed in ____________?', 'plane crashes', 'plane crashes'],
 ['Inventors', "Who invented 'bifocal' lenses for eyeglasses?", 'Benjamin Franklin', 'Benjamin Franklin'],
 ['Inventors', 'Who invented the most common projection for world maps?', 'Gerardus #Mercator#', '(Gerardus Mercator|Mercator)'],
 ['Jokes', 'In the old gag, where is Prince Albert?', 'In a #can#', '(In a can|can)'],
@@ -2356,7 +2361,7 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Literature', 'In the Dr Seuss books, which elephant hatched an egg?', 'Horton', 'Horton'],
 ['Literature', 'In which book did four ghosts visit Scrooge?', 'A Christmas Carol', 'A Christmas Carol'],
 ['Literature', "On what book was 'Three Days Of The Condor' based?", 'Six Days Of The Condor', '(Six|6) Days Of The condor'],
-['Literature', 'The Hardy Boys and \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Nancy Drew', 'Nancy Drew'],
+['Literature', 'The Hardy Boys and ____________?', 'Nancy Drew', 'Nancy Drew'],
 ['Literature', 'What Dr Seuss character steals Christmas?', 'Grinch', 'Grinch'],
 ['Literature', 'What controversial book did Germaine Greer write?', 'The #Female Eunuch#', '(The Female Eunuch|Female Eunuch)'],
 ['Literature', 'What shakespearean play refers to the date of epiphany?', 'Twelfth Night', 'Twelfth Night'],
@@ -2416,10 +2421,10 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Mathematics', 'What is the square root of one quarter?', 'one half', '((One |A |1 )?half|1/2)'],
 ['Measurement', 'What instrument measures walking distance?', 'pedometer', 'pedometer'],
 ['Medicien', 'In what body part does an osteopath specialise?', '#bone#s', '(bones|bone)'],
-['Medicine', 'A salt enema was given to children to rid them of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Threadworm', 'Threadworm'],
+['Medicine', 'A salt enema was given to children to rid them of ____________?', 'Threadworm', 'Threadworm'],
 ['Medicine', 'Heroin is the brand name of morphine once marketed by which pharmaceutical company?', 'Bayer', 'Bayer'],
 ['Medicine', 'In the early 20th century, rattlesnake venom was used to treat which illness?', 'epilepsy', 'epilepsy'],
-['Medicine', 'North American Indians ate watercress to dissolve gravel and stones in the \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'bladder', 'bladder'],
+['Medicine', 'North American Indians ate watercress to dissolve gravel and stones in the ____________?', 'bladder', 'bladder'],
 ['Medicine', 'North American Indians ate watercress to dissolve what in the bladder?', 'gravel and stones', '(gravel|stones)'],
 ['Medicine', "On what part of the body is an 'LTK procedure' performed?", 'eyes', 'eyes'],
 ['Medicine', 'What did North American Indians eat to dissolve gravel and stones in the bladder?', 'watercress', 'watercress'],
@@ -2490,7 +2495,7 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Movie Trivia', 'In which film was Goldie Hawn the body double for Julia Roberts?', 'Pretty Woman', 'Pretty Woman'],
 ['Movie Trivia', 'Juliette Binoche won an academy award for best supporting role in which film?', 'English Patient', 'English Patient'],
 ['Movie Trivia', 'Pancho was whose faithful sidekick?', "#Cisco Kid#'s", "(Cisco Kid's|Cisco Kid)"],
-['Movie Trivia', "The film 'The Wizard Of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd'?", 'Oz', 'Oz'],
+['Movie Trivia', "The film 'The Wizard Of ____________'?", 'Oz', 'Oz'],
 ['Movie Trivia', 'Tippi Hedren is best known for her lead role in which film?', 'The #Birds#', '(The Birds|Birds)'],
 ['Movie Trivia', 'Was Shirley Temple 21, 25 or 29 when she made her last film?', '21', '21'],
 ['Movie Trivia', 'What Marlon Brando film was widely banned?', 'Last Tango In Paris', 'Last Tango In Paris'],
@@ -2559,7 +2564,7 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Music', 'As what is Merle Haggard also known as?', 'Okie from Muskogee', 'Okie from Muskogee'],
 ['Music', "Besides the Stones, which group had the longest touring career until the founder's death in 1995?", 'The #Grateful Dead#', '(The Grateful Dead|Grateful Dead)'],
 ['Music', "Bill Justis was a studio musician when he recorded this 'sloppy' instrumental in october 1957?", 'Raunchy', 'Raunchy'],
-['Music', 'Country singer Vince \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Gill', 'Gill'],
+['Music', 'Country singer Vince ________?', 'Gill', 'Gill'],
 ['Music', "Crosby, Stills and Nash's debut album included a song about a girl and the colour of her eyes. Name that song.", 'Sweet Judy Blue Eyes', 'Sweet Judy Blue Eyes'],
 ['Music', 'For whom did Colonel Tom Parker act as manager?', '#Elvis# Presley', '(Elvis Presley|Elvis)'],
 ['Music', 'Formerly with Spencer Davis, he went on to form Traffic with Dave Mason. He is?', 'Steve Winwood', 'Steve Winwood'],
@@ -2582,10 +2587,10 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Music', 'In which opera does Leporello entertain a vengeful jilted lover?', 'Don Giovanni', 'Don Giovanni'],
 ['Music', 'Michael di Lorenzo was one of the lead dancers on which Michael Jackson video?', 'Beat It', 'Beat It'],
 ['Music', "R. Kelly sings: 'If I can see it then I can do it, if I just believe it, there's nothing to it'. What's the song title?", 'I Believe I Can Fly', 'I Believe I Can Fly'],
-['Music', "Randy Travis said his love was 'deeper than the \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd'?", 'holler', 'holler'],
+['Music', "Randy Travis said his love was 'deeper than the ____________'?", 'holler', 'holler'],
 ['Music', 'Savage Garden took 13 nominations and 10 wins at which awards?', '#ARIA# awards', '(ARIA awards|ARIA)'],
-['Music', 'Singer Paula \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Abdul', 'Abdul'],
-['Music', "Sung by Robert Palmer, '\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd to love'?", 'Addicted', 'Addicted'],
+['Music', 'Singer Paula ____________?', 'Abdul', 'Abdul'],
+['Music', "Sung by Robert Palmer, '____________ to love'?", 'Addicted', 'Addicted'],
 ['Music', 'What Don Mclean song laments the day Buddy Holly died?', 'American Pie', 'American Pie'],
 ['Music', 'What album holds the world record for copies sold?', 'Thriller', 'Thriller'],
 ['Music', 'What are the separators on a guitar neck called?', 'frets', 'frets'],
@@ -2683,10 +2688,10 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Music', "Who wrote the song 'Do They Know It's Christmas' with Bob Geldof?", 'Midge Ure', 'Midge Ure'],
 ['Music', "Who wrote the song 'Do They Know It's Christmas' with Midge Ure?", 'Bob Geldof', 'Bob Geldof'],
 ['Music', "Who's first release was 'Talking Heads 77'?", 'Psycho Killer', 'Psycho Killer'],
-['Music', '\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd in the name of love?', 'Stop', 'Stop'],
+['Music', '__________ in the name of love?', 'Stop', 'Stop'],
 ['Muthology', 'In Greek mythology, the riddle of what did Oedipus solve?', 'sphinx', 'sphinx'],
-['Mytholgy', 'Apollo was the Greek god of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'prophecy and archery', '(prophecy (and|&) archery|archery (and|&) prophecy)'],
-['Mythology', 'Dionysus was the greek god of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Wine', 'Wine'],
+['Mytholgy', 'Apollo was the Greek god of ____________?', 'prophecy and archery', '(prophecy (and|&) archery|archery (and|&) prophecy)'],
+['Mythology', 'Dionysus was the greek god of ____________?', 'Wine', 'Wine'],
 ['Mythology', 'In Egyptian mythology, what is the life force called?', 'Ka', 'Ka'],
 ['Mythology', 'In Egyptian mythology, who is known as the god of the desert?', 'Ash', 'Ash'],
 ['Mythology', 'In Egyptian mythology, who is the god of the underworld?', 'Osiris', 'Osiris'],
@@ -2712,9 +2717,9 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Mythology', 'In Greek mythology, who was the only mortal gorgon?', 'Medusa', 'Medusa'],
 ['Mythology', 'In Greek mythology, who was the son of Peleus and Thetis?', 'Achilles', 'Achilles'],
 ['Mythology', "In Greek mythology, who were Achilles' parents?", 'Peleus and Thetis', '(Peleus (and |& )Thetis|Thetis (and |& )Peleus)'],
-['Mythology', 'Neptune was the Roman god of the \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'sea', 'sea'],
-['Mythology', 'Persephone was the Greek goddess of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'spring', 'spring'],
-['Mythology', 'Poseidon was the Greek god of the \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'sea', 'sea'],
+['Mythology', 'Neptune was the Roman god of the ____________?', 'sea', 'sea'],
+['Mythology', 'Persephone was the Greek goddess of ____________?', 'spring', 'spring'],
+['Mythology', 'Poseidon was the Greek god of the ____________?', 'sea', 'sea'],
 ['Mythology', 'What mythical Scottish town appears for one day every 100 years?', 'Brigadoon', 'Brigadoon'],
 ['Mythology', 'Which Norse god had the Valkyries as handmaidens?', 'Odin', 'Odin'],
 ['Mythology', 'Which Titan had snakes for hair?', 'Medusa', 'Medusa'],
@@ -2742,7 +2747,7 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Nature', 'What has approximately 1/4 pound of salt in every gallon?', 'seawater', 'seawater'],
 ['Nature', 'What is the heart rate of the blue whale? (in beats per minute)', 'nine', '(nine|9)'],
 ['Nature', 'When does the human uterus expand 500 times its normal size?', 'during #pregnancy#', '(during pregnancy|pregnancy)'],
-['Nomenclature', 'Eras are divided into units called \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'periods', 'periods'],
+['Nomenclature', 'Eras are divided into units called ________________?', 'periods', 'periods'],
 ['Not Telling!', 'What can be either new, last or gibbous?', 'The #moon#', '(The moon|moon)'],
 ['Nuresry rhymes', 'Who sat on her tuffet?', 'Little Miss Muffet', 'Little Miss Muffet'],
 ['Nursery Rhymes', "In the song 'Skip To My Lou', in what beverage are the flies?", 'Buttermilk', 'Buttermilk'],
@@ -2773,7 +2778,7 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Olympics', 'Who did Zola Budd trip in the 1984 Los Angeles Olympics?', 'Mary Decker', 'Mary Decker'],
 ['Olympics', 'Who tripped Mary Decker in the 1984 Los Angeles Olympics?', 'Zola Budd', 'Zola Budd'],
 ['One For The Trekkies', 'How many episodes were there in the original Star Trek series?', 'seventy five', '(seventy five|75)'],
-['One For The Trekkies', "In 'Star Trek' Jean \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd Picard?", 'Luc', 'Luc'],
+['One For The Trekkies', "In 'Star Trek' Jean ____________ Picard?", 'Luc', 'Luc'],
 ['One For The Trekkies', "In 'Star Trek', what is Data's rank?", 'Lieutenant Commander', 'Lieutenant Commander'],
 ['One For The Trekkies', "In 'Star Trek', who was the captain of the 'Enterprise C'?", 'Rachel Garret', 'Rachel Garret'],
 ['One For The Trekkies', 'What is the registry number of the enterprise in the original Star Trek?', 'NCC 1701', 'NCC ?1701'],
@@ -2802,7 +2807,7 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Psychology', 'Of what did Sigmund Freud have a morbid fear?', 'ferns', 'ferns'],
 ['Psychology', "Who wrote 'Sexual Behavior In The Human Male' in 1948?", 'Alfred #Kinsey#', '(Alfred Kinsey|Kinsey)'],
 ['Psychology', 'With what branch of medicine is Franz Mesmer associated?', 'hypnotism', 'hypnotism'],
-['Railways', 'New York has the longest subway system in \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'North #America#', '(North America|America)'],
+['Railways', 'New York has the longest subway system in ____________?', 'North #America#', '(North America|America)'],
 ['Railways', 'What city has the most underground stations in the world?', 'New York', 'New York'],
 ['Recorded Media', "Who is the spokesperson for the exercise tapes 'Tae Bo'?", 'Billy Blanks', 'Billy Blanks'],
 ['Recreational Chemistry', 'What is the common name for lysergic acid diethylamide?', 'LSD', 'L.?S.?D.?'],
@@ -2816,10 +2821,10 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Religion', 'What religious movement was founded by William Booth?', 'Salvation Army', 'Salvation Army'],
 ['Religion', 'Who founded the Salvation Army?', 'William Booth', 'William Booth'],
 ['Sad, But True', 'What are 35% of people using personal ads for dating?', 'married', 'married'],
-['Saints', 'St Frideswide the patron saint \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Oxford', 'Oxford'],
-['Saints', 'St Patrick the patron saint of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Ireland', 'Ireland'],
-['Saints', 'St. Bernard the patron saint of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'skiers', 'skiers'],
-['Saints', 'St. Christopher the patron saint of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'travellers', 'travellers'],
+['Saints', 'St Frideswide the patron saint ____________?', 'Oxford', 'Oxford'],
+['Saints', 'St Patrick the patron saint of ____________?', 'Ireland', 'Ireland'],
+['Saints', 'St. Bernard the patron saint of __________?', 'skiers', 'skiers'],
+['Saints', 'St. Christopher the patron saint of ____________?', 'travellers', 'travellers'],
 ['Saints', 'Who is the patron saint of skiers?', 'St. Bernard', '(Saint |St.? ?)Bernard'],
 ['Satellites', 'What country has the third most satellites in orbit?', 'France', 'France'],
 ['Science', 'As what is minus forty celcius the same?', 'minus forty fahrenheit', '(minus forty fahrenheit|-40 ?f)'],
@@ -2828,7 +2833,7 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Science', 'In what does a rhinologist specialise?', 'human #nose#', '(human nose|nose)'],
 ['Science', 'In what was the strength of early lasers measured?', 'gillettes', 'gillettes'],
 ['Science', 'In which branch of science are monocotyledon and dicotyledon terms?', 'Botany', 'Botany'],
-['Science', 'Meteorology is the study of \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'weather', 'weather'],
+['Science', 'Meteorology is the study of ____________?', 'weather', 'weather'],
 ['Science', 'Of what did Aristotle say all things were made up?', 'air, earth, fire, and water', '(air|earth|fire|water),? ?(air|earth|fire|water),? ?(air|earth|fire|water),? ?(and )?(air|earth|fire|water)'],
 ['Science', 'Of what is genetics the study?', 'heredity', 'heredity'],
 ['Science', 'Paedology is the study of ...... ?', 'soil', 'soil'],
@@ -2882,30 +2887,30 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Show Biz', 'Who married Mutt Lange?', 'Shania Twain', 'Shania Twain'],
 ['Show Biz', 'Who married Shania Twain?', 'Robert "Mutt" Lange', '(Robert|Mutt) Lange'],
 ['Show Biz', "Who said 'you'd be surprised how much it costs to look this cheap'?", 'Dolly Parton', 'Dolly Parton'],
-['Similes', 'As neat as a \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'pin', 'pin'],
+['Similes', 'As neat as a ____________?', 'pin', 'pin'],
 ['Space', 'In which state is the Houston Space Centre?', 'Texas', 'Texas'],
 ['Space', 'What is the biggest criterion for prospective astronauts?', 'eyesight', 'eyesight'],
 ['Sport', 'As who is Cassius Clay now known?', 'Mohammed Ali', 'm[uo]hamm[ae]d ali'],
-['Sport', 'Baseball: The Atlanta \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Braves', 'Braves'],
-['Sport', 'Baseball: The Boston \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Red Sox', 'Red Sox'],
-['Sport', 'Baseball: The Chicago \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Cubs', 'Cubs'],
-['Sport', 'Baseball: The Cleveland \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Indians', 'Indians'],
-['Sport', 'Baseball: The Florida \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Marlins', 'Marlins'],
-['Sport', 'Baseball: The Houston \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Astros', 'Astros'],
-['Sport', 'Baseball: The Kansas City \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Royals', 'Royals'],
-['Sport', 'Baseball: The Milwaukee \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Brewers', 'Brewers'],
-['Sport', 'Baseball: The New York \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Mets', 'Mets'],
-['Sport', 'Baseball: The Philadelphia \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Phillies', 'Phillies'],
-['Sport', 'Baseball: The St. Louis \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Cardinals', 'Cardinals'],
-['Sport', 'Baseball: The Texas \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Rangers', 'Rangers'],
-['Sport', 'Basketball: The Denver \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Nuggets', 'Nuggets'],
-['Sport', 'Football: The Chicago \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Bears', 'Bears'],
-['Sport', 'Football: The Dallas \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Cowboys', 'Cowboys'],
-['Sport', 'Football: The Denver \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Broncos', 'Broncos'],
-['Sport', 'Football: The Pittsburgh \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Steelers', 'Steelers'],
-['Sport', 'Football: The San Diego \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Chargers', 'Chargers'],
-['Sport', 'Hockey: The Calgary \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Flames', 'Flames'],
-['Sport', 'Hockey: The Toronto \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Maple Leafs', 'Maple Leafs'],
+['Sport', 'Baseball: The Atlanta ____________?', 'Braves', 'Braves'],
+['Sport', 'Baseball: The Boston ____________?', 'Red Sox', 'Red Sox'],
+['Sport', 'Baseball: The Chicago ____________?', 'Cubs', 'Cubs'],
+['Sport', 'Baseball: The Cleveland ____________?', 'Indians', 'Indians'],
+['Sport', 'Baseball: The Florida ____________?', 'Marlins', 'Marlins'],
+['Sport', 'Baseball: The Houston ____________?', 'Astros', 'Astros'],
+['Sport', 'Baseball: The Kansas City ____________?', 'Royals', 'Royals'],
+['Sport', 'Baseball: The Milwaukee ____________?', 'Brewers', 'Brewers'],
+['Sport', 'Baseball: The New York ____________?', 'Mets', 'Mets'],
+['Sport', 'Baseball: The Philadelphia ____________?', 'Phillies', 'Phillies'],
+['Sport', 'Baseball: The St. Louis ____________?', 'Cardinals', 'Cardinals'],
+['Sport', 'Baseball: The Texas ____________?', 'Rangers', 'Rangers'],
+['Sport', 'Basketball: The Denver ____________?', 'Nuggets', 'Nuggets'],
+['Sport', 'Football: The Chicago ____________?', 'Bears', 'Bears'],
+['Sport', 'Football: The Dallas ____________?', 'Cowboys', 'Cowboys'],
+['Sport', 'Football: The Denver ________?', 'Broncos', 'Broncos'],
+['Sport', 'Football: The Pittsburgh ____________?', 'Steelers', 'Steelers'],
+['Sport', 'Football: The San Diego ____________?', 'Chargers', 'Chargers'],
+['Sport', 'Hockey: The Calgary ______________?', 'Flames', 'Flames'],
+['Sport', 'Hockey: The Toronto ____________?', 'Maple Leafs', 'Maple Leafs'],
 ['Sport', 'How many dimples does a golf ball have?', 'three hundred and thirty six', '(three hundred (and |& )?thirty[- ]six|336)'],
 ['Sport', 'How many sides does a baseball homeplate have?', 'five', '(five|5)'],
 ['Sport', 'How many stitches are on a regulation baseball?', '108', '(One hundred (and )?eight|108)'],
@@ -2918,7 +2923,7 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Sport', "In what sport is the term 'terminal speed' used?", 'Drag Racing', 'Drag Racing'],
 ['Sport', 'Other than England, which european country took part in the 1996 cricket World Cup?', 'Netherlands', 'Netherlands'],
 ['Sport', 'Other than skiing, which sport takes place on a piste?', 'fencing', 'fencing'],
-['Sport', 'The first cricket one-day international was held between england and \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Australia', 'Australia'],
+['Sport', 'The first cricket one-day international was held between england and ____________?', 'Australia', 'Australia'],
 ['Sport', 'What are the two basic aids in orienteering?', 'map and compass', '(map|compass) (and|&) (map|compass)'],
 ['Sport', "What is soccer star Pele's real name?", 'Edson Arantes do Nascimento', 'Edson Arantes do Nascimento'],
 ['Sport', 'What is the maximum number of clubs a golfer may use in a round?', 'fourteen', '(fourteen|14)'],
@@ -2974,7 +2979,7 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['TV Trivia', 'Kelsey Grammer sings and plays the theme song for which TV show?', 'Frasier', 'Frasier'],
 ['TV Trivia', "On 'Dragnet', who played officer Bill Gannon?", 'Harry Morgan', 'Harry Morgan'],
 ['TV Trivia', "On 'The Lucy Show', who played Vivian Bagley?", 'Vivian Vance', 'Vivian Vance'],
-['TV Trivia', "TV series: 'American \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd'?", 'Bandstand', 'Bandstand'],
+['TV Trivia', "TV series: 'American ____________'?", 'Bandstand', 'Bandstand'],
 ['TV Trivia', "To which elemetary school did TV's 'Brady Bunch' go?", '#Dixie Canyon# Elementary', '(Dixie Canyon Elementary|Dixie Canyon)'],
 ['TV Trivia', 'What TV network features programming just for children?', 'Nickelodeon', 'Nickelodeon'],
 ['TV Trivia', 'What TV series from 1970-1974 starred Susan Dey?', 'Partridge Family', 'Partridge Family'],
@@ -3018,7 +3023,7 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Travel', 'Which city is served by Ringway Airport?', 'Manchester', 'Manchester'],
 ['Trivia', "5% of Canadians don't know the first seven words of the Canadian anthem, but know the first nine words of which anthem?", 'The #American# anthem', '(The American anthem|American)'],
 ['Trivia', "7% of Americans don't know the first nine words of the American anthem, but know the first seven words of which anthem?", '#Canadian# anthem', '(Canadian anthem|Canadian)'],
-['Trivia', 'Betsy Ross is the only real person to ever have been the head of a \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?', 'Pez dispenser', 'Pez dispenser'],
+['Trivia', 'Betsy Ross is the only real person to ever have been the head of a ____________?', 'Pez dispenser', 'Pez dispenser'],
 ['Trivia', 'How much do nine pennies weigh?', 'one ounce', '(one |1 ?)(ounce|oz)'],
 ['Trivia', 'Like what can a fully ripened cranberry be dribbled?', 'basketball', 'basketball'],
 ['Trivia', 'Of what are throat, foxing and platform parts?', 'shoe', 'shoe'],
@@ -3028,8 +3033,8 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Trivia', 'What keeps one from crying when peeling onions?', 'chewing gum', 'chewing gum'],
 ['Trivia', 'Who is the only real person to ever have been the head on a Pez dispenser?', 'Betsy Ross', 'Betsy Ross'],
 ['Tunnels', 'How long is the longest tunnel? (in kms)', 'one hundred and sixty nine', '(one hundred (and )?sixty[- ]nine|169)'],
-['Tunnels', "The world's longest tunnel connects Delaware and \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?", 'New York', 'New York'],
-['Tunnels', "The world's longest tunnel connects New York and \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd?", 'Delaware', 'Delaware'],
+['Tunnels', "The world's longest tunnel connects Delaware and ____________?", 'New York', 'New York'],
+['Tunnels', "The world's longest tunnel connects New York and ____________?", 'Delaware', 'Delaware'],
 ['Tunnels', "What is the world's longest tunnel?", 'The #Water Supply# Tunnel', '(The Water Supply Tunnel|Water Supply)'],
 ['US Aeronautics', 'Where is the Kennedy Space Centre?', '#Cape Canaveral#, Florida', '(Cape Canaveral, Florida|Cape Canaveral)'],
 ['United States', 'In the USA, for how many years is a patent good?', 'seventeen', '(seventeen|17)'],
@@ -3056,7 +3061,7 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Wines', 'Good Rhine wines are bottled in what colour bottles?', 'brown', 'brown'],
 ['Woodchucks', 'How much wood can a woodchuck chuck if a woodchuck could chuck wood?', 'All the wood that a woodchuck could if a woodchuck could chuck wood', 'All the wood that a woodchuck could if a woodchuck could chuck wood'],
 ['Word Association', 'Which word is related to these three: rat, blue, cottage?', 'cheese', 'cheese'],
-['Word Pairs', 'Cattle are bovine, sheep are \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd ?', 'ovine', 'ovine'],
+['Word Pairs', 'Cattle are bovine, sheep are ____________ ?', 'ovine', 'ovine'],
 ["Words containing 'for'", 'Pardon?', 'FORgive', 'FORgive'],
 ['World Affairs', 'What arabian peninsula nations recently merged under communist leadership?', 'Yemen', 'Yemen'],
 ['World Climate', 'What is a calm ocean region near the equator called?', 'doldrums', 'doldrums'],
@@ -3124,7 +3129,7 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Astrophysics', 'What is the heaviest element that can be formed by regular fusion reactions in the core of a star?', 'iron', 'iron'],
 ['BANANAS', 'A cluster or bunch of bananas is called a ?', 'hand', 'hand'],
 ['BANANAS', 'Individual bananas are called ?', 'fingers', 'fingers'],
-['Banking', 'What was the first credit card called?', 'Diner\xb4s Club', 'Diner\xb4s Club'],
+['Banking', 'What was the first credit card called?', "Diner's Club", "Diner's Club"],
 ['Beverages', 'This drink is made from espresso coffee, steamed milk and chocolate.', 'Mocha', 'Mocha'],
 ['Bibile', "What 'S' was a king of israel who was famous for his wisdom?", 'Solomon', 'Solomon'],
 ['Bible', 'How many animals of each kind did Moses take onto the ark?', '#None# (It Was Noah Not Moses)', '(0|None|Nill|Zero)'],
@@ -3192,7 +3197,7 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Chemistry', 'Which substance has the chemical formula HNO3?', 'Nitric Acid', 'Nitric Acid'],
 ['Chemistry', 'Which substance has the chemical formula NaOH?', 'Sodium Hydroxide', 'Sodium Hydroxide'],
 ['Church', 'According to popular belief brides walk to the what in the church? (not the aisle)', 'The nave of the church', 'The nave of the church'],
-['Clich\xe9s', 'The pen is mightier then the ......', 'sword', 'sword'],
+['Cliches', 'The pen is mightier then the ......', 'sword', 'sword'],
 ['Cocktails', 'To make Drambuie, you add some honey to what type of whiskey?', 'Scotch', 'Scotch'],
 ['Cocktails', 'Vodka or gin, ____ juice and sugar make a gimlet.', 'lime', 'lime'],
 ['Cold things', 'What percentage of Antarctica is ice?', 'ninty eight', '(98|Ninty eight)'],
@@ -3339,7 +3344,7 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Geography', 'What is the capital of Wales?', 'Cardiff', 'Cardiff'],
 ['Geography', 'What is the capital of Wales??', 'Cardiff', 'Cardiff'],
 ['Geography', 'What is the capital of the Italian province Lazio?', 'Rome', 'Rome'],
-['Geography', 'What is the capital of the overseas department and administrative region of France, R\xe9union?', 'Saint-Denis', '(saint|st|st\\.)[- ]denis'],
+['Geography', 'What is the capital of the overseas department and administrative region of France, Reunion?', 'Saint-Denis', '(saint|st|st\\.)[- ]denis'],
 ['Geography', 'What is the capitol of Iceland?', 'Reykjavik', 'Reykjavik'],
 ['Geography', 'What is the highest mountain in Europe?', 'Mont Blanc', 'Mont Blanc'],
 ['Geography', 'What is the highest mountain in the Appalachian range?', 'Mt. Mitchell', '(mt|mt\\.|mount) mitchell'],
@@ -3632,7 +3637,7 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Music', 'In the 60s Mokees Song Here comes Tommorow who does Davey Jones say he Loves?', 'Sandra and Mary', '(Sandra(,| and| +|&) Mary|Mary(,| and| +|&) Sandra)'],
 ['Music', 'In the Gene Pitney how many hours was it from Tulsa?', '24', '24'],
 ['Music', 'In which London recording studios did The Beatles record the majority of their work?', 'Abbey Road', 'Abbey Road'],
-['Music', "On what LP Cover can we read the words 'Welcome Rolling Stones'?", 'Sergeant Pepper\xb4s Lonely Hearts Club Band', 'Sergeant Pepper\xb4s Lonely Hearts Club Band'],
+['Music', "On what LP Cover can we read the words 'Welcome Rolling Stones'?", "Sergeant Pepper's Lonely Hearts Club Band", "Sergeant Pepper's Lonely Hearts Club Band"],
 ['Music', 'Paul Mccartney played these instruments?', 'bass guitar and piano', 'bass guitar and piano'],
 ['Music', 'Russian modernist Igor ---------', 'Stravinsky', 'Stravinsky'],
 ['Music', 'Singing without instrumental back up is called what?', 'Capella', 'Capella'],
@@ -3648,8 +3653,6 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Music', 'This term means to play crisply, with the notes separated?', 'staccato', 'staccato'],
 ['Music', 'This term means to play moderately slow and gracefully?', 'adagio', 'adagio'],
 ['Music', 'This term means to play smoothly.', 'legato', 'legato'],
-['Music', 'This term means to play smoothly?', 'Legato', 'Legato'],
-['Music', 'This term means to play smoothly?', 'legato', 'legato'],
 ['Music', 'This was the first video to play on MTV?', 'Video Killed the Radio Star', 'Video Killed the Radio Star'],
 ['Music', 'To gradually decrease in volume.', 'decrescendo', 'decrescendo'],
 ['Music', 'To gradually decrease in volume?', 'Decrescendo', 'Decrescendo'],
@@ -3740,7 +3743,7 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Optics', 'What colour do you get when you mix blue and yellow together?', 'Green', 'Green'],
 ['Palindromes', 'Complete the Palindrome: satan, oscillate my metallic ________', 'sonatas', 'sonatas'],
 ['Paper', 'What size is A-0 paper?', 'one Square Meter', 'one Square Meter'],
-['People', 'Who is David John Cornwell better known as?', 'John Le Carr\xe9', 'John Le Carr\xe9'],
+['People', 'Who is David John Cornwell better known as?', 'John Le Carre', 'John Le Carre'],
 ['Periodic Table', 'What is the first element in alphabetical order?', 'Actinium', 'Actinium'],
 ['Periodic table', 'What is the last element in alphabetical order?', 'Zirconium', 'Zirconium'],
 ['Philisophy', 'In addition to writing novels, Jonathan Swift also wrote social and philosophical commentary. In one satirical piece, "A Modest Proposal," what did he suggest should be made out of the skin of children?', 'gloves', 'gloves'],
@@ -3831,26 +3834,26 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Science', 'In the electomagnetic spectrum, what comes between X-rays and Light?', 'ultraviolet light', 'ultraviolet light'],
 ['Science', 'On the Moh Hardness scale what has a hardness of 10?', 'Diamond', 'Diamond'],
 ['Science', 'Sound travels fastest through which state of matter?', 'solid', 'solid'],
-['Science', 'The Carloline Institute of Stockholm won the nobel prize for what?', 'Physiology and Medicine', 'Physiology and Medicine'],
+['Science', 'The Caroline Institute of Stockholm won the nobel prize for what?', 'Physiology and Medicine', 'Physiology and Medicine'],
 ['Science', 'The study of the size, composition and distribution of the human population.', 'demography', 'demography'],
 ['Science', 'What 2 planets do not have moons?', 'Mercury and Venus', 'Mercury and Venus'],
-['Science', 'What did Einstein get the nobel prize for?', 'The Photelectric effect', 'The Photelectric effect'],
+['Science', 'What did Einstein get the nobel prize for?', 'The Photoelectric effect', 'The Photoelectric effect'],
 ['Science', 'What does LPG stands for?', 'Liquid Petroleum Gas', 'Liquid Petroleum Gas'],
-['Science', 'What engery does an Eolic power station?', 'Wind Power', 'Wind Power'],
-['Science', 'What is Cytology the study of?', 'The Structure of Cells', 'The Structure of Cells'],
+['Science', 'What energy does an Eolic power station?', 'Wind Power', 'Wind Power'],
+['Science', 'What is cytology the study of?', 'The Structure of Cells', 'The Structure of Cells'],
 ['Science', 'What is the chief constituent of air?', 'Nitrogen', 'Nitrogen'],
 ['Science', 'What is the fourth state of matter?', 'liquid crystals', "liquid crystal'?s"],
 ['Science', 'What is the second hardest gem after diamond?', 'sapphire', 'sapphire'],
 ['Science', 'What science does Professor Stephen Hawking study and teach?', 'astrophysics', 'astrophysics'],
-['Science', 'What two planets dont have moons?', 'Mercury and Venus', '(Mercury(,| and| +| &) Venus|Venus(,| and| +| &) Mercury)'],
+['Science', "What two planets don't have moons?", 'Mercury and Venus', '(Mercury(,| and| +| &) Venus|Venus(,| and| +| &) Mercury)'],
 ['Science', 'What would a Conchologist be intrested in?', 'shells', 'shells'],
 ['Science', 'Who devised the periodic table of elements?', 'Mendelev', 'Mendelev'],
 ['Science', 'Who discovered Vitamin C?', 'Linus Pauling', 'Linus Pauling'],
 ['Science', 'Who invented the centigrade scale?', 'Anders Celsius', 'Anders Celsius'],
-['Science', 'Who is the only person two win two nobel prizes?', 'Marie Curie', '(Madamme )?(Marie )?Curie'],
+['Science', 'Who is the only person to win two nobel prizes?', 'Marie Curie', '(Madamme )?(Marie )?Curie'],
 ['Science', 'Who made the first phone call to the moon?', 'Richard Nixon', 'Richard Nixon'],
 ['Science', 'what Vitamin is Thiamine?', 'Vitamin B1', 'Vitamin B1'],
-['Science', 'what period Came after the triassic?', 'Jurassic', 'Jurassic'],
+['Science', 'what period came after the triassic?', 'Jurassic', 'Jurassic'],
 ['Shakespeare', "Whose ghost appears at the dinner table in 'Macbeth'?", "Banquo's", "Banquo'?s"],
 ['Shapes', 'A "gyre" is another term for what shape?', 'coil', 'coil'],
 ['Show Biz', "What is Kenny G's real surname?", 'Gorelick', 'Gorelick'],
@@ -3858,20 +3861,20 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Similes', 'As light as a .......', 'feather', 'feather'],
 ['Similes', 'As old as the .....?', 'hills', "hill'?s"],
 ['Similes', 'As old as the ...?', 'hills', 'hills'],
-['Space', 'How many Astronaughs crewed the Gemini series of Spacecraft?', 'Two', 'Two'],
+['Space', 'How many astronauts crewed the Gemini series of Spacecraft?', 'Two', 'Two'],
 ['Space', 'The Sun is how much more dense than water?', '1.41', '1.41'],
 ['Space', 'What is a Blue Moon?', '2nd full moon in 1 month', '2nd full moon in 1 month'],
-['Space', 'What is the only man-made structure on earth that can been seen from space?', 'Great Wall Of China', 'Great Wall Of China'],
-['Space', 'What lies between mars and jupiter?', 'the asteroid belt', 'the asteroid belt'],
+['Space', 'What is the only man-made structure on earth that can be seen from space?', 'Great Wall Of China', 'Great Wall Of China'],
+['Space', 'What lies between Mars and Jupiter?', 'the asteroid belt', 'the asteroid belt'],
 ['Space Travel', 'Who was the first man in space?', 'Yuri #Gagarin#', '(Yuri Gagarin|Gagarin)'],
-['Sport', 'How many hurdles in a 400m hurdle race?', '10', '10'],
-['Sport', 'How many pockets on a standard snooker table?', '6', '6'],
-['Sport', 'In american football where is the Orange Bowl?', 'Miami', 'Miami'],
+['Sport', 'How many hurdles are in a 400m hurdle race?', '10', '10'],
+['Sport', 'How many pockets are on a standard snooker table?', '6', '6'],
+['Sport', 'In American football, where is the Orange Bowl?', 'Miami', 'Miami'],
 ['Sport', 'In baseball, how many outs are there in an inning?', 'six', '(six|6)'],
 ['Sport', "In what sport would you find a 'Sukahara'?", 'Gymnastics', 'Gymnastics'],
 ['Sport', 'In which country is the famous Maracana stadium?', 'brazil', 'brazil'],
 ['Sport', 'Polo consists of 8 periods called what?', 'Chukkers', 'Chukkers'],
-['Sport', 'The greyhound, along with this smaller relative, is used in the sport of coursing?', 'Whippet', 'Whippet'],
+['Sport', 'The greyhound, along with this smaller relative, is used in the sport of coursing.', 'Whippet', 'Whippet'],
 ['Sport', "The name of the only weapon in women's fencing?", 'foil', 'foil'],
 ['Sport', 'The two tire manufacturers in F1 are Bridgestone and ........?', 'Michelin', 'Michelin'],
 ['Sport', 'This football team was formerly known as the Frankford Yellow Jackets?', 'Philadelphia Eagles', 'Philadelphia Eagles'],
@@ -3936,50 +3939,67 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['quote', 'Who said "The great masses of the people will more easily fall victims to a big lie than to a small one."?', 'Adolf Hitler', 'Hitler'],
 ['quote', 'Who said "The great masses of the people will more easily fall victims to a big lie than to a small one."?', 'Adolf Hitler', 'Adolf Hitler'],
 ['silly Americans', 'Teddy Roosevelt banned the a what from the White House for environmental reasons?', 'Christmas Tree', 'Christmas Tree'],
-['silly flags', 'Which nation has an AK-47 assault rifle on its flag?', 'Mozambique', 'Mozambique'],
-['stupid Fish', 'A goldfish has a memory of how many seconds?', 'three', '(3|one)'],
-['stupid Rivers', 'The only river that flows both north and south of the equator is the?', 'congo', 'congo'],
-['useless Stuff', 'The only place in the world where one can see the sun rise on the Pacific Ocean and set on the Atlantic is in which country?', 'Panama', 'Panama'],
+['Flags', 'Which nation has an AK-47 assault rifle on its flag?', 'Mozambique', 'Mozambique'],
+['Fish', 'A goldfish has a memory of how many seconds?', 'three', '(3|three)'],
+['Rivers', 'What is the only river that flows both north and south of the Equator?', 'congo', 'congo'],
+['General Knowledge', 'The only place in the world where one can see the sun rise on the Pacific Ocean and set on the Atlantic is in which country?', 'Panama', 'Panama'],
 ['Films', 'Who is Julia Wells Better known as?', 'Julie Andrews', 'Julie Andrews']];
 
 _q = []
 _question_num = 0
-_additional_pause = 0
 
-scores = { }
+showProgress = false
+mute = false
+overall_scores = { }
+victory_scores = { }
+current_scores = overall_scores
+
+pause_duration = 0
+trivia_type_flag = FLAG_FREE_PLAY
+trivia_num_questions = 20
+
 function loadScores() {
   var scoresText = localStorage[SAVE_STRING];
+  var victoryText = localStorage[VICTORY_STRING];
   if (scoresText) {
-    scores = JSON.parse(scoresText);
+    overall_scores = JSON.parse(scoresText);
   }
   else {
-    scores = { };
+    overall_scores = { };
   }
-  return scores;
+  if (victoryText) {
+	victory_scores = JSON.parse(victoryText);
+  }
+  else {
+	victory_scores = { };
+  }
 }
-function saveScores(scores) {
-  localStorage[SAVE_STRING] = JSON.stringify(scores);
+function saveScores() {
+  localStorage[SAVE_STRING] = JSON.stringify(overall_scores);
+  localStorage[VICTORY_STRING] = JSON.stringify(victory_scores);
 }
 function userInfoStr(user) {
-  return user + " (" + (scores[user] != null ? scores[user] : "0") + ")";
+  return user + " (" + (current_scores[user] != null ? current_scores[user] : "0") + ")";
 }
-function computeTopScoresStr(scores, num) {
+function computeTopUsers(num) {
   var scoresArray = [ ];
-  for (var user in scores) {
-    scoresArray.push([user, scores[user]]);
+  for (var user in current_scores) {
+    scoresArray.push([user, current_scores[user]]);
   }
   scoresArray.sort(function(a, b) { return -(a[1] - b[1]); });
-  var buildScores = "HIGH SCORES: ";
-  buildScores += scoresArray.map(i => userInfoStr(i[0])).slice(0, num).join(", ");
-  return buildScores;
+  return scoresArray.map(i => i[0]).slice(0, num);
+}
+function computeTopScoresStr(num) {
+  var scoresArray = computeTopUsers(num);
+  return scoresArray.map(i => userInfoStr(i)).join(", ");
 }
 function increaseScores(users) {
   for (var i=0; i<users.length; ++i) {
     var user = users[i];
-    if (scores[user] == null) {
-      scores[user] = 0;
+    if (current_scores[user] == null) {
+      current_scores[user] = 0;
     }
-    scores[user] += (i < SCORE_ORDER_TABLE.length ? SCORE_ORDER_TABLE[i] : BASE_SCORE);
+    current_scores[user] += (i < SCORE_ORDER_TABLE.length ? SCORE_ORDER_TABLE[i] : BASE_SCORE);
   }
 }
 /**
@@ -3999,9 +4019,10 @@ function shuffle(a) {
 }
 
 function getAdditionalPause() {
-  if (_additional_pause > 0) {
-    var toReturn = _additional_pause;
-    _additional_pause = 0;
+  if (pause_duration > 0) {
+    var toReturn = pause_duration;
+    pause_duration = 0;
+    console.log("Pausing for an additional " + (toReturn / 1000.) + " seconds!");
     return toReturn;
   }
   return 0;
@@ -4011,23 +4032,27 @@ function sendMessage(message) {
   if (truncated_message.length > MAX_MESSAGE_LENGTH) {
     truncated_message = truncated_message.substr(0, MAX_MESSAGE_LENGTH-3) + "...";
   }
-  unsafeWindow.$(".text-counter-input").val(truncated_message).trigger("submit");
+  if (!mute) {
+	unsafeWindow.$(".text-counter-input").val(truncated_message).trigger("submit");
+  }
 }
 function printQuestion(index) {
-  sendMessage("CATEGORY: " + _q[index][0] + " || " + _q[index][1]);
+  sendMessage((showProgress ? "(" + (index+1) + "/" + _q.length + ") " : "")
+			   + "CATEGORY: " + q[_q[index]][0] + " || " + q[_q[index]][1]);
 }
-function poseSingleQuestion(index, timeout) {
-  printQuestion(index);
+function poseSingleQuestion(q_index, timeout) {
+  index = _q[q_index];
+  printQuestion(q_index);
   var usersCorrect = [ ];
   setTimeout(function() {
     var answers = pullNewAnswers();
-    usersCorrect = judgeAnswers(_q[index][3], answers);
+    usersCorrect = judgeAnswers(q[index][3], answers);
     usersCorrect = usersCorrect.filter(function(item, pos, self) {
       return self.indexOf(item) == pos;
     });
     increaseScores(usersCorrect);
-    saveScores(scores);
-    var buildAnswerMessage = "The answer was " + _q[index][2].replace(/#/g, "") + "! Correct users: ";
+    saveScores();
+    var buildAnswerMessage = "The answer was " + q[index][2].replace(/#/g, "") + "! Correct users: ";
     buildAnswerMessage += usersCorrect.map(i => userInfoStr(i)).join(", ");
     if (usersCorrect.length == 0) {
       buildAnswerMessage += "(nobody) :(";
@@ -4036,25 +4061,39 @@ function poseSingleQuestion(index, timeout) {
   }, timeout);
 }
 
-function _poseSeveralQuestions(indices, timeout, breaktime, currentIndex) {
-  if (currentIndex >= indices.length) {
-    return;
+function _poseSeveralQuestions(timeout, breaktime, breakfn, currentIndex) {
+  if (currentIndex >= _q.length) {
+	if (breakfn != null) {
+	  return breakfn();
+	}
+	return;
   }
-  poseSingleQuestion(indices[currentIndex], timeout);
+  else if (trivia_type_flag != FLAG_FREE_PLAY) {
+	if (trivia_type_flag == FLAG_STANDARD) {
+	  console.log("Starting standard trivia with " + trivia_num_questions + " questions!");
+	  simpleTriviaContest(q, trivia_num_questions);
+	  return;
+	}
+	else {
+	  console.log("Unknown trivia type flag " + trivia_type_flag + "! (Ignoring.)");
+	  trivia_type_flag = FLAG_FREE_PLAY;
+	}
+  }
+  poseSingleQuestion(currentIndex, timeout);
   _question_num++;
   var adj_breaktime = timeout + breaktime + getAdditionalPause();
   if (_question_num % QUESTIONS_PER_SCORE_DISPLAY == 0) {
     setTimeout(function() {
-      sendMessage(computeTopScoresStr(scores, NUM_SCORES_TO_DISPLAY));
+      sendMessage("HIGH SCORES: " + computeTopScoresStr(NUM_SCORES_TO_DISPLAY));
     }, adj_breaktime);
     adj_breaktime += breaktime;
   }
   setTimeout(function() {
-    _poseSeveralQuestions(indices, timeout, breaktime, currentIndex+1);
+    _poseSeveralQuestions(timeout, breaktime, breakfn, currentIndex+1);
   }, adj_breaktime);
 }
-function poseSeveralQuestions(indices, timeout, breaktime) {
-  _poseSeveralQuestions(indices, timeout, breaktime, 0);
+function poseSeveralQuestions(timeout, breaktime, breakfn) {
+  _poseSeveralQuestions(timeout, breaktime, breakfn, 0);
 }
 
 function customTrim(str) {
@@ -4082,24 +4121,60 @@ function judgeAnswers(key, answers) {
   }
   return re;
 }
-function pause(ms) {
-    _additional_pause += ms;
-}
-function simpleTriviaLoop(q) {
-  _q = q;
+function loadQuestions(q, num_questions) {
   var r = [ ];
-  for (var i=0; i<_q.length; ++i) {
-    r.push(i);
+  for (var i=0; i<q.length; ++i) {
+	r.push(i);
   }
   loadScores();
   shuffle(r);
-  poseSeveralQuestions(r, TIME_PER_QUESTION, TIME_PER_BREAK);
+  r = r.slice(0, num_questions);
+  
+  return r;
+}
+function simpleTriviaLoop(q) {
+  _q = loadQuestions(q, q.length);
+  showProgress = false;
+  current_scores = overall_scores;
+  sendMessage("Starting FREE PLAY loop. (Play at your own pace!)");
+  setTimeout(function() {
+	poseSeveralQuestions(TIME_PER_QUESTION, TIME_PER_BREAK, null);
+  }, TIME_PER_BREAK);
+}
+function simpleTriviaContest(q, num_questions) {
+  _q = loadQuestions(q, num_questions);
+  showProgress = true;
+  current_scores = { };
+  sendMessage("Starting TRIVIA CONTEST! Get the most points over " + num_questions + " questions to win a spot in the HALL OF FAME!");
+  trivia_type_flag = FLAG_FREE_PLAY;
+  setTimeout(function() {
+	poseSeveralQuestions(TIME_PER_QUESTION, TIME_PER_BREAK, outputContestResults);
+  }, TIME_PER_BREAK);
+}
+function outputContestResults() {
+  var winner = computeTopUsers(3);
+  if (winner.length == 0) {
+	sendMessage("Nobody got a single point! For shame!");
+  }
+  else {
+	sendMessage(winner[0] + " wins with " + current_scores[winner[0]] + " points! CONGRATULATIONS!!");
+  }
+  current_scores = victory_scores;
+  increaseScores(winner);
+  saveScores();
+  setTimeout(function() {
+	sendMessage("HALL OF FAME: " + computeTopScoresStr(5));
+	setTimeout(function() { simpleTriviaLoop(q); }, TIME_PER_BREAK);
+  }, TIME_PER_BREAK);
 }
     
 function connectLoop() {
   var connectedMessage = $(".robin-message--message:contains('connected!')");
-  if (connectedMessage.length > 0) {
+  if (connectedMessage.length > 0 && localStorage["robin-quiz-mute"] != "mute") {
     simpleTriviaLoop(q);
+	setInterval(function() {
+	  trivia_type_flag = FLAG_STANDARD;
+	}, CONTEST_FREQUENCY_MS);
     console.log("Trivia bot initialized successfully!");
   }
   else {
