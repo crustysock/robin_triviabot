@@ -112,8 +112,8 @@ Answer: Neptune
 
 Category: Astronomy
 Question: How many planets are there in our solar system?
-Answer: nine
-Regexp: (nine|9)
+Answer: eight
+Regexp: (eight|8)
 
 Category: Astronomy
 Question: If you're in the northern hemisphere, Polaris, the North Star, can be found by looking which direction?
@@ -2874,7 +2874,7 @@ Answer: Jordan
 
 Category: History
 Question: John F. Kennedy Airport in New York used to be called __________.
-Answer: Idlewind
+Answer: Idlewild
 
 Category: History
 Question: Mussolini invaded this country in 1935.
@@ -5707,23 +5707,23 @@ Category: Trivia
 Question: Who is known as "the world's oldest teenager"?
 Answer: Dick #Clark#
 
-Category: Word Asssociation
+Category: Word Association
 Question: Ball and ________.
 Answer: chain
 
-Category: Word Asssociation
+Category: Word Association
 Question: Peace and _________.
 Answer: quiet
 
-Category: Word Asssociation
+Category: Word Association
 Question: Which word is related to these three: nap, walk, call?
 Answer: cat
 
-Category: Word Asssociation
+Category: Word Association
 Question: Which word is related to these three: painting, bowl, nail?
 Answer: finger
 
-Category: Word Asssociation
+Category: Word Association
 Question: Which word is related to these three: rat, blue, cottage?
 Answer: cheese
 
