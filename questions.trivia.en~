@@ -887,7 +887,7 @@ Question: Name the pain-inflicting person you go to to get your teeth fixed.
 Answer: dentist
 
 Category: Definitions
-Question: Name the porceilan chair you sit on at least once a day.
+Question: Name the porcelain chair you sit on at least once a day.
 Answer: toilet
 
 Category: Definitions
@@ -1001,6 +1001,7 @@ Answer: cloud
 Category: Definitions
 Question: This instrument is used for measuring the distance between two points, on a curved surface.
 Answer: calliper
+Regexp: call?iper
 
 Category: Definitions
 Question: This instrument measures atmospheric pressure.
@@ -3967,7 +3968,7 @@ Answer: Hardy
 
 Category: Movie Trivia
 Question: What does the statue of Oscar stand on?
-Answer: A #Reel of Film#
+Answer: A #reel of film#
 
 Category: Movie Trivia
 Question: What famous animal character called "Skull Island" home?
@@ -4683,7 +4684,7 @@ Question: What word is used for a female sheep?
 Answer: ewe
 
 Category: Nature
-Question: What word is used for a male ass? (Other than that the word used for that #*§^*&%@! ex-boyfriend.)
+Question: What word is used for a male ass?
 Answer: jack
 
 Category: Nature

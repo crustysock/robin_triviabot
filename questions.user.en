@@ -3997,7 +3997,7 @@ Answer: solid
 Author: MingTea
 
 Category: Science
-Question: The Carloline Institute of Stockholm won the nobel prize for what?
+Question: The Caroline Institute of Stockholm won the nobel prize for what?
 Answer: Physiology and Medicine
 Author: Magic2000 
 
@@ -4013,7 +4013,7 @@ Author: Magic2000
 
 Category: Science
 Question: What did Einstein get the nobel prize for?
-Answer: The Photelectric effect
+Answer: The Photoelectric effect
 Author: Magic2000
 
 Category: Science
@@ -4022,12 +4022,12 @@ Answer: Liquid Petroleum Gas
 Author: AjiMMbO
 
 Category: Science
-Question: What engery does an Eolic power station?
+Question: What energy does an Eolic power station?
 Answer: Wind Power
 Author: Magic2000
 
 Category: Science
-Question: What is Cytology the study of?
+Question: What is cytology the study of?
 Answer: The Structure of Cells
 Author: Magic2000 
 
@@ -4053,7 +4053,7 @@ Answer: astrophysics
 Author: ^Trotsky
 
 Category: Science
-Question: What two planets dont have moons?
+Question: What two planets don't have moons?
 Answer: Mercury and Venus
 Regexp: (Mercury(,| and| +| &) Venus|Venus(,| and| +| &) Mercury)
 Author: Magic2000
@@ -4079,7 +4079,7 @@ Answer: Anders Celsius
 Author: Magic2000 
 
 Category: Science
-Question: Who is the only person two win two nobel prizes?
+Question: Who is the only person to win two nobel prizes?
 Answer: Marie Curie
 Regexp: (Madamme )?(Marie )?Curie
 Author: midnightsun99
@@ -4095,7 +4095,7 @@ Answer: Vitamin B1
 Author: Magic2000 
 
 Category: Science
-Question: what period Came after the triassic?
+Question: what period came after the triassic?
 Answer: Jurassic
 Author: Magic2000 
 
@@ -4137,7 +4137,7 @@ Answer: hills
 Author: Lyrax
 
 Category: Space
-Question: How many Astronaughs crewed the Gemini series of Spacecraft?
+Question: How many astronauts crewed the Gemini series of Spacecraft?
 Answer: Two
 Author: Magic2000
 
@@ -4152,12 +4152,12 @@ Answer: 2nd full moon in 1 month
 Author: Magic2000 
 
 Category: Space
-Question: What is the only man-made structure on earth that can been seen from space?
+Question: What is the only man-made structure on earth that can be seen from space?
 Answer: Great Wall Of China
 Author: Tornado-
 
 Category: Space
-Question: What lies between mars and jupiter?
+Question: What lies between Mars and Jupiter?
 Answer: the asteroid belt
 Author: Magic2000
 
@@ -4167,17 +4167,17 @@ Answer: Yuri #Gagarin#
 Author: CursumPerficio
 
 Category: Sport
-Question: How many hurdles in a 400m hurdle race?
+Question: How many hurdles are in a 400m hurdle race?
 Answer: 10
 Author: Magic2000
 
 Category: Sport
-Question: How many pockets on a standard snooker table?
+Question: How many pockets are on a standard snooker table?
 Answer: 6
 Author: Magic2000
 
 Category: Sport
-Question: In american football where is the Orange Bowl?
+Question: In American football, where is the Orange Bowl?
 Answer: Miami
 Author: Magic2000
 
@@ -4203,7 +4203,7 @@ Answer: Chukkers
 Author: Magic2000
 
 Category: Sport
-Question: The greyhound, along with this smaller relative, is used in the sport of coursing?
+Question: The greyhound, along with this smaller relative, is used in the sport of coursing.
 Answer: Whippet
 Author: MingTea
 
@@ -4534,23 +4534,23 @@ Question: Teddy Roosevelt banned the a what from the White House for environment
 Answer: Christmas Tree
 Author: {LaVisH_Yum_Yum}
 
-Category: silly flags
+Category: Flags
 Question: Which nation has an AK-47 assault rifle on its flag?
 Answer: Mozambique
 Author: {LaVisH}
 
-Category: stupid Fish
+Category: Fish
 Question: A goldfish has a memory of how many seconds?
 Answer: three
-Regexp: (3|one)
+Regexp: (3|three)
 Author: {LaVisH}
 
-Category: stupid Rivers
-Question: The only river that flows both north and south of the equator is the?
+Category: Rivers
+Question: What is the only river that flows both north and south of the Equator?
 Answer: congo
 Author: {LaVisH}
 
-Category: useless Stuff
+Category: General Knowledge
 Question: The only place in the world where one can see the sun rise on the Pacific Ocean and set on the Atlantic is in which country?
 Answer: Panama
 Author: {LaVisH}
