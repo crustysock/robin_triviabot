@@ -3,11 +3,15 @@ BASE_SCORE = 1;
 
 MAX_MESSAGE_LENGTH = 140;
 TIME_PER_QUESTION = 24000;
-TIME_PER_BREAK = 18000;
+TIME_PER_BREAK = 14000;
+
+QUESTIONS_PER_SCORE_DISPLAY = 8;
+NUM_SCORES_TO_DISPLAY = 15;
 
 SAVE_STRING = "robin-quiz-scores";
 
 _q = []
+_question_num = 0
 
 scores = { }
 function loadScores() {
@@ -23,6 +27,19 @@ function loadScores() {
 }
 function saveScores(scores) {
   localStorage[SAVE_STRING] = JSON.stringify(scores);
+}
+function userInfoStr(user) {
+  return user + " (" + (scores[user] != null ? scores[user] : "0") + ")";
+}
+function computeTopScoresStr(scores, num) {
+  var scoresArray = [ ];
+  for (var user in scores) {
+    scoresArray.push([user, scores[user]]);
+  }
+  scoresArray.sort(function(a, b) { return -(a[1] - b[1]); });
+  var buildScores = "HIGH SCORES: ";
+  buildScores += scoresArray.map(i => userInfoStr(i[0])).slice(0, num).join(", ");
+  return buildScores;
 }
 
 function increaseScores(users) {
@@ -58,7 +75,7 @@ function sendMessage(message) {
   $(".text-counter-input").val(truncated_message).submit();
 }
 function printQuestion(index) {
-  sendMessage("CATEGORY: " + _q[index][0] + "  //  " + _q[index][1]);
+  sendMessage("CATEGORY: " + _q[index][0] + " || " + _q[index][1]);
 }
 function poseSingleQuestion(index, timeout) {
   printQuestion(index);
@@ -71,13 +88,8 @@ function poseSingleQuestion(index, timeout) {
     });
     increaseScores(usersCorrect);
     saveScores(scores);
-    var buildAnswerMessage = "The answer was " + _q[index][2].replace(/#/, "") + "!! Correct users: ";
-    for (var i=0; i<usersCorrect.length; ++i) {
-      if (i > 0) {
-        buildAnswerMessage += ", ";
-      }
-      buildAnswerMessage += usersCorrect[i] + " (" + scores[usersCorrect[i]] + ")";
-    }
+    var buildAnswerMessage = "The answer was " + _q[index][2].replace(/#/, "") + "! Correct users: ";
+    buildAnswerMessage += usersCorrect.map(i => userInfoStr(i)).join(", ");
     if (usersCorrect.length == 0) {
       buildAnswerMessage += "(nobody) :(";
     }
@@ -85,14 +97,22 @@ function poseSingleQuestion(index, timeout) {
   }, timeout);
 }
 
-function _poseSeveralQuestions(indices, timeout, breaktime, current_index) {
+function _poseSeveralQuestions(indices, timeout, breaktime, currentIndex) {
   if (current_index >= indices.length) {
     return;
   }
-  poseSingleQuestion(indices[current_index], timeout);
+  poseSingleQuestion(indices[currentIndex], timeout);
+  _question_num++;
+  var adj_breaktime = timeout + breaktime;
+  if (_question_num % QUESTIONS_PER_SCORE_DISPLAY == 0) {
+    setTimeout(function() {
+      sendMessage(computeTopScoresStr(scores, NUM_SCORES_TO_DISPLAY));
+    }, timeout + breaktime);
+    adj_breaktime = timeout + 2 * breaktime;
+  }
   setTimeout(function() {
-    _poseSeveralQuestions(indices, timeout, breaktime, current_index+1);
-  }, timeout + breaktime);
+    _poseSeveralQuestions(indices, timeout, breaktime, currentIndex+1);
+  }, adj_breaktime);
 }
 function poseSeveralQuestions(indices, timeout, breaktime) {
   _poseSeveralQuestions(indices, timeout, breaktime, 0);
