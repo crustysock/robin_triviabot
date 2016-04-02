@@ -1,9 +1,9 @@
 SCORE_ORDER_TABLE = [3, 2, 1];
 BASE_SCORE = 1;
 
+MAX_MESSAGE_LENGTH = 140;
 TIME_PER_QUESTION = 24000;
 TIME_PER_BREAK = 18000;
-
 
 scores = { }
 function initScores() {
@@ -36,8 +36,8 @@ function shuffle(a) {
 
 function sendMessage(message) {
   var truncated_message = message;
-  if (truncated_message.length > 140) {
-    truncated_message = truncated_message.substr(0, 137) + "...";
+  if (truncated_message.length > MAX_MESSAGE_LENGTH) {
+    truncated_message = truncated_message.substr(0, MAX_MESSAGE_LENGTH-3) + "...";
   }
   $(".text-counter-input").val(truncated_message).submit();
 }
