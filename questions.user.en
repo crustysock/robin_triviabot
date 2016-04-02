@@ -1621,12 +1621,12 @@ Author: Magic2000
 
 Category: Geography
 Question: Where is the original London Bridge located?
-Answer: Lake Havasu,
+Answer: Lake Havasu
 Author: MingTea
 
 Category: Geography
 Question: Where is the tallest building in the world?
-Answer: Kuala Lumpur, Malaysia
+Answer: #Dubai#, UAE
 Author: AjiMMbO
 
 Category: Geography
@@ -1636,7 +1636,7 @@ Author: JessicaA^^^
 
 Category: Geography
 Question: Which is the only South East Asian country that is a member of the British Commonwealth?
-Answer: malaysia
+Answer: Malaysia
 Author: Danni-
 
 Category: Geography
@@ -1657,7 +1657,7 @@ Author: Danni-
 Category: Geography
 Question: Who is regarded as the most influential monarch of Russian Romanov Dynasty?
 Answer: Peter I
-Regexp: Peter the Great
+Regexp: (Peter I|Peter the Great)
 Author: ^Trotsky
 
 Category: Geography
@@ -1671,22 +1671,22 @@ Answer: Rotterdam
 Author: Magic2000 
 
 Category: Geography
-Question: in what country do people speak the Language they call Nihongo?
+Question: in what country do people speak the language they call Nihongo?
 Answer: Japan
 Author: Magic2000
 
 Category: Geography
 Question: what country has the highest per capita tea consumption?
-Answer: ireland
+Answer: Ireland
 Author: Magic2000 
 
 Category: Geography
-Question: what country has the oldest constitution that still exists?
+Question: What country has the oldest constitution that still exists?
 Answer: America
 Author: Magic2000 
 
 Category: Geography
-Question: what river separates the city of Florence?
+Question: What river separates the city of Florence?
 Answer: Arno
 Author: JessicaA^^^
 
@@ -1868,6 +1868,7 @@ Author: MingTea
 Category: History
 Question: This U.S. President suffered from polio during WWII.
 Answer: Franklin D #Roosevelt#
+Regexp: (FDR|Franklin D\.? Roosevelt|Roosevelt)
 Author: MingTea
 
 Category: History
@@ -2830,7 +2831,7 @@ Author: Dr_Jean_Grey
 
 Category: Movies
 Question: Who played 'The Scorpion King' in the recent movie 'The Mummy Returns'?
-Answer: Dwight Johnson
+Answer: Dwayne Johnson
 Author: atariwiggler
 
 Category: Movies
