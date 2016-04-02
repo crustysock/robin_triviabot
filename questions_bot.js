@@ -88,7 +88,7 @@ function poseSingleQuestion(index, timeout) {
     });
     increaseScores(usersCorrect);
     saveScores(scores);
-    var buildAnswerMessage = "The answer was " + _q[index][2].replace(/#/, "") + "! Correct users: ";
+    var buildAnswerMessage = "The answer was " + _q[index][2].replace(/#/g, "") + "! Correct users: ";
     buildAnswerMessage += usersCorrect.map(i => userInfoStr(i)).join(", ");
     if (usersCorrect.length == 0) {
       buildAnswerMessage += "(nobody) :(";
