@@ -342,7 +342,7 @@ Answer: Ryu Hayabusa (accept either answer)
 
 Category: Video Games
 Question: Master Higgins was the skateboarding hero of this tropical Hudson series that debuted on the NES.
-Answer: Hudson's Adventure Island
+Answer: Hudson's #Adventure Island#
 
 Category: Video Games
 Question: You probably didn't use this orange and gray gun in The Adventures of Bayou Billy, but you could have. 
@@ -351,6 +351,7 @@ Answer: NES Zapper
 Category: Video Games
 Question: Full name required: Also known as the Famicom Robot, this stacking robot was compatible with only two games: Gyromite and Stack-Up.
 Answer: Robotic Operating Buddy (prompt on "R.O.B.")
+Regexp: (Robotic Operating Buddy|R\.?O\.?B\.?)
 
 Category: Video Games
 Question: Consisting of a built-in microphone and two rubber barrels, this accessory can be used to play songs like Rock Lobster, Wild Thing and All The Small Things.
