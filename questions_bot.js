@@ -5,6 +5,8 @@ MAX_MESSAGE_LENGTH = 140;
 TIME_PER_QUESTION = 24000;
 TIME_PER_BREAK = 18000;
 
+_q = []
+
 scores = { }
 function initScores() {
   scores = { };
@@ -42,19 +44,19 @@ function sendMessage(message) {
   $(".text-counter-input").val(truncated_message).submit();
 }
 function printQuestion(index) {
-  sendMessage("CATEGORY: " + q[index][0] + "  //  " + q[index][1]);
+  sendMessage("CATEGORY: " + _q[index][0] + "  //  " + _q[index][1]);
 }
 function poseSingleQuestion(index, timeout) {
   printQuestion(index);
   var usersCorrect = [ ];
   setTimeout(function() {
     var answers = pullNewAnswers();
-    usersCorrect = judgeAnswers(q[index][3], answers);
+    usersCorrect = judgeAnswers(_q[index][3], answers);
     usersCorrect = usersCorrect.filter(function(item, pos, self) {
       return self.indexOf(item) == pos;
     });
     increaseScores(usersCorrect);
-    var buildAnswerMessage = "The answer was " + q[index][2].replace(/#/, "") + "!! Correct users: ";
+    var buildAnswerMessage = "The answer was " + _q[index][2].replace(/#/, "") + "!! Correct users: ";
     for (var i=0; i<usersCorrect.length; ++i) {
       if (i > 0) {
         buildAnswerMessage += ", ";
@@ -108,8 +110,9 @@ function judgeAnswers(key, answers) {
 }
 
 function simpleTriviaLoop(q) {
+  _q = q;
   var r = [ ];
-  for (var i=0; i<q.length; ++i) {
+  for (var i=0; i<_q.length; ++i) {
     r.push(i);
   }
   shuffle(r);
