@@ -5,12 +5,26 @@ MAX_MESSAGE_LENGTH = 140;
 TIME_PER_QUESTION = 24000;
 TIME_PER_BREAK = 18000;
 
+SAVE_STRING = "robin-quiz-scores";
+
 _q = []
 
 scores = { }
-function initScores() {
-  scores = { };
+function loadScores() {
+  var scoresText = localStorage[SAVE_STRING];
+  console.log(scoresText);
+  if (scoresText) {
+    scores = JSON.parse(scoresText);
+  }
+  else {
+    scores = { };
+  }
+  return scores;
 }
+function saveScores(scores) {
+  localStorage[SAVE_STRING] = JSON.stringify(scores);
+}
+
 function increaseScores(users) {
   for (var i=0; i<users.length; ++i) {
     var user = users[i];
@@ -56,6 +70,7 @@ function poseSingleQuestion(index, timeout) {
       return self.indexOf(item) == pos;
     });
     increaseScores(usersCorrect);
+    saveScores(scores);
     var buildAnswerMessage = "The answer was " + _q[index][2].replace(/#/, "") + "!! Correct users: ";
     for (var i=0; i<usersCorrect.length; ++i) {
       if (i > 0) {
@@ -115,6 +130,7 @@ function simpleTriviaLoop(q) {
   for (var i=0; i<_q.length; ++i) {
     r.push(i);
   }
+  loadScores();
   shuffle(r);
   poseSeveralQuestions(r, TIME_PER_QUESTION, TIME_PER_BREAK);
 }

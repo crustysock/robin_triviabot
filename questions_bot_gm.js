@@ -1,4 +1,25 @@
-[['(Definitions: -isms)', 'Sartre, de Beauvoir and Camus all belonged to this philosophical movement.', 'Existentialism', 'Existentialism'],
+// ==UserScript==
+// @name         Robin trivia bot
+// @namespace    http://tampermonkey.net/
+// @version      1.00
+// @description  try to take over the world!
+// @author       /u/npinsker
+// @include      https://www.reddit.com/robin*
+// @updateURL    https://github.com/npinsker/robin_triviabot/questions_bot.js
+// @require      http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
+// ==/UserScript==
+(function() {
+SCORE_ORDER_TABLE = [3, 2, 1];
+BASE_SCORE = 1;
+
+MAX_MESSAGE_LENGTH = 140;
+TIME_PER_QUESTION = 24000;
+TIME_PER_BREAK = 18000;
+RETRY_CONNECT = 2000;
+
+SAVE_STRING = "robin-quiz-scores";
+
+q = [['(Definitions: -isms)', 'Sartre, de Beauvoir and Camus all belonged to this philosophical movement.', 'Existentialism', 'Existentialism'],
 ['-isms', 'Indifference to pleasure or pain; Greek philosophical system following the teachings of Zeno.', 'stoicism', 'stoicism'],
 ['-ologies', 'A collection of literary pieces?', 'anthology', 'anthology'],
 ['-ologies', 'The study of animal and plant tissues?', 'Histology', 'Histology'],
@@ -2278,4 +2299,145 @@
 ["Words containing 'for'", 'A castle or enclosed place.', 'FORt', 'FORt'],
 ["Words containing 'for'", 'Make holes through something.', 'perFORate', 'perFORate'],
 ["Words containing 'for'", 'Many trees.', 'FORest', 'FORest'],
-["Words containing 'for'", 'Pardon.', 'FORgive', 'FORgive']]
+["Words containing 'for'", 'Pardon.', 'FORgive', 'FORgive']];
+
+_q = []
+
+scores = { }
+function loadScores() {
+  var scoresText = localStorage[SAVE_STRING];
+  if (scoresText) {
+    scores = JSON.parse(scoresText);
+  }
+  else {
+    scores = { };
+  }
+  return scores;
+}
+function saveScores(scores) {
+  localStorage[SAVE_STRING] = JSON.stringify(scores);
+}
+
+function increaseScores(users) {
+  for (var i=0; i<users.length; ++i) {
+    var user = users[i];
+    if (scores[user] == null) {
+      scores[user] = 0;
+    }
+    scores[user] += (i < SCORE_ORDER_TABLE.length ? SCORE_ORDER_TABLE[i] : BASE_SCORE);
+  }
+}
+/**
+ * Shuffles array in place.
+ * @param {Array} a items The array containing the items.
+ * Taken verbatim from
+ * http://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array-in-javascript.
+ */
+function shuffle(a) {
+    var j, x, i;
+    for (i = a.length; i; i -= 1) {
+        j = Math.floor(Math.random() * i);
+        x = a[i - 1];
+        a[i - 1] = a[j];
+        a[j] = x;
+    }
+}
+
+function sendMessage(message) {
+  var truncated_message = message;
+  if (truncated_message.length > MAX_MESSAGE_LENGTH) {
+    truncated_message = truncated_message.substr(0, MAX_MESSAGE_LENGTH-3) + "...";
+  }
+  unsafeWindow.$(".text-counter-input").val(truncated_message).trigger("submit");
+}
+function printQuestion(index) {
+  sendMessage("CATEGORY: " + _q[index][0] + "  //  " + _q[index][1]);
+}
+function poseSingleQuestion(index, timeout) {
+  printQuestion(index);
+  var usersCorrect = [ ];
+  setTimeout(function() {
+    var answers = pullNewAnswers();
+    usersCorrect = judgeAnswers(_q[index][3], answers);
+    usersCorrect = usersCorrect.filter(function(item, pos, self) {
+      return self.indexOf(item) == pos;
+    });
+    increaseScores(usersCorrect);
+    saveScores(scores);
+    var buildAnswerMessage = "The answer was " + _q[index][2].replace(/#/, "") + "!! Correct users: ";
+    for (var i=0; i<usersCorrect.length; ++i) {
+      if (i > 0) {
+        buildAnswerMessage += ", ";
+      }
+      buildAnswerMessage += usersCorrect[i] + " (" + scores[usersCorrect[i]] + ")";
+    }
+    if (usersCorrect.length == 0) {
+      buildAnswerMessage += "(nobody) :(";
+    }
+    sendMessage(buildAnswerMessage);
+  }, timeout);
+}
+
+function _poseSeveralQuestions(indices, timeout, breaktime, current_index) {
+  if (current_index >= indices.length) {
+    return;
+  }
+  poseSingleQuestion(indices[current_index], timeout);
+  setTimeout(function() {
+    _poseSeveralQuestions(indices, timeout, breaktime, current_index+1);
+  }, timeout + breaktime);
+}
+function poseSeveralQuestions(indices, timeout, breaktime) {
+  _poseSeveralQuestions(indices, timeout, breaktime, 0);
+}
+
+function customTrim(str) {
+  return str.replace(/^[\s!\?]+|[\s!\?]+$/gm, '');
+}
+function answerMatch(raw_key, raw_answer) {
+  var key_regex = new RegExp("^" + raw_key.toLowerCase() + "$");
+  return key_regex.test(customTrim(raw_answer.toLowerCase()));
+}
+function pullNewAnswers() {
+  var re = new Array();
+  $('.robin-message--message:not(.addon--judged)').each(function() {
+    var user = $('.robin-message--from', $(this).closest('.robin-message')).text();
+    re.push([user, $(this).text()]);
+    $(this).addClass('addon--judged');
+  });
+  return re;
+}
+function judgeAnswers(key, answers) {
+  var re = new Array();
+  for (var i=0; i<answers.length; ++i) {
+    if (answerMatch(key, answers[i][1])) {
+      re.push(answers[i][0]);
+    }
+  }
+  return re;
+}
+
+function simpleTriviaLoop(q) {
+  _q = q;
+  var r = [ ];
+  for (var i=0; i<_q.length; ++i) {
+    r.push(i);
+  }
+  loadScores();
+  shuffle(r);
+  poseSeveralQuestions(r, TIME_PER_QUESTION, TIME_PER_BREAK);
+}
+    
+function connectLoop() {
+  var connectedMessage = $(".robin-message--message:contains('connected!')");
+  if (connectedMessage.length > 0) {
+    simpleTriviaLoop(q);
+    console.log("Trivia bot initialized successfully!");
+  }
+  else {
+    console.log("Could not connect; retrying...");
+    setTimeout(connectLoop, RETRY_CONNECT);
+  }
+}
+connectLoop();
+})();
