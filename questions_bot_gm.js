@@ -1598,7 +1598,7 @@ q = [['(Definitions: -isms)', 'Sartre, de Beauvoir and Camus all belonged to thi
 ['History', 'In which country was the Rosetta Stone found?', 'Egypt', 'Egypt'],
 ['History', 'Israel occupied the Golan Heights.  Whose territory was it?', 'Syria', 'Syria'],
 ['History', 'Israel occupied the West Bank.  It belonged to _______.', 'Jordan', 'Jordan'],
-['History', 'John F. Kennedy Airport in New York used to be called __________.', 'Idlewind', 'Idlewind'],
+['History', 'John F. Kennedy Airport in New York used to be called __________.', 'Idlewild', 'Idlewild'],
 ['History', 'Mussolini invaded this country in 1935.', 'Ethiopia', 'Ethiopia'],
 ['History', "Name Jacques Cousteau's research ship.", 'Calypso', 'Calypso'],
 ['History', 'Name the incident in which tea was dumped into the harbour.', 'Boston Tea Party', 'Boston Tea[- ]Party'],
