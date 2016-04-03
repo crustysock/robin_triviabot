@@ -1974,7 +1974,7 @@ Question: The Ionian and Cyclades are island groups of which country?
 Answer: Greece
 
 Category: Geography
-Question: The Little Mermaid is found in the harbour of which city?
+Question: The Little Mermaid is found in the harbor of which city?
 Answer: Copenhagen
 
 Category: Geography
@@ -2886,7 +2886,7 @@ Question: Name Jacques Cousteau's research ship.
 Answer: Calypso
 
 Category: History
-Question: Name the incident in which tea was dumped into the harbour.
+Question: Name the incident in which tea was dumped into the harbor.
 Answer: Boston Tea Party
 Regexp: Boston Tea[- ]Party
 
@@ -3019,6 +3019,7 @@ Answer: Dunkirk
 Category: History
 Question: This military attack took place on Dec. 7, 1941.
 Answer: Pearl Harbour
+Regexp: Pearl Harbou?r
 
 Category: History
 Question: This organization was founded by William Booth.

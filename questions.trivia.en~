@@ -1235,7 +1235,7 @@ Answer: almonds
 
 Category: Food and Drink
 Question: Where is the best brandy bottled?
-Answer: cognac
+Answer: Cognac
 
 Category: Food and Drink
 Question: Where was Budweiser first brewed?
@@ -1974,7 +1974,7 @@ Question: The Ionian and Cyclades are island groups of which country?
 Answer: Greece
 
 Category: Geography
-Question: The Little Mermaid is found in the harbour of which city?
+Question: The Little Mermaid is found in the harbor of which city?
 Answer: Copenhagen
 
 Category: Geography
@@ -2886,7 +2886,7 @@ Question: Name Jacques Cousteau's research ship.
 Answer: Calypso
 
 Category: History
-Question: Name the incident in which tea was dumped into the harbour.
+Question: Name the incident in which tea was dumped into the harbor.
 Answer: Boston Tea Party
 Regexp: Boston Tea[- ]Party
 

@@ -950,10 +950,11 @@ Answer: Jetsons
 
 Category: Chemistry
 Question: 20% of what is in the metal part at the end of a pencil?
-Answer: sulphur
+Answer: sulfur
+Regexp: (sulphur|sulfur)
 
 Category: Chemistry
-Question: As what is sulphur also known?
+Question: As what is sulfur also known?
 Answer: brimstone
 
 Category: Chemistry
@@ -1000,7 +1001,7 @@ Answer: forty two
 Regexp: (forty[- ]two|42)
 
 Category: Chemistry
-Question: What is the atomic number of sulphur?
+Question: What is the atomic number of sulfur?
 Answer: 16
 
 Category: Chemistry
@@ -3204,7 +3205,7 @@ Question: What was the name of the scandal that resulted in the resignation of p
 Answer: Watergate
 
 Category: History
-Question: What wonder stood 32m high in rhodes harbour?
+Question: What wonder stood 32m high in Rhodes Harbor?
 Answer: Colossus of Rhodes
 
 Category: History
@@ -5947,7 +5948,8 @@ Answer: gillette
 
 Category: Science
 Question: What is the scientific name for brimstone?
-Answer: sulphur
+Answer: sulfur
+Regexp: (sulphur|sulfur)
 
 Category: Science
 Question: What is the scientific name for earth's outer layer of surface soil or crust?

@@ -1,16 +1,18 @@
 // ==UserScript==
 // @name         Robin trivia bot
 // @namespace    http://tampermonkey.net/
-// @version      1.00
+// @version      1.02
 // @description  try to take over the world!
 // @author       /u/npinsker
 // @include      https://www.reddit.com/robin*
-// @updateURL    https://github.com/npinsker/robin_triviabot/questions_bot.js
+// @updateURL    https://github.com/npinsker/robin_triviabot/raw/master/questions_bot_gm.js
 // @require      http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
+// @grant        unsafeWindow
 // ==/UserScript==
 (function() {
-SCORE_ORDER_TABLE = [3, 2, 1];
-BASE_SCORE = 1;
+SCORE_ORDER_TABLE = [4, 3, 2, 1];
+BASE_SCORE = 0;
+CHANNEL_PREFIX = "$";
 
 MAX_MESSAGE_LENGTH = 140;
 TIME_PER_QUESTION = 24000;
@@ -502,7 +504,7 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Geography', 'The Auckland Islands belong to which country?', 'New Zealand', 'New Zealand'],
 ['Geography', 'The Hebrides are part of this country.', 'Scotland', 'Scotland'],
 ['Geography', 'The Ionian and Cyclades are island groups of which country?', 'Greece', 'Greece'],
-['Geography', 'The Little Mermaid is found in the harbour of which city?', 'Copenhagen', 'Copenhagen'],
+['Geography', 'The Little Mermaid is found in the harbor of which city?', 'Copenhagen', 'Copenhagen'],
 ['Geography', 'The Nationalist Chinese occupy this island.', 'Taiwan', 'Taiwan'],
 ['Geography', 'The Thatcher Ferry Bridge crosses what canal?', '#Panama# Canal', '(Panama Canal|Panama)'],
 ['Geography', 'The United States is made up of __ states.', '50', '50'],
@@ -728,7 +730,7 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['History', 'John F. Kennedy Airport in New York used to be called __________.', 'Idlewild', 'Idlewild'],
 ['History', 'Mussolini invaded this country in 1935.', 'Ethiopia', 'Ethiopia'],
 ['History', "Name Jacques Cousteau's research ship.", 'Calypso', 'Calypso'],
-['History', 'Name the incident in which tea was dumped into the harbour.', 'Boston Tea Party', 'Boston Tea[- ]Party'],
+['History', 'Name the incident in which tea was dumped into the harbor.', 'Boston Tea Party', 'Boston Tea[- ]Party'],
 ['History', 'One who fought professionally in Roman arenas was a(n) ____________.', 'Gladiator', 'Gladiator'],
 ['History', 'She overcame her handicaps to become a lecturer and a scholar.', 'Helen #Keller#', '(Helen Keller|Keller)'],
 ['History', 'She was Queen of Egypt and mistress of Julius Caesar.', 'Cleopatra', 'Cleopatra'],
@@ -760,7 +762,7 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['History', 'This assassin of Julius Caesar was his friend.', 'Brutus', 'Brutus'],
 ['History', 'This frontiersman and politician was killed at the Alamo.', 'Davy #Crockett#', '(Davy Crockett|Crockett)'],
 ['History', "This is said to be history's greatest military evacuation.", 'Dunkirk', 'Dunkirk'],
-['History', 'This military attack took place on Dec. 7, 1941.', 'Pearl Harbour', 'Pearl Harbour'],
+['History', 'This military attack took place on Dec. 7, 1941.', 'Pearl Harbour', 'Pearl Harbou?r'],
 ['History', 'This organization was founded by William Booth.', 'Salvation Army', 'Salvation Army'],
 ['History', 'This racist organization was formed in Tennessee in 1865.', 'Ku Klux Klan', 'Ku Klux Klan'],
 ['History', 'This war began on June 25, 1950.', 'Korean', 'Korean'],
@@ -1640,8 +1642,8 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Cartoon Trivia', 'Who was the black assistant of Mandrake the Magician?', 'Lothar', 'Lothar'],
 ['Cartoon Trivia', 'Who was the first voice of Mickey Mouse?', 'Walt Disney', 'Walt Disney'],
 ['Cartoon trivia', "What film was the last featuring Mel Blanc's voice?", 'Jetsons', 'Jetsons'],
-['Chemistry', '20% of what is in the metal part at the end of a pencil?', 'sulphur', 'sulphur'],
-['Chemistry', 'As what is sulphur also known?', 'brimstone', 'brimstone'],
+['Chemistry', '20% of what is in the metal part at the end of a pencil?', 'sulfur', '(sulphur|sulfur)'],
+['Chemistry', 'As what is sulfur also known?', 'brimstone', 'brimstone'],
 ['Chemistry', 'For what is the chemical formula H2O2?', 'hydrogen peroxide', 'hydrogen peroxide'],
 ['Chemistry', "For what metal is 'Au' the chemical symbol?", 'gold', 'gold'],
 ['Chemistry', 'Of what is 98% of the weight of water made?', 'oxygen', 'oxygen'],
@@ -1652,7 +1654,7 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Chemistry', 'What is the atomic number for thalium?', 'eighty one', '(eighty one|81)'],
 ['Chemistry', 'What is the atomic number of Bromine?', 'thirty five', '(thirty five|35)'],
 ['Chemistry', 'What is the atomic number of Molybdenum?', 'forty two', '(forty[- ]two|42)'],
-['Chemistry', 'What is the atomic number of sulphur?', '16', '16'],
+['Chemistry', 'What is the atomic number of sulfur?', '16', '16'],
 ['Chemistry', 'What is the atomic number of uranium?', 'ninety two', '(ninety two|92)'],
 ['Chemistry', 'What is the chemical name for quicksilver?', 'mercury', 'mercury'],
 ['Chemistry', 'What is the chemical symbol for gold?', 'Au', 'Au'],
@@ -2184,7 +2186,7 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['History', 'What was the leading cause of death in the late 19th century?', 'tuberculosis', 'tuberculosis'],
 ['History', 'What was the name of the first ironclad warship ever launched?', 'HMS #Warrior#', '(HMS Warrior|Warrior)'],
 ['History', 'What was the name of the scandal that resulted in the resignation of president Nixon?', 'Watergate', 'Watergate'],
-['History', 'What wonder stood 32m high in rhodes harbour?', 'Colossus of Rhodes', 'Colossus of Rhodes'],
+['History', 'What wonder stood 32m high in Rhodes Harbor?', 'Colossus of Rhodes', 'Colossus of Rhodes'],
 ['History', 'When was D-day?', 'June 6th, 1944', '(6(th)? (of )?June,? 1944|June 6(th)?,? 1944)'],
 ['History', 'When was Julius Caesar murdered?', 'Ides of March', 'Ides of March'],
 ['History', 'When was the Greek alphabet first used?', '800 BC', '800 ?BC'],
@@ -2842,7 +2844,7 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Science', 'What does the Rankine scale measure?', 'temperature', 'temperature'],
 ['Science', 'What is name applied to the study of soil?', 'paedology', 'paedology'],
 ['Science', 'What is the number of blue razor blades a given beam can puncture?', 'gillette', 'gillette'],
-['Science', 'What is the scientific name for brimstone?', 'sulphur', 'sulphur'],
+['Science', 'What is the scientific name for brimstone?', 'sulfur', '(sulphur|sulfur)'],
 ['Science', "What is the scientific name for earth's outer layer of surface soil or crust?", 'lithosphere', 'lithosphere'],
 ['Science', 'What is the study of prehistoric plants and animals?', 'paleontology', 'paleontology'],
 ['Science', 'What is the study of the composition of substances and the changes they undergo?', 'chemistry', 'chemistry'],
@@ -4131,7 +4133,7 @@ function getAdditionalPause() {
   return 0;
 }
 function sendMessage(message) {
-  var truncated_message = message;
+  var truncated_message = (CHANNEL_PREFIX != "" ? CHANNEL_PREFIX + " " : "") + message;
   if (truncated_message.length > MAX_MESSAGE_LENGTH) {
     truncated_message = truncated_message.substr(0, MAX_MESSAGE_LENGTH-3) + "...";
   }
@@ -4200,7 +4202,7 @@ function poseSeveralQuestions(timeout, breaktime, breakfn) {
 }
 
 function customTrim(str) {
-  return str.replace(/^[\s]+|[\s]+$/gm, '').replace(/[:!\?]/gm, '');
+  return str.replace(/[:!\?\$]/gm, '').replace(/^[\s]+|[\s]+$/gm, '');
 }
 function answerMatch(raw_key, raw_answer) {
   var key_regex = new RegExp("^" + raw_key.toLowerCase() + "$");
@@ -4237,6 +4239,7 @@ function loadQuestions(q, num_questions) {
 }
 function simpleTriviaLoop(q) {
   _q = loadQuestions(q, q.length);
+  _question_num = 0;
   showProgress = false;
   current_scores = overall_scores;
   sendMessage("Starting FREE PLAY loop. (Play at your own pace!)");
@@ -4246,6 +4249,7 @@ function simpleTriviaLoop(q) {
 }
 function simpleTriviaContest(q, num_questions) {
   _q = loadQuestions(q, num_questions);
+  _question_num = 0;
   showProgress = true;
   current_scores = { };
   sendMessage("Starting TRIVIA CONTEST! Get the most points over " + num_questions + " questions to win a spot in the HALL OF FAME!");
