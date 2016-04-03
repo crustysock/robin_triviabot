@@ -3019,6 +3019,7 @@ Answer: Dunkirk
 Category: History
 Question: This military attack took place on Dec. 7, 1941.
 Answer: Pearl Harbour
+Regexp: Pearl Harbou?r
 
 Category: History
 Question: This organization was founded by William Booth.
@@ -3306,7 +3307,7 @@ Answer: Macbeth
 
 Category: Literature
 Question: Stephen King's: "Pet ________".
-Answer: Semetary
+Answer: Sematary
 
 Category: Literature
 Question: Stephen King's: "Salem's _________".
@@ -5608,7 +5609,7 @@ Answer: American Bandstand
 
 Category: TV Trivia
 Question: Who was Carl in Five Easy Pieces before going to Walton's Mountain?
-Answer: Waite
+Answer: Ralph #Waite#
 
 Category: TV Trivia
 Question: Who was Chief Marshall of the Mickey Mouse Club?

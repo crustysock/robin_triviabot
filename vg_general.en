@@ -251,7 +251,7 @@ Question: Introduced in Soul Calibur II, she is the younger sister of Sophitia f
 Answer: #Cassandra# Alexander
 
 Category: Video Games
-Question: The two main characters of this series used weapons like boomerangs, bones, and wheels to kill Dinosaurs in this SNES platformer.
+Question: The two main characters of this series used boomerangs, bones, and wheels to kill dinosaurs in this SNES platformer.
 Answer: Joe & Mac
 Regexp: (Joe (and|&) Mac|Mac (and|&) Joe)
 
@@ -313,8 +313,8 @@ Question: The first online Dreamcast game, this Sega party game featuring cats a
 Answer: ChuChu Rocket!
 
 Category: Video Games
-Question: Created by Yasumi Matsuno, this SNES strategy game published by Enix and later Atlus was subtitled, March of the Black Queen.
-Answer: Ogre Battle: March of the Black Queen
+Question: This SNES strategy game published by Enix and later Atlus was subtitled, March of the Black Queen.
+Answer: #Ogre Battle#: March of the Black Queen
 
 Category: Video Games
 Question: Containing an impressive play book of two running plays and two passing plays, this NES football game nevertheless was notable for its early use of licensed players.
@@ -367,7 +367,8 @@ Answer: Nintendo iQue Player
 
 Category: Video Games
 Question: Plugging into the bottom of the SNES, this satellite expansion was notable for its Zelda game, The Legend of Zelda: Ancient Stone Tablets.
-Answer: Satellaview (also accept BS-X)
+Answer: Satellaview
+Regexp: (Satellaview|BS\-?X)
 
 Category: Video Games
 Question: This robust arcade joystick for the NES contained turbo and slow motion buttons and could also be plugged into both controller ports.

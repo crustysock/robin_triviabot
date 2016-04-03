@@ -712,6 +712,7 @@ Answer: larynx
 Category: Biology
 Question: What is the common name for the larynx?
 Answer: voice box
+Regexp: voice ?box
 
 Category: Biology
 Question: What is the hardest bone in the human body?
@@ -4062,10 +4063,6 @@ Question: Who wrote 'A Tale Of Two Cities'?
 Answer: Charles #Dickens#
 
 Category: Literature
-Question: Who wrote 'A Tale Of Two Cities'?
-Answer: Charles #Dickens#
-
-Category: Literature
 Question: Who wrote 'Alice In Wonderland'?
 Answer: Lewis Carroll
 
@@ -4114,18 +4111,6 @@ Category: Literature
 Question: Who wrote the 'Dragonriders Of Pern' series?
 Answer: Anne McCaffrey
 Regexp: Anne Ma?cCaffrey
-
-Category: Literature
-Question: Who wrote the 'Father Brown' crime stories?
-Answer: G.K. #Chesterton#
-
-Category: Literature
-Question: Who wrote the 'Myth' series?
-Answer: Robert Asprin
-
-Category: Literature
-Question: Who wrote the 'Noddy' books?
-Answer: Enid Blyton
 
 Category: Literature
 Question: Who wrote the vampire series that featured Lestat as the main character?
