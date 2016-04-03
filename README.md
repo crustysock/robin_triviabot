@@ -1,7 +1,6 @@
 # Robin Triviabot
-(/u/npinsker)
 
-A simple trivia bot for use with reddit's robin chat channels.
+A simple trivia bot (by /u/npinsker) for use with reddit's robin chat channels.
 
 ## Installation
 
