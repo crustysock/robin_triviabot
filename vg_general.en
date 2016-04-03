@@ -338,7 +338,7 @@ Answer: Spread Gun
 
 Category: Video Games
 Question: Appearing in sequels subtitled The Dark Sword of Chaos and The Ancient Ship of Doom, this Team Ninja main character's first game was Ninja Gaiden.
-Answer: Ryu Hayabusa (accept either answer)
+Answer: #Ryu# Hayabusa
 
 Category: Video Games
 Question: Master Higgins was the skateboarding hero of this tropical Hudson series that debuted on the NES.
@@ -349,9 +349,9 @@ Question: You probably didn't use this orange and gray gun in The Adventures of 
 Answer: NES Zapper
 
 Category: Video Games
-Question: Full name required: Also known as the Famicom Robot, this stacking robot was compatible with only two games: Gyromite and Stack-Up.
-Answer: Robotic Operating Buddy (prompt on "R.O.B.")
-Regexp: (Robotic Operating Buddy|R\.?O\.?B\.?)
+Question: Also known as the Famicom Robot, this stacking robot was compatible with only two games: Gyromite and Stack-Up.
+Answer: Robotic Operating Buddy
+Regexp: (Robotic Operating Buddy|R\.? ?O\.? ?B\.?)
 
 Category: Video Games
 Question: Consisting of a built-in microphone and two rubber barrels, this accessory can be used to play songs like Rock Lobster, Wild Thing and All The Small Things.
@@ -374,7 +374,7 @@ Question: This robust arcade joystick for the NES contained turbo and slow motio
 Answer: NES Advantage
 
 Category: Video Games
-Question: This Famicom add-on that resided underneath the system allowed users to save their own levels in the Japanese version of Excitebike and to copy data for new games at special kiosks.
+Question: This Famicom add-on allowed users to save their own levels in the Japanese version of Excitebike and to copy data for new games at special kiosks.
 Answer: Famicom #Disc System#
 
 Category: Video Games
