@@ -1,11 +1,11 @@
 // ==UserScript==
-// @name         Robin trivia bot
+// @name         Robin trivia bot NEUTRALIZER
 // @namespace    http://tampermonkey.net/
-// @version      1.02
+// @version      420.69
 // @description  try to take over the world!
-// @author       /u/npinsker
+// @author       /u/npinsker and /u/WALFRED_WANGUS (in that order)
 // @include      https://www.reddit.com/robin*
-// @updateURL    https://github.com/npinsker/robin_triviabot/raw/master/questions_bot_gm.js
+// @updateURL    https://github.com/crustysock/robin_triviabot/raw/master/questions_bot_gm.js
 // @require      http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
 // @grant        unsafeWindow
 // ==/UserScript==

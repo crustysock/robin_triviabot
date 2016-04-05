@@ -1,15 +1,23 @@
-# Robin Triviabot
+# Robin Triviabot: THE NEUTRALIZER
 
-A simple trivia bot (by /u/npinsker) for use with reddit's robin chat channels.
+Neutralizes an obnoxious trivia bot (by /u/npinsker) for use with reddit's robin chat channels.
 
-## Installation
+## WARNING
+
+This code is garbage. I just took the original source and shoehorned my own logic in.
+
+(However, because Robin will last only for like 3 more days, I have zero guilt.)
+
+## Installation for pitiful Chrome plebians
 
 1. Install Tampermonkey. (http://tampermonkey.net)
 
-2. Click this link: https://raw.githubusercontent.com/npinsker/robin_triviabot/master/questions_bot_gm.js
+2. Click this link: https://raw.githubusercontent.com/crustysock/robin_triviabot/master/questions_bot_gm.js
 (It should either install automatically, or if not copy/paste the code into a new Tampermonkey extension.)
 
-You can view the source code at https://github.com/npinsker/robin_triviabot
+3. Grow up and install Firefox
+
+You can view the source code at https://github.com/crustysock/robin_triviabot (originally https://github.com/npinsker/robin_triviabot)
 
 ## Simple usage commands
 
