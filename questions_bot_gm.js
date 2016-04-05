@@ -18,6 +18,7 @@ MAX_MESSAGE_LENGTH = 140;
 TIME_PER_QUESTION = 24000;
 TIME_PER_BREAK = 14000;
 RETRY_CONNECT = 2000;
+CHECK_INTERVAL = 500;
 
 QUESTIONS_PER_SCORE_DISPLAY = 8;
 NUM_SCORES_TO_DISPLAY = 15;
@@ -4066,10 +4067,10 @@ function loadScores() {
     overall_scores = { };
   }
   if (victoryText) {
-	victory_scores = JSON.parse(victoryText);
+  victory_scores = JSON.parse(victoryText);
   }
   else {
-	victory_scores = { };
+  victory_scores = { };
   }
 }
 function saveScores() {
@@ -4125,18 +4126,19 @@ function getAdditionalPause() {
   }
   return 0;
 }
-function sendMessage(message) {
-  var truncated_message = (CHANNEL_PREFIX != "" ? CHANNEL_PREFIX + " " : "") + message;
+function sendMessage(message, channel) {
+  var chan = channel !== undefined ? channel : CHANNEL_PREFIX;
+  var truncated_message = (chan != "" ? chan + " " : "") + message;
   if (truncated_message.length > MAX_MESSAGE_LENGTH) {
     truncated_message = truncated_message.substr(0, MAX_MESSAGE_LENGTH-3) + "...";
   }
   if (!mute) {
-	unsafeWindow.$(".text-counter-input").val(truncated_message).trigger("submit");
+  unsafeWindow.$(".text-counter-input").val(truncated_message).trigger("submit");
   }
 }
 function printQuestion(index) {
   sendMessage((showProgress ? "(" + (index+1) + "/" + _q.length + ") " : "")
-			   + "CATEGORY: " + q[_q[index]][0] + " || " + q[_q[index]][1]);
+         + "CATEGORY: " + q[_q[index]][0] + " || " + q[_q[index]][1]);
 }
 function poseSingleQuestion(q_index, timeout) {
   index = _q[q_index];
@@ -4161,21 +4163,20 @@ function poseSingleQuestion(q_index, timeout) {
 
 function _poseSeveralQuestions(timeout, breaktime, breakfn, currentIndex) {
   if (currentIndex >= _q.length) {
-	if (breakfn != null) {
-	  return breakfn();
-	}
-	return;
-  }
-  else if (trivia_type_flag != FLAG_FREE_PLAY) {
-	if (trivia_type_flag == FLAG_STANDARD) {
-	  console.log("Starting standard trivia with " + trivia_num_questions + " questions!");
-	  simpleTriviaContest(q, trivia_num_questions);
-	  return;
-	}
-	else {
-	  console.log("Unknown trivia type flag " + trivia_type_flag + "! (Ignoring.)");
-	  trivia_type_flag = FLAG_FREE_PLAY;
-	}
+    if (breakfn != null) {
+      return breakfn();
+    }
+    return;
+  } else if (trivia_type_flag != FLAG_FREE_PLAY) {
+    if (trivia_type_flag == FLAG_STANDARD) {
+      console.log("Starting standard trivia with " + trivia_num_questions + " questions!");
+      simpleTriviaContest(q, trivia_num_questions);
+      return;
+    }
+    else {
+      console.log("Unknown trivia type flag " + trivia_type_flag + "! (Ignoring.)");
+      trivia_type_flag = FLAG_FREE_PLAY;
+    }
   }
   poseSingleQuestion(currentIndex, timeout);
   _question_num++;
@@ -4204,9 +4205,14 @@ function answerMatch(raw_key, raw_answer) {
 function pullNewAnswers() {
   var re = new Array();
   $('.robin-message--message:not(.addon--judged)').each(function() {
-    var user = $('.robin-message--from', $(this).closest('.robin-message')).text();
-    re.push([user, $(this).text()]);
+    var parentNode = $(this).closest('.robin-message');
+    var user = $('.robin-message--from', parentNode).text();
+    var timestamp = $('.robin-message--timestamp', parentNode).attr('datetime');
     $(this).addClass('addon--judged');
+
+    // don't answer ancient questions (prevents accidental spamming)
+    if (Date.now() - new Date(timestamp) < 5000)
+      re.push([user, $(this).text()]);
   });
   return re;
 }
@@ -4222,13 +4228,45 @@ function judgeAnswers(key, answers) {
 function loadQuestions(q, num_questions) {
   var r = [ ];
   for (var i=0; i<q.length; ++i) {
-	r.push(i);
+  r.push(i);
   }
   loadScores();
   shuffle(r);
   r = r.slice(0, num_questions);
   
   return r;
+}
+function answerQuestion(question) {
+  for (var i = 0; i < q.length; i++)
+    if (q[i][1] == question) {
+      sendMessage(q[i][2].toLowerCase().replace(/#/g, ''));
+      break;
+    }
+}
+function questionText(message) {
+  var result = message.match(/^[\$%\+\.>< ]*CATEGORY: (\w| )+\|\| (.+)$/);
+  //console.log(result);
+  if (result === null)
+    return null;
+  else
+    return result[2];
+}
+function lookForQuestions() {
+  var answers = pullNewAnswers();
+  //console.log(answers);
+  var question;
+
+  for (var i = 0; i < answers.length; i++) {
+    //console.log(answers[i]);
+    if ((question = questionText(answers[i][1])) !== null)
+      answerQuestion(question);
+      //setTimeout(function() { answerQuestion(question) }, 5000*Math.random());
+  }
+
+  setTimeout(lookForQuestions, CHECK_INTERVAL);
+}
+function simpleTriviaAnswerLoop(q) {
+  setTimeout(lookForQuestions, CHECK_INTERVAL);
 }
 function simpleTriviaLoop(q) {
   _q = loadQuestions(q, q.length);
@@ -4237,7 +4275,7 @@ function simpleTriviaLoop(q) {
   current_scores = overall_scores;
   sendMessage("Starting FREE PLAY loop. (Play at your own pace!)");
   setTimeout(function() {
-	poseSeveralQuestions(TIME_PER_QUESTION, TIME_PER_BREAK, null);
+  poseSeveralQuestions(TIME_PER_QUESTION, TIME_PER_BREAK, null);
   }, TIME_PER_BREAK);
 }
 function simpleTriviaContest(q, num_questions) {
@@ -4248,34 +4286,36 @@ function simpleTriviaContest(q, num_questions) {
   sendMessage("Starting TRIVIA CONTEST! Get the most points over " + num_questions + " questions to win a spot in the HALL OF FAME!");
   trivia_type_flag = FLAG_FREE_PLAY;
   setTimeout(function() {
-	poseSeveralQuestions(TIME_PER_QUESTION, TIME_PER_BREAK, outputContestResults);
+  poseSeveralQuestions(TIME_PER_QUESTION, TIME_PER_BREAK, outputContestResults);
   }, TIME_PER_BREAK);
 }
 function outputContestResults() {
   var winner = computeTopUsers(3);
   if (winner.length == 0) {
-	sendMessage("Nobody got a single point! For shame!");
+    sendMessage("Nobody got a single point! For shame!");
   }
   else {
-	sendMessage(winner[0] + " wins with " + current_scores[winner[0]] + " points! CONGRATULATIONS!!");
+    sendMessage(winner[0] + " wins with " + current_scores[winner[0]] + " points! CONGRATULATIONS!!");
   }
   current_scores = victory_scores;
   increaseScores(winner);
   saveScores();
   setTimeout(function() {
-	sendMessage("HALL OF FAME: " + computeTopScoresStr(5));
-	setTimeout(function() { simpleTriviaLoop(q); }, TIME_PER_BREAK);
+  sendMessage("HALL OF FAME: " + computeTopScoresStr(5));
+  setTimeout(function() { simpleTriviaLoop(q); }, TIME_PER_BREAK);
   }, TIME_PER_BREAK);
 }
     
 function connectLoop() {
   var connectedMessage = $(".robin-message--message:contains('connected!')");
   if (connectedMessage.length > 0 && localStorage["robin-quiz-mute"] != "mute") {
-    simpleTriviaLoop(q);
-	/*setInterval(function() {
-	  trivia_type_flag = FLAG_STANDARD;
-	}, CONTEST_FREQUENCY_MS);*/
-    console.log("Trivia bot initialized successfully!");
+    simpleTriviaAnswerLoop(q);
+    //simpleTriviaLoop(q);
+  /*setInterval(function() {
+    trivia_type_flag = FLAG_STANDARD;
+  }, CONTEST_FREQUENCY_MS);*/
+    //console.log("Trivia bot initialized successfully!");
+    console.log("TRIVIA DESTRUCTOR INITIALIZED.");
   }
   else {
     console.log("Could not connect; retrying...");
