@@ -4044,6 +4044,7 @@ q = [['Americanisms', "Britains say 'tarmac'; Americans say ______.", 'runway', 
 ['Video Games', 'These are the name given to the little drones that fly over your shoulder in Phantasy Star Online.  They boost your stats and can execute photon blasts.', 'MAGs', 'MAGs'],
 ['Video Games', 'Wearing sunglasses and a spiked collar, this blue creature is the fastest sprinter in the Mushroom Derby in Super Mario RPG.', 'Boshi', 'Boshi']];
 
+_categories = []
 _q = []
 _question_num = 0
 
@@ -4239,17 +4240,18 @@ function loadQuestions(q, num_questions) {
 function answerQuestion(question) {
   for (var i = 0; i < q.length; i++)
     if (q[i][1] == question) {
-      sendMessage(q[i][2].toLowerCase().replace(/#/g, ''));
+      sendMessage(q[i][2].replace(/#/g, ''));
       break;
     }
 }
 function questionText(message) {
-  var result = message.match(/^[\$%\+\.>< ]*CATEGORY: (\w| )+\|\| (.+)$/);
+  var result = message.match(/^[\$%\+\.>< ]*[\[\|]*((TRIVIA )?Question|CATEGORY)[,:\|\]\[ ]*[0-9A-Za-z\-_,\.'" ]+[,:\]\| ]* (.+?)[\]\|]*$/);
+
   //console.log(result);
   if (result === null)
     return null;
   else
-    return result[2];
+    return result[3];
 }
 function lookForQuestions() {
   var answers = pullNewAnswers();
@@ -4264,6 +4266,11 @@ function lookForQuestions() {
   }
 
   setTimeout(lookForQuestions, CHECK_INTERVAL);
+}
+function compileCategories() {
+    for (var i = 0; i < q.length; i++)
+        if (_categories.indexOf(q[i][0]) == -1)
+            _categories.push(q[i][0]);
 }
 function simpleTriviaAnswerLoop(q) {
   setTimeout(lookForQuestions, CHECK_INTERVAL);
@@ -4308,6 +4315,7 @@ function outputContestResults() {
     
 function connectLoop() {
   var connectedMessage = $(".robin-message--message:contains('connected!')");
+  compileCategories();
   if (connectedMessage.length > 0 && localStorage["robin-quiz-mute"] != "mute") {
     simpleTriviaAnswerLoop(q);
     //simpleTriviaLoop(q);
